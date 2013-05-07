@@ -1,0 +1,7 @@
+out/*
+tmp/*
+bin/*
+ideaSDK/*
+.idea/workspace.xml
+lib/*
+dependencies/*
