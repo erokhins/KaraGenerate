@@ -17,22 +17,23 @@
 package org.jetbrain.kara.generate
 
 
-trait Builder {
-
-}
-
-
 trait Attribute {
     public enum class AttributeType {
-        ticker
         dateTime
         float
         positiveInteger
         boolean
         string
         anyUri
-        enumType
-        stringEnumType
+        special // use AttributeDeclaration
+    }
+
+    fun getName(): String
+    fun getType(): AttributeType
+
+    // if type != special is null
+    fun getAttributeDeclaration(): AttributeDeclaration? {
+        return null
     }
 
 }
@@ -41,38 +42,46 @@ trait AttributeDeclaration {
     fun getName(): String
 
     // return null, if name of Attribute is unique
-    fun getElementName(): String? {
-        return null;
-    }
+    fun getElementName(): String?
 }
 
-open class EnumAttributeDeclaration(val name: String, val enumList: Set<String>, val elementName: String? = null):
-            AttributeDeclaration {
-
+abstract class AbstractAttributeDeclaration(val name: String, val elementName: String? = null) : AttributeDeclaration {
     override fun getName(): String {
         return name
     }
-
     override fun getElementName(): String? {
         return elementName
     }
-
 }
+
+
+class SimpleAttributeDeclaration(val attributeType: Attribute.AttributeType, name: String, elementName: String? = null):
+AbstractAttributeDeclaration(name, elementName)
+
+class TickerAttributeDeclaration(name: String, elementName: String? = null):
+AbstractAttributeDeclaration(name, elementName)
+
+open class EnumAttributeDeclaration(val enumList: Set<String>, name: String, elementName: String? = null):
+AbstractAttributeDeclaration(name, elementName)
 
 class StringEnumAttributeDeclaration(name: String, enumList: Set<String>, elementName: String? = null):
-        EnumAttributeDeclaration(name, enumList, elementName) {
-
-}
+EnumAttributeDeclaration(enumList, name, elementName)
 
 
 trait AttributeBuilder {
 
+    fun createAttributeDeclaration(attributeDeclaration: AttributeDeclaration);
 
-    fun attributeGroup(name: String, attributes: Collection<AttributeDeclaration>)
+    // create abstract tag with this attributes
+    fun createAttributeGroup(name: String, attributes: Collection<Attribute>)
 }
 
 
 
+
+trait Builder {
+
+}
 
 
 
