@@ -87,14 +87,7 @@
         </xsd:attribute>
         <xsd:attribute name="accesskey"/>
         <xsd:attribute name="class"/>
-        <xsd:attribute name="contenteditable">
-            <xsd:simpleType>
-                <xsd:restriction base="xsd:NMTOKEN">
-                    <xsd:enumeration value="true"/>
-                    <xsd:enumeration value="false"/>
-                </xsd:restriction>
-            </xsd:simpleType>
-        </xsd:attribute>
+        <xsd:attribute name="contenteditable" type="xsd:boolean"/>
         <xsd:attribute name="contextmenu"/>
         <!-- TODO: support whildcards like <xsd:attribute name="data-*"/> -->
         <xsd:attribute name="data-FolderName"/>
@@ -128,14 +121,7 @@
         <xsd:attribute name="lang" type="i18LanguageCode"/>
         <xsd:attribute name="itemprop"/>
         <xsd:attribute name="role"/>
-        <xsd:attribute name="spellcheck">
-            <xsd:simpleType>
-                <xsd:restriction base="xsd:NMTOKEN">
-                    <xsd:enumeration value="true"/>
-                    <xsd:enumeration value="false"/>
-                </xsd:restriction>
-            </xsd:simpleType>
-        </xsd:attribute>
+        <xsd:attribute name="spellcheck" type="xsd:boolean"/>
         <xsd:attribute name="style"/>
         <xsd:attribute name="subject"/>
         <xsd:attribute name="tabIndex"/>
@@ -802,7 +788,7 @@
             <xsd:attribute name="rel" type="linkType"/>
             <xsd:attribute name="media"/>
             <xsd:attribute name="hreflang" type="i18LanguageCode"/>
-            <xsd:attribute name="type" type="simpleContentType"/>
+            <xsd:attribute name="type" type="contentType"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -1269,7 +1255,13 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="disabled"/>
+            <xsd:attribute name="disabled">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="disabled"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
             <xsd:attribute name="form"/>
             <xsd:attribute name="name"/>
         </xsd:complexType>
@@ -1710,14 +1702,14 @@
                 <xsd:element ref="col"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="span" type="xsd:integer" default="1"/>
+            <xsd:attribute name="span" type="xsd:positiveInteger" default="1"/>
         </xsd:complexType>
     </xsd:element>
 
     <xsd:element name="col">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="span" type="xsd:integer" default="1"/>
+            <xsd:attribute name="span" type="xsd:positiveInteger" default="1"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -1871,23 +1863,6 @@
                     <xsd:enumeration value="text/scriptlet"/>
                     <xsd:enumeration value="text/x-component"/>
                     <xsd:enumeration value="text/x-html-insertion"/>
-                    <xsd:enumeration value="text/xml"/>
-                </xsd:restriction>
-            </xsd:simpleType>
-            <xsd:simpleType>
-                <xsd:restriction base="xsd:string"/>
-            </xsd:simpleType>
-        </xsd:union>
-    </xsd:simpleType>
-
-    <xsd:simpleType name="simpleContentType">
-        <xsd:union>
-            <xsd:simpleType>
-                <xsd:restriction base="xsd:string">
-                    <xsd:enumeration value="text/asp"/>
-                    <xsd:enumeration value="text/asa"/>
-                    <xsd:enumeration value="text/html"/>
-                    <xsd:enumeration value="text/plain"/>
                     <xsd:enumeration value="text/xml"/>
                 </xsd:restriction>
             </xsd:simpleType>
