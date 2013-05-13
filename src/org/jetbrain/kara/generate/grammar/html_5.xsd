@@ -215,7 +215,7 @@
             <xsd:element ref="audio"/>
 
             <xsd:element ref="b"/>
-            <xsd:element ref="bdo"/>
+            <xsd:element ref="bdi"/>
             <xsd:element ref="blockquote"/>
             <xsd:element ref="bdo"/>
             <xsd:element ref="br"/>
@@ -339,6 +339,7 @@
             <xsd:element ref="audio"/>
 
             <xsd:element ref="b"/>
+            <xsd:element ref="bdi"/>
             <xsd:element ref="bdo"/>
             <xsd:element ref="br"/>
             <xsd:element ref="button"/>
@@ -398,30 +399,6 @@
 
             <xsd:element ref="var"/>
             <xsd:element ref="video"/>
-        </xsd:choice>
-    </xsd:group>
-
-    <xsd:group name="formElements">
-        <xsd:choice>
-            <xsd:element ref="button"/>
-            <xsd:element ref="fieldset"/>
-            <xsd:element ref="input"/>
-            <xsd:element ref="keygen"/>
-            <xsd:element ref="label"/>
-            <xsd:element ref="object"/>
-            <xsd:element ref="output"/>
-            <xsd:element ref="select"/>
-            <xsd:element ref="textarea"/>
-        </xsd:choice>
-    </xsd:group>
-
-    <xsd:group name="labelElements">
-        <xsd:choice>
-            <xsd:element ref="button"/>
-            <xsd:element ref="input"/>
-            <xsd:element ref="keygen"/>
-            <xsd:element ref="select"/>
-            <xsd:element ref="textarea"/>
         </xsd:choice>
     </xsd:group>
 
@@ -878,6 +855,7 @@
 
     <xsd:element name="rt" type="simplePhrasingContentElement"/>
     <xsd:element name="rp" type="simplePhrasingContentElement"/>
+    <xsd:element name="bdi" type="simplePhrasingContentElement"/>
     <xsd:element name="bdo" type="simplePhrasingContentElement"/>
     <xsd:element name="span" type="simplePhrasingContentElement"/>
 
