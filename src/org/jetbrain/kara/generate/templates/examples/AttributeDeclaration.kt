@@ -26,6 +26,7 @@ object Attributes {
     val alt = StringAttribute("alt")
     val disabled = TickerAttribute("disabled")
     val href = LinkAttribute("href")
+    val src = LinkAttribute("src")
     val formMethod = EnumAttribute("method", javaClass<FormMethod>())
 }
 

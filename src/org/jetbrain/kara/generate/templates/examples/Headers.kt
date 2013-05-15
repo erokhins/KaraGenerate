@@ -18,12 +18,21 @@ package org.jetbrain.kara.generate.templates.examples
 
 import java.util.HashMap
 
+public trait StyleClass
+val <T> empty_contents: T.() -> Unit = {}
+
 trait AttributeGroup {
     val attributesMap: MutableMap<String, Any>
 }
 
-class BaseElement {
+open class BaseElement(val containingElement: BaseElement?) {
     val attributesMap = HashMap<String, Any>()
+    protected fun String.plus() {}
+}
+fun <T:BaseElement> BaseElement.contentTag(tag : T, c : StyleClass? = null, id : String? = null, contents : T.() -> Unit = empty_contents) {}
+
+trait AllowText {
+    public fun String.plus()
 }
 
 public abstract class Attribute<T>(val name : String) {
