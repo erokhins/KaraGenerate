@@ -26,8 +26,8 @@ trait AttributeDeclaration {
         positiveInteger
         boolean
         string
-        anyUri
         ticker
+        anyUri
         enumType
         strEnumType
     }
