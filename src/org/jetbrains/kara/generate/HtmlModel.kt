@@ -23,6 +23,7 @@ trait AttributeDeclaration {
     public enum class AttributeType {
         dateTime
         float
+        integer
         positiveInteger
         boolean
         string
@@ -46,25 +47,24 @@ trait AttributeGroup {
     val parentGroups: Collection<AttributeGroup>
 }
 
+trait ElementGroupDeclaration: AbstractElementDeclaration
+trait ElementDeclaration: AbstractElementDeclaration
 
-trait ElementDeclaration {
-    public enum class ElementType {
-        element
-        elementGroup
-    }
+private trait AbstractElementDeclaration {
     val name: String
-    val elementType: ElementType
-    val parentElement: ElementDeclaration?
-    val attributes: Collection<AttributeDeclaration>
-    val attributeGroups: Collection<AttributeGroup>
+    val allowText: Boolean
+    val elementGroups: Collection<ElementGroupDeclaration>
     val newAllowElements: Collection<ElementDeclaration>
+    val attributeGroups: Collection<AttributeGroup>
+    val attributes: Collection<AttributeDeclaration>
 }
 
 
-trait XsdSchema {
+trait HtmlModel {
     val attributeDeclarations: Collection<AttributeDeclaration>
     val attributeGroups: Collection<AttributeGroup>
-    val elementDeclarations: Collection<ElementDeclaration>
+    val simpleElementDeclarations: Collection<ElementDeclaration>
+    val groupElementDeclaration: Collection<ElementGroupDeclaration>
 }
 
 

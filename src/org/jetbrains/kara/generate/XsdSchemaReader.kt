@@ -21,42 +21,89 @@ import com.sun.xml.internal.xsom.*
 import java.util.*
 import org.jetbrains.kara.generate.*
 import org.jetbrain.kara.generate.AttributeDeclaration.AttributeType.*
+import com.sun.xml.internal.xsom.XSModelGroup.Compositor
+import org.jetbrain.kara.generate.templates.examples.PositiveInteger
 
 
 val attributeGroupCache = Cache<XSAttGroupDecl, AttributeGroup>()
 val attributeCache = Cache<XSAttributeDecl, AttributeDeclaration>()
 val elementCache = Cache<XSElementDecl, ElementDeclaration>()
+val elementGroupXSComplexTypeCache = Cache<XSComplexType, ElementGroupDeclaration>()
+val elementGroupXSModelGroupDeclCache = Cache<XSModelGroupDecl, ElementGroupDeclaration>()
 
 
-val indent = "   "
+fun nameToType(name: String): AttributeDeclaration.AttributeType? {
+    return when (name) {
+        "boolean"           -> boolean
+        "anyURI"            -> anyUri
+        "anySimpleType"     -> string
+        "string"            -> string
+        "dateTime"          -> dateTime
+        "float"             -> float
+        "positiveInteger"   -> positiveInteger
+        "integer"           -> integer
 
-
+        else -> null
+    }
+}
 
 // TODO:
-fun getAttributeDeclaration(xsDecl: XSAttributeDecl): AttributeDeclaration {
+// if call xsDecl1 = xsDecl2? elementName1 != elementName2, then save only xsDecl1 with name elementName1
+fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): AttributeDeclaration {
     return attributeCache.get(xsDecl) {
-        println(indent + getName())
-
-        SimpleAttributeDeclaration(string, getName()!!)
+        val attributeType = getType()!!
+        if (attributeType.getName() != null) {
+            val attrType = nameToType(attributeType.getName()!!)
+            if (attrType != null) {
+                SimpleAttributeDeclaration(attrType, getName()!!, elementName)
+            } else {
+                SimpleAttributeDeclaration(string, getName()!!)
+            }
+        } else {
+            SimpleAttributeDeclaration(string, getName()!!)
+        }
     }
 }
 
 fun getAttributeGroup(groupDeclaration: XSAttGroupDecl): AttributeGroup {
     return attributeGroupCache.get(groupDeclaration) {
-        println(getName())
-
         val attrGroups = getAttGroups()!!.getProcessedCollection { getAttributeGroup(it) }
-        val attributes = getAttributeUses()!!.getProcessedCollection { getAttributeDeclaration(it.getDecl()!!) }
-
-        println()
-
+        val attributes = getAttributeUses()!!.getProcessedCollection { getAttributeDeclaration(it.getDecl()!!, groupDeclaration.getName()!!) }
         AttributeGroupImp(getName()!!, attributes, attrGroups)
     }
 }
 
-public fun getElementGroupDeclaration(groupDecl: XSModelGroupDecl): ElementDeclaration {
-    return ElementDeclarationImpl(groupDecl.getName()!!, ElementDeclaration.ElementType.elementGroup, Collections.emptyList(),
-            Collections.emptyList(), Collections.emptyList())
+public fun getElementGroupDeclaration(groupDecl: XSModelGroupDecl): ElementGroupDeclaration {
+    return elementGroupXSModelGroupDeclCache.get(groupDecl) {
+        val modelGroup = getModelGroup()!!
+        if (modelGroup.getCompositor() != Compositor.CHOICE) {
+            throw IllegalStateException("in model group declaration modelGroup must have compositor CHOISE")
+        }
+        val elementGroups: MutableCollection<ElementGroupDeclaration> = ArrayList()
+        modelGroup.forEach {
+            val term = it.getTerm()!!
+            if (term.isModelGroupDecl()) {
+                elementGroups.add(getElementGroupDeclaration(term.asModelGroupDecl()!!));
+            }
+        }
+
+        SpecialGroupDeclaration(getName()!!, elementGroups) {
+            val resultCollection: MutableCollection<ElementDeclaration> = ArrayList()
+            modelGroup.forEach {
+                val term = it.getTerm()!!
+                if (term.isElementDecl()) {
+                    resultCollection.add(getElementDeclaration(term.asElementDecl()!!));
+                }
+            }
+            resultCollection
+        }
+    }
+}
+
+public fun getElementGroupDeclaration(complexType: XSComplexType): ElementGroupDeclaration {
+    return elementGroupXSComplexTypeCache.get(complexType) {
+        buildAbstractElementDeclaration(complexType, complexType.getName()!!)
+    }
 }
 
 public fun getContentElements(complexType: XSComplexType): Collection<XSTerm> {
@@ -70,54 +117,45 @@ public fun getContentElements(complexType: XSComplexType): Collection<XSTerm> {
         return Collections.emptyList()
     }
     val resultCollection = ArrayList<XSTerm>()
-    modelGroup.getChildren()!!.forEach { resultCollection.add(it.getTerm()!!) }
+    modelGroup.forEach { resultCollection.add(it.getTerm()!!) }
     return resultCollection
 }
 
-public fun buildElementDeclaration(elementDecl: XSElementDecl): ElementDeclaration {
-    val elementName = elementDecl.getName()!!
-    println(elementName + ":")
-    val elementType = elementDecl.getType()!!;
+public fun buildAbstractElementDeclaration(complexType: XSComplexType, elementName: String): CommonElementDeclaration {
+    val attrGroups = complexType.getAttGroups()!!.getProcessedCollection { getAttributeGroup(it) }
+    val attributes = complexType.getAttributeUses()!!.getProcessedCollection {
+        getAttributeDeclaration(it.getDecl()!!, elementName)
+    }
 
-    if (elementType.getName() == null) { // anonymous
-        if (!elementType.isComplexType()) {
-            throw IllegalStateException("for anonymous type declaration element type must be ComplexType")
-        }
-        val complexType = elementType.asComplexType()!!
-
-        val attrGroups = complexType.getAttGroups()!!.getProcessedCollection { getAttributeGroup(it) }
-        val attributes = complexType.getAttributeUses()!!.getProcessedCollection { getAttributeDeclaration(it.getDecl()!!) }
-
-        var parent: ElementDeclaration? = null
-        val newAllowElement: MutableCollection<ElementDeclaration> = ArrayList()
-        for (term in getContentElements(complexType)) {
-            if (term.isModelGroupDecl()) {
-                if (parent != null) {
-                    throw IllegalStateException("several element group, element: " + elementName)
-                }
-                parent = getElementGroupDeclaration(term.asModelGroupDecl()!!);
+    val elementGroups: MutableCollection<ElementGroupDeclaration> = ArrayList()
+    val newAllowElement: MutableCollection<ElementDeclaration> = ArrayList()
+    for (term in getContentElements(complexType)) {
+        if (term.isModelGroupDecl()) {
+            elementGroups.add(getElementGroupDeclaration(term.asModelGroupDecl()!!));
+        } else {
+            if (term.isElementDecl()) {
+                newAllowElement.add(getElementDeclaration(term.asElementDecl()!!))
             } else {
-                if (term.isElementDecl()) {
-                    newAllowElement.add(getElementDeclaration(term.asElementDecl()!!))
-                } else {
-                    throw IllegalStateException("bad term type, element: " + elementName)
-                }
+                throw IllegalStateException("bad term type, element: " + elementName)
             }
         }
-
-        println()
-        return ElementDeclarationImpl(elementName, ElementDeclaration.ElementType.element, attributes, attrGroups, newAllowElement, parent)
-    } else {
-        var parent: ElementDeclaration? = null // TODO: parent init
-
-        return ElementDeclarationImpl(elementName, ElementDeclaration.ElementType.element, Collections.emptyList(),
-                Collections.emptyList(), Collections.emptyList(), parent)
     }
+    return CommonElementDeclaration(elementName, complexType.isMixed(), elementGroups, newAllowElement, attrGroups, attributes)
 }
 
 public fun getElementDeclaration(elementDecl: XSElementDecl): ElementDeclaration {
     return elementCache.get(elementDecl) {
-        buildElementDeclaration(this)
+        if (!elementDecl.getType()!!.isComplexType()) {
+            throw IllegalStateException("element must have complex type")
+        }
+        val complexType = elementDecl.getType()!!.asComplexType()!!
+
+        if (complexType.getName() == null) {
+            buildAbstractElementDeclaration(complexType, elementDecl.getName()!!)
+        } else {
+            val elementGroup = getElementGroupDeclaration(complexType);
+            CommonElementDeclaration(elementDecl.getName()!!, false, Collections.singleton(elementGroup))
+        }
     }
 }
 
@@ -156,6 +194,10 @@ public class Cache<I, R> {
             cache.put(input, result)
             return result
         }
+    }
+
+    fun getAllResults(): Collection<R> {
+        return cache.values()
     }
 }
 
