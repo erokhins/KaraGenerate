@@ -21,62 +21,19 @@ import com.sun.xml.xsom.*
 import java.util.*
 import org.jetbrains.kara.generate.*
 import com.sun.xml.xsom.XSModelGroup.Compositor
-import org.jetbrain.kara.generate.templates.examples.PositiveInteger
 
 
 val attributeGroupCache = Cache<XSAttGroupDecl, AttributeGroup>()
-val attributeCache = Cache<XSAttributeDecl, AttributeDeclaration>()
 val elementCache = Cache<XSElementDecl, ElementDeclaration>()
 val elementGroupXSComplexTypeCache = Cache<XSComplexType, ElementGroupDeclaration>()
 val elementGroupXSModelGroupDeclCache = Cache<XSModelGroupDecl, ElementGroupDeclaration>()
 
 
-fun nameToType(name: String): SimpleAttributeTypeDeclaration? {
-    return when (name) {
-        "boolean"           -> SimpleAttributeTypeDeclaration.boolean
-        "anyURI"            -> SimpleAttributeTypeDeclaration.anyUri
-        "anySimpleType"     -> SimpleAttributeTypeDeclaration.string
-        "string"            -> SimpleAttributeTypeDeclaration.string
-        "dateTime"          -> SimpleAttributeTypeDeclaration.dateTime
-        "float"             -> SimpleAttributeTypeDeclaration.float
-        "positiveInteger"   -> SimpleAttributeTypeDeclaration.positiveInteger
-        "integer"           -> SimpleAttributeTypeDeclaration.integer
-
-        else -> null
-    }
-}
-
-fun getAttributeTypeDeclaration(xsType: XSSimpleType, name: String, elementName: String? = null): AttributeTypeDeclaration {
-    val typeDeclaration = nameToType(name)
-    if (typeDeclaration != null) {
-        return typeDeclaration
-    }
-
-    // TODO: parse enum values
-    return AttributeTypeDeclarationImpl(AttributeTypeDeclaration.AttributeType.enumType, name, elementName);
-}
-
-// TODO:
-// if call xsDecl1 = xsDecl2? elementName1 != elementName2, then save only xsDecl1 with name elementName1
-fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): AttributeDeclaration {
-    return attributeCache.get(xsDecl) {
-        val attributeType = getType()!!
-        var attrType: AttributeTypeDeclaration? = null
-        if (attributeType.getName() != null) {
-            if (attrType == null) {
-                attrType = getAttributeTypeDeclaration(attributeType, attributeType.getName()!!, null)
-            }
-        } else {
-            attrType = getAttributeTypeDeclaration(attributeType, getName()!!, elementName)
-        }
-        AttributeDeclarationImpl(getName()!!, attrType!!)
-    }
-}
 
 fun getAttributeGroup(groupDeclaration: XSAttGroupDecl): AttributeGroup {
     return attributeGroupCache.get(groupDeclaration) {
         val attrGroups = getAttGroups().getProcessedCollection { getAttributeGroup(it) }
-        val attributes = getAttributeUses().getProcessedCollection { getAttributeDeclaration(it.getDecl()!!, groupDeclaration.getName()!!) }
+        val attributes = getDeclaredAttributeUses()!!.getProcessedCollection { getAttributeDeclaration(it.getDecl()!!, groupDeclaration.getName()!!) }
         AttributeGroupImp(getName()!!, attributes, attrGroups)
     }
 }
@@ -131,7 +88,7 @@ public fun getContentElements(complexType: XSComplexType): Collection<XSTerm> {
 
 public fun buildAbstractElementDeclaration(complexType: XSComplexType, elementName: String): CommonElementDeclaration {
     val attrGroups = complexType.getAttGroups().getProcessedCollection { getAttributeGroup(it) }
-    val attributes = complexType.getAttributeUses().getProcessedCollection {
+    val attributes = complexType.getDeclaredAttributeUses()!!.getProcessedCollection {
         getAttributeDeclaration(it.getDecl()!!, elementName)
     }
 
@@ -192,7 +149,7 @@ public fun main(args: Array<String>) {
 
 
 public class Cache<I, R> {
-    val cache: MutableMap<I, R> = HashMap<I, R>()
+    private val cache: MutableMap<I, R> = HashMap<I, R>()
 
     fun get(input: I, foo: I.() -> R): R {
         if (cache.containsKey(input)) {
