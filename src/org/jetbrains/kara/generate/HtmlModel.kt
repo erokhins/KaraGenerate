@@ -16,10 +16,11 @@
 
 package org.jetbrain.kara.generate
 
-import org.jetbrain.kara.generate.AttributeDeclaration.AttributeType
+import org.jetbrain.kara.generate.AttributeTypeDeclaration.AttributeType
 
 
-trait AttributeDeclaration {
+
+trait AttributeTypeDeclaration {
     public enum class AttributeType {
         dateTime
         float
@@ -32,13 +33,15 @@ trait AttributeDeclaration {
         enumType
         strEnumType
     }
-    val attrType: AttributeType
     val name: String
+    val attrType: AttributeType
     val elementName: String?
+    val values: Collection<String>?
 }
 
-trait EnumAttributeDeclaration: AttributeDeclaration {
-    val values: Collection<String>
+trait AttributeDeclaration {
+    val name: String
+    val attrTypeDeclaration: AttributeTypeDeclaration
 }
 
 trait AttributeGroup {
@@ -61,7 +64,7 @@ private trait AbstractElementDeclaration {
 
 
 trait HtmlModel {
-    val attributeDeclarations: Collection<AttributeDeclaration>
+    val attributeDeclarations: Collection<AttributeTypeDeclaration>
     val attributeGroups: Collection<AttributeGroup>
     val simpleElementDeclarations: Collection<ElementDeclaration>
     val groupElementDeclaration: Collection<ElementGroupDeclaration>

@@ -20,7 +20,6 @@ import com.sun.xml.internal.xsom.parser.XSOMParser
 import com.sun.xml.internal.xsom.*
 import java.util.*
 import org.jetbrains.kara.generate.*
-import org.jetbrain.kara.generate.AttributeDeclaration.AttributeType.*
 import com.sun.xml.internal.xsom.XSModelGroup.Compositor
 import org.jetbrain.kara.generate.templates.examples.PositiveInteger
 
@@ -32,19 +31,29 @@ val elementGroupXSComplexTypeCache = Cache<XSComplexType, ElementGroupDeclaratio
 val elementGroupXSModelGroupDeclCache = Cache<XSModelGroupDecl, ElementGroupDeclaration>()
 
 
-fun nameToType(name: String): AttributeDeclaration.AttributeType? {
+fun nameToType(name: String): SimpleAttributeTypeDeclaration? {
     return when (name) {
-        "boolean"           -> boolean
-        "anyURI"            -> anyUri
-        "anySimpleType"     -> string
-        "string"            -> string
-        "dateTime"          -> dateTime
-        "float"             -> float
-        "positiveInteger"   -> positiveInteger
-        "integer"           -> integer
+        "boolean"           -> SimpleAttributeTypeDeclaration.boolean
+        "anyURI"            -> SimpleAttributeTypeDeclaration.anyUri
+        "anySimpleType"     -> SimpleAttributeTypeDeclaration.string
+        "string"            -> SimpleAttributeTypeDeclaration.string
+        "dateTime"          -> SimpleAttributeTypeDeclaration.dateTime
+        "float"             -> SimpleAttributeTypeDeclaration.float
+        "positiveInteger"   -> SimpleAttributeTypeDeclaration.positiveInteger
+        "integer"           -> SimpleAttributeTypeDeclaration.integer
 
         else -> null
     }
+}
+
+fun getAttributeTypeDeclaration(xsType: XSSimpleType, name: String, elementName: String? = null): AttributeTypeDeclaration {
+    val typeDeclaration = nameToType(name)
+    if (typeDeclaration != null) {
+        return typeDeclaration
+    }
+
+    // TODO: parse enum values
+    return AttributeTypeDeclarationImpl(AttributeTypeDeclaration.AttributeType.enumType, name, elementName);
 }
 
 // TODO:
@@ -52,16 +61,15 @@ fun nameToType(name: String): AttributeDeclaration.AttributeType? {
 fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): AttributeDeclaration {
     return attributeCache.get(xsDecl) {
         val attributeType = getType()!!
+        var attrType: AttributeTypeDeclaration? = null
         if (attributeType.getName() != null) {
-            val attrType = nameToType(attributeType.getName()!!)
-            if (attrType != null) {
-                SimpleAttributeDeclaration(attrType, getName()!!, elementName)
-            } else {
-                SimpleAttributeDeclaration(string, getName()!!)
+            if (attrType == null) {
+                attrType = getAttributeTypeDeclaration(attributeType, attributeType.getName()!!, null)
             }
         } else {
-            SimpleAttributeDeclaration(string, getName()!!)
+            attrType = getAttributeTypeDeclaration(attributeType, getName()!!, elementName)
         }
+        AttributeDeclarationImpl(getName()!!, attrType!!)
     }
 }
 

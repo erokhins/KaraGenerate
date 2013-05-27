@@ -18,14 +18,37 @@ package org.jetbrains.kara.generate
 
 import org.jetbrain.kara.generate.*
 import java.util.Collections
+import org.jetbrain.kara.generate.AttributeTypeDeclaration.AttributeType
 
 class AttributeGroupImp(override val name: String,
                         override val attributes: Collection<AttributeDeclaration>,
                         override val parentGroups: Collection<AttributeGroup>): AttributeGroup
 
-class SimpleAttributeDeclaration(override val attrType: AttributeDeclaration.AttributeType,
+class AttributeTypeDeclarationImpl(override val attrType: AttributeTypeDeclaration.AttributeType,
                                  override val name: String,
-                                 override val elementName: String? = null): AttributeDeclaration
+                                 override val elementName: String? = null,
+                                 override val values: Collection<String>? = null
+): AttributeTypeDeclaration
+
+public enum class SimpleAttributeTypeDeclaration(attrType: AttributeType): AttributeTypeDeclaration {
+    override val name: String = attrType.name()
+    override val attrType: AttributeTypeDeclaration.AttributeType = attrType
+    override val elementName: String? = null
+    override val values: Collection<String>? = null
+
+    dateTime : SimpleAttributeTypeDeclaration(AttributeType.dateTime)
+    float : SimpleAttributeTypeDeclaration(AttributeType.float)
+    integer : SimpleAttributeTypeDeclaration(AttributeType.integer)
+    positiveInteger : SimpleAttributeTypeDeclaration(AttributeType.positiveInteger)
+    boolean : SimpleAttributeTypeDeclaration(AttributeType.boolean)
+    string : SimpleAttributeTypeDeclaration(AttributeType.string)
+    ticker : SimpleAttributeTypeDeclaration(AttributeType.ticker)
+    anyUri : SimpleAttributeTypeDeclaration(AttributeType.anyUri)
+}
+
+class AttributeDeclarationImpl(override val name: String,
+                               override val attrTypeDeclaration: AttributeTypeDeclaration
+): AttributeDeclaration
 
 open class CommonElementDeclaration(override val name: String,
                              override val allowText: Boolean = false,
