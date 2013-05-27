@@ -1,0 +1,152 @@
+<root>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void dumpRef(com.sun.xml.xsom.XSAttGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.Uri java.lang.String resolve(java.lang.String, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void unionSimpleType(com.sun.xml.xsom.XSUnionSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void unionSimpleType(com.sun.xml.xsom.XSUnionSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.Uri boolean isValid(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void identityConstraint(com.sun.xml.xsom.XSIdentityConstraint) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.Uri boolean hasFragmentId(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser.SchemaTreeCellRenderer java.awt.Component getTreeCellRendererComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void dumpRef(com.sun.xml.xsom.XSAttGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void complexType(com.sun.xml.xsom.XSComplexType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser.SchemaTreeModel com.sun.xml.xsom.impl.util.SchemaTreeTraverser.SchemaTreeModel getInstance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void notation(com.sun.xml.xsom.XSNotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void visit(com.sun.xml.xsom.XSSchemaSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void attributeDecl(com.sun.xml.xsom.XSAttributeDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void restrictionSimpleType(com.sun.xml.xsom.XSRestrictionSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void attributeUse(com.sun.xml.xsom.XSAttributeUse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void simpleType(com.sun.xml.xsom.XSSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void schema(com.sun.xml.xsom.XSSchema) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser.SchemaTreeCellRenderer java.awt.Component getTreeCellRendererComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.ResourceEntityResolver org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void complexType(com.sun.xml.xsom.XSComplexType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void listSimpleType(com.sun.xml.xsom.XSListSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void facet(com.sun.xml.xsom.XSFacet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void attributeDecl(com.sun.xml.xsom.XSAttributeDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void restrictionSimpleType(com.sun.xml.xsom.XSRestrictionSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.Uri boolean isAbsolute(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void identityConstraint(com.sun.xml.xsom.XSIdentityConstraint) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void facet(com.sun.xml.xsom.XSFacet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void attributeUse(com.sun.xml.xsom.XSAttributeUse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void listSimpleType(com.sun.xml.xsom.XSListSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void notation(com.sun.xml.xsom.XSNotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void visit(com.sun.xml.xsom.XSSchemaSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void schema(com.sun.xml.xsom.XSSchema) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void attGroupDecl(com.sun.xml.xsom.XSAttGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaTreeTraverser void attGroupDecl(com.sun.xml.xsom.XSAttGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.Uri java.lang.String escapeDisallowedChars(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.util.SchemaWriter void simpleType(com.sun.xml.xsom.XSSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

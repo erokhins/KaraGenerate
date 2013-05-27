@@ -16,11 +16,11 @@
 
 package org.jetbrain.kara.generate
 
-import com.sun.xml.internal.xsom.parser.XSOMParser
-import com.sun.xml.internal.xsom.*
+import com.sun.xml.xsom.parser.XSOMParser
+import com.sun.xml.xsom.*
 import java.util.*
 import org.jetbrains.kara.generate.*
-import com.sun.xml.internal.xsom.XSModelGroup.Compositor
+import com.sun.xml.xsom.XSModelGroup.Compositor
 import org.jetbrain.kara.generate.templates.examples.PositiveInteger
 
 
@@ -75,8 +75,8 @@ fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): Attri
 
 fun getAttributeGroup(groupDeclaration: XSAttGroupDecl): AttributeGroup {
     return attributeGroupCache.get(groupDeclaration) {
-        val attrGroups = getAttGroups()!!.getProcessedCollection { getAttributeGroup(it) }
-        val attributes = getAttributeUses()!!.getProcessedCollection { getAttributeDeclaration(it.getDecl()!!, groupDeclaration.getName()!!) }
+        val attrGroups = getAttGroups().getProcessedCollection { getAttributeGroup(it) }
+        val attributes = getAttributeUses().getProcessedCollection { getAttributeDeclaration(it.getDecl()!!, groupDeclaration.getName()!!) }
         AttributeGroupImp(getName()!!, attributes, attrGroups)
     }
 }
@@ -115,9 +115,9 @@ public fun getElementGroupDeclaration(complexType: XSComplexType): ElementGroupD
 }
 
 public fun getContentElements(complexType: XSComplexType): Collection<XSTerm> {
-    val modelGroup = complexType.getContentType()?.asParticle()?.getTerm()?.asModelGroup();
+    val modelGroup = complexType.getContentType().asParticle()?.getTerm()?.asModelGroup();
 
-    if (modelGroup == null && complexType.getContentType()?.asEmpty() == null) {
+    if (modelGroup == null && complexType.getContentType().asEmpty() == null) {
         throw IllegalStateException("unsupported xsd format")
     }
 
@@ -130,8 +130,8 @@ public fun getContentElements(complexType: XSComplexType): Collection<XSTerm> {
 }
 
 public fun buildAbstractElementDeclaration(complexType: XSComplexType, elementName: String): CommonElementDeclaration {
-    val attrGroups = complexType.getAttGroups()!!.getProcessedCollection { getAttributeGroup(it) }
-    val attributes = complexType.getAttributeUses()!!.getProcessedCollection {
+    val attrGroups = complexType.getAttGroups().getProcessedCollection { getAttributeGroup(it) }
+    val attributes = complexType.getAttributeUses().getProcessedCollection {
         getAttributeDeclaration(it.getDecl()!!, elementName)
     }
 

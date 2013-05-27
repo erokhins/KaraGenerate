@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.sun.xml.xsom.parser.AnnotationParser org.xml.sax.ContentHandler getContentHandler(com.sun.xml.xsom.parser.AnnotationContext, java.lang.String, org.xml.sax.ErrorHandler, org.xml.sax.EntityResolver)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.parser.AnnotationParserFactory com.sun.xml.xsom.parser.AnnotationParser create()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.parser.JAXPParser JAXPParser(javax.xml.parsers.SAXParserFactory) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.parser.SchemaDocument java.lang.String getTargetNamespace()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.parser.SchemaDocument java.util.Set&lt;com.sun.xml.xsom.parser.SchemaDocument&gt; getImportedDocuments(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.parser.XSOMParser XSOMParser(javax.xml.parsers.SAXParserFactory) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.parser.XSOMParser java.util.Set&lt;com.sun.xml.xsom.parser.SchemaDocument&gt; getDocuments()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.parser.XSOMParser org.xml.sax.ContentHandler getParserHandler()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.parser.XSOMParser void parse(java.io.File) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.parser.XSOMParser void parse(java.net.URL) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.parser.XSOMParser void parse(org.xml.sax.InputSource) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+</root>
+

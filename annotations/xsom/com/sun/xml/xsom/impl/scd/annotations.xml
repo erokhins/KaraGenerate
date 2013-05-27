@@ -1,0 +1,110 @@
+<root>
+    <item name='com.sun.xml.xsom.impl.scd.Axis java.util.Iterator&lt;T&gt; iterator(com.sun.xml.xsom.XSComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Iterators.Adapter T filter(U) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParser com.sun.xml.xsom.impl.scd.ParseException generateParseException()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParserTokenManager com.sun.xml.xsom.impl.scd.Token getNextToken()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Iterators.Map java.util.Iterator&lt;? extends T&gt; apply(U)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParser com.sun.xml.xsom.impl.UName QName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Token com.sun.xml.xsom.impl.scd.Token newToken(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.TokenMgrError java.lang.String addEscapes(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Axis java.util.Iterator&lt;T&gt; iterator(java.util.Iterator&lt;? extends com.sun.xml.xsom.XSComponent&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParser com.sun.xml.xsom.impl.scd.Step NameOrWildcardOrAnonymous(com.sun.xml.xsom.impl.scd.Axis)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Iterators.Map java.util.Iterator&lt;? extends T&gt; apply(U) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Axis.ModelGroupAxis java.lang.Object particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParser com.sun.xml.xsom.impl.scd.Step NameOrWildcard(com.sun.xml.xsom.impl.scd.Axis)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParser com.sun.xml.xsom.impl.scd.Step Step()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Axis.ModelGroupAxis java.lang.Object modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Step java.util.Iterator&lt;? extends T&gt; filter(java.util.Iterator&lt;? extends T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.TokenMgrError TokenMgrError(boolean, int, int, int, java.lang.String, char, int) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParserTokenManager com.sun.xml.xsom.impl.scd.Token jjFillToken()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Iterators java.util.Iterator&lt;T&gt; singleton(T)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.ParseException java.lang.String add_escapes(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParser int Predicate(com.sun.xml.xsom.impl.scd.Step) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SimpleCharStream char[] GetSuffix(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Axis.ModelGroupAxis java.util.Iterator&lt;com.sun.xml.xsom.XSModelGroup&gt; particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Iterators.Filter boolean matches(T) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.SCDParser java.util.List RelativeSchemaComponentPath()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.TokenMgrError java.lang.String LexicalError(boolean, int, int, int, java.lang.String, char) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Axis java.util.Iterator&lt;T&gt; iterator(java.util.Iterator&lt;? extends com.sun.xml.xsom.XSComponent&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.scd.Axis.ModelGroupAxis java.util.Iterator&lt;com.sun.xml.xsom.XSModelGroup&gt; modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

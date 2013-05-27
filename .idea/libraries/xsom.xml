@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="xsom">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$/annotations/xsom" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/xsom.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/xsom_src.jar!/" />
+    </SOURCES>
+  </library>
+</component>

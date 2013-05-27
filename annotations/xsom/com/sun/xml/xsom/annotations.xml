@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.sun.xml.xsom.SCD com.sun.xml.xsom.SCD create(java.lang.String, javax.xml.namespace.NamespaceContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.SCD com.sun.xml.xsom.XSComponent selectSingle(com.sun.xml.xsom.XSSchemaSet) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.SCD java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(com.sun.xml.xsom.XSComponent)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.SCD java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(com.sun.xml.xsom.XSSchemaSet)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.SCD java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(com.sun.xml.xsom.XSSchemaSet) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.SCD java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.util.Collection&lt;? extends com.sun.xml.xsom.XSComponent&gt;)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.SCD java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.util.Collection&lt;? extends com.sun.xml.xsom.XSComponent&gt;) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.sun.xml.xsom.XSAttContainer com.sun.xml.xsom.XSAttributeUse getAttributeUse(java.lang.String, java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSAttContainer com.sun.xml.xsom.XSAttributeUse getAttributeUse(java.lang.String, java.lang.String) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSAttContainer java.util.Collection&lt;? extends com.sun.xml.xsom.XSAttGroupDecl&gt; getAttGroups()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSAttContainer java.util.Collection&lt;? extends com.sun.xml.xsom.XSAttributeUse&gt; getAttributeUses()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSComplexType com.sun.xml.xsom.XSContentType getContentType()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSComponent T apply(com.sun.xml.xsom.visitor.XSFunction&lt;T&gt;) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSComponent java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.lang.String, javax.xml.namespace.NamespaceContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSComponent void visit(com.sun.xml.xsom.visitor.XSVisitor) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSContentType T apply(com.sun.xml.xsom.visitor.XSContentTypeFunction&lt;T&gt;) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSContentType void visit(com.sun.xml.xsom.visitor.XSContentTypeVisitor) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSIdentityConstraint com.sun.xml.xsom.XSXPath getSelector()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSRestrictionSimpleType java.util.Collection&lt;? extends com.sun.xml.xsom.XSFacet&gt; getDeclaredFacets()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSRestrictionSimpleType java.util.List&lt;com.sun.xml.xsom.XSFacet&gt; getDeclaredFacets(java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchema java.lang.String getTargetNamespace()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet com.sun.xml.xsom.XSComplexType getAnyType()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet com.sun.xml.xsom.XSContentType getEmpty()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet com.sun.xml.xsom.XSSimpleType getAnySimpleType()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.lang.String, javax.xml.namespace.NamespaceContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSAttGroupDecl&gt; iterateAttGroupDecls()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSAttributeDecl&gt; iterateAttributeDecls()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSComplexType&gt; iterateComplexTypes()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSElementDecl&gt; iterateElementDecls()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSIdentityConstraint&gt; iterateIdentityConstraints()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSModelGroupDecl&gt; iterateModelGroupDecls()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSNotation&gt; iterateNotations()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSSimpleType&gt; iterateSimpleTypes()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSchemaSet java.util.Iterator&lt;com.sun.xml.xsom.XSType&gt; iterateTypes()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSimpleType T apply(com.sun.xml.xsom.visitor.XSSimpleTypeFunction&lt;T&gt;) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSimpleType com.sun.xml.xsom.XSVariety getVariety()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSSimpleType void visit(com.sun.xml.xsom.visitor.XSSimpleTypeVisitor) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSTerm T apply(com.sun.xml.xsom.visitor.XSTermFunction&lt;T&gt;) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSTerm T apply(com.sun.xml.xsom.visitor.XSTermFunctionWithParam&lt;T,P&gt;, P) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSTerm void visit(com.sun.xml.xsom.visitor.XSTermVisitor) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSType com.sun.xml.xsom.XSType getBaseType()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSWildcard T apply(com.sun.xml.xsom.visitor.XSWildcardFunction&lt;T&gt;) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSWildcard boolean acceptsNamespace(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XSWildcard void visit(com.sun.xml.xsom.visitor.XSWildcardVisitor) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.XmlString XmlString(java.lang.String, org.relaxng.datatype.ValidationContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+</root>
+
