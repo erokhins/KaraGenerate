@@ -94,3 +94,10 @@ class SpecialGroupDeclaration(name: String, elementGroups: Collection<ElementGro
             return realNewAllowElements!!
         }
 }
+
+class HtmlModelImpl(
+        override val attributeDeclarations: Collection<AttributeTypeDeclaration>,
+        override val attributeGroups: Collection<AttributeGroup>,
+        override val simpleElementDeclarations: Collection<ElementDeclaration>,
+        override val groupElementDeclaration: Collection<ElementGroupDeclaration>
+): HtmlModel

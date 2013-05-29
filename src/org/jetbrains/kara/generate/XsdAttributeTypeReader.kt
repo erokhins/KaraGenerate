@@ -29,9 +29,8 @@ import org.jetbrains.kara.generate.test.makeStr
 
 
 val XSD_NAMESPACE = "http://www.w3.org/2001/XMLSchema"
-val attrCache = AttributeTypeCache()
 
-fun nameToType(name: String): SimpleAttributeTypeDeclaration? {
+private fun nameToType(name: String): SimpleAttributeTypeDeclaration? {
     return when (name) {
         "boolean"           -> SimpleAttributeTypeDeclaration.boolean
         "anyURI"            -> SimpleAttributeTypeDeclaration.anyUri
@@ -46,7 +45,7 @@ fun nameToType(name: String): SimpleAttributeTypeDeclaration? {
     }
 }
 
-fun detectXsSimpleType(xsType: XSSimpleType): SimpleAttributeTypeDeclaration? {
+private fun detectXsSimpleType(xsType: XSSimpleType): SimpleAttributeTypeDeclaration? {
     if (xsType.getTargetNamespace() == XSD_NAMESPACE) {
         return nameToType(xsType.getName()!!)
     } else {
@@ -54,10 +53,7 @@ fun detectXsSimpleType(xsType: XSSimpleType): SimpleAttributeTypeDeclaration? {
     }
 }
 
-fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): AttributeDeclaration {
-    val attrDecl = attrCache.getAttributeTypeDeclaration(xsDecl.getType()!!, xsDecl.getName()!!, elementName)
-    return AttributeDeclarationImpl(xsDecl.getName()!!, attrDecl)
-}
+
 
 
 class AttributeTypeCache {
@@ -107,6 +103,11 @@ class AttributeTypeCache {
         }
 
         return typeDecl
+    }
+
+    fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): AttributeDeclaration {
+        val attrDecl = getAttributeTypeDeclaration(xsDecl.getType()!!, xsDecl.getName()!!, elementName)
+        return AttributeDeclarationImpl(xsDecl.getName()!!, attrDecl)
     }
 
     fun getAttributeTypeDeclaration(xsType: XSSimpleType, attributeDeclName: String, elementName: String? = null): AttributeTypeDeclaration {
