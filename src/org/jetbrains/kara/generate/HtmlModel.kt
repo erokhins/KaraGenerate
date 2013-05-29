@@ -36,7 +36,7 @@ trait AttributeTypeDeclaration {
     val name: String
     val attrType: AttributeType
     val elementName: String?
-    val values: Collection<String>?
+    val values: Collection<String>
 }
 
 trait AttributeDeclaration {

@@ -24,17 +24,33 @@ class AttributeGroupImp(override val name: String,
                         override val attributes: Collection<AttributeDeclaration>,
                         override val parentGroups: Collection<AttributeGroup>): AttributeGroup
 
-class AttributeTypeDeclarationImpl(override val attrType: AttributeTypeDeclaration.AttributeType,
+class MutableAttributeTypeDeclaration(override val attrType: AttributeTypeDeclaration.AttributeType,
                                  override val name: String,
-                                 override val elementName: String? = null,
-                                 override val values: Collection<String>? = null
-): AttributeTypeDeclaration
+                                 elementName: String? = null,
+                                 override val values: Collection<String> = Collections.emptyList()
+): AttributeTypeDeclaration {
+    var mutableElementName: String? = elementName
+    override val elementName: String?
+        get() {return mutableElementName}
+
+    fun setElementName(elementName: String?) {
+        mutableElementName = elementName
+    }
+
+    fun equalsType(other : MutableAttributeTypeDeclaration) : Boolean {
+        var equalValues = false;
+        if (values.size == other.values.size) {
+            equalValues = other.values.all { values.contains(it) }
+        }
+        return other.attrType == attrType && other.name == name && equalValues
+    }
+}
 
 public enum class SimpleAttributeTypeDeclaration(attrType: AttributeType): AttributeTypeDeclaration {
     override val name: String = attrType.name()
     override val attrType: AttributeTypeDeclaration.AttributeType = attrType
     override val elementName: String? = null
-    override val values: Collection<String>? = null
+    override val values: Collection<String> = Collections.emptyList()
 
     dateTime : SimpleAttributeTypeDeclaration(AttributeType.dateTime)
     float : SimpleAttributeTypeDeclaration(AttributeType.float)
