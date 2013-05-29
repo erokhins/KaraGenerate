@@ -21,23 +21,26 @@ import java.util.Collections
 import org.jetbrain.kara.generate.AttributeTypeDeclaration.AttributeType
 
 class AttributeGroupImp(override val name: String,
-                        override val attributes: Collection<AttributeDeclaration>,
+                        override val newAttributes: Collection<AttributeDeclaration>,
                         override val parentGroups: Collection<AttributeGroup>): AttributeGroup
 
+
 class MutableAttributeTypeDeclaration(override val attrType: AttributeTypeDeclaration.AttributeType,
-                                 override val name: String,
-                                 elementName: String? = null,
-                                 override val values: Collection<String> = Collections.emptyList()
+                                      override val name: String,
+                                      elementName: String? = null,
+                                      override val values: Collection<String> = Collections.emptyList()
 ): AttributeTypeDeclaration {
     var mutableElementName: String? = elementName
     override val elementName: String?
-        get() {return mutableElementName}
+        get() {
+            return mutableElementName
+        }
 
     fun setElementName(elementName: String?) {
         mutableElementName = elementName
     }
 
-    fun equalsType(other : MutableAttributeTypeDeclaration) : Boolean {
+    fun equalsType(other: MutableAttributeTypeDeclaration): Boolean {
         var equalValues = false;
         if (values.size == other.values.size) {
             equalValues = other.values.all { values.contains(it) }
@@ -45,6 +48,7 @@ class MutableAttributeTypeDeclaration(override val attrType: AttributeTypeDeclar
         return other.attrType == attrType && other.name == name && equalValues
     }
 }
+
 
 public enum class SimpleAttributeTypeDeclaration(attrType: AttributeType): AttributeTypeDeclaration {
     override val name: String = attrType.name()
@@ -62,17 +66,20 @@ public enum class SimpleAttributeTypeDeclaration(attrType: AttributeType): Attri
     anyUri : SimpleAttributeTypeDeclaration(AttributeType.anyUri)
 }
 
+
 class AttributeDeclarationImpl(override val name: String,
                                override val attrTypeDeclaration: AttributeTypeDeclaration
 ): AttributeDeclaration
 
+
 open class CommonElementDeclaration(override val name: String,
-                             override val allowText: Boolean = false,
-                             override val elementGroups: Collection<ElementGroupDeclaration> = Collections.emptyList(),
-                             override val newAllowElements: Collection<ElementDeclaration> = Collections.emptyList(),
-                             override val attributeGroups: Collection<AttributeGroup> = Collections.emptyList(),
-                             override val attributes: Collection<AttributeDeclaration> = Collections.emptyList()
+                                    override val allowText: Boolean = false,
+                                    override val elementGroups: Collection<ElementGroupDeclaration> = Collections.emptyList(),
+                                    override val newAllowElements: Collection<ElementDeclaration> = Collections.emptyList(),
+                                    override val attributeGroups: Collection<AttributeGroup> = Collections.emptyList(),
+                                    override val newAttributes: Collection<AttributeDeclaration> = Collections.emptyList()
 ): ElementGroupDeclaration, ElementDeclaration
+
 
 class SpecialGroupDeclaration(name: String, elementGroups: Collection<ElementGroupDeclaration>,
                               val newAllowElementsFun: () -> Collection<ElementDeclaration>

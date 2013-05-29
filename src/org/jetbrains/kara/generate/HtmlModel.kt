@@ -46,20 +46,20 @@ trait AttributeDeclaration {
 
 trait AttributeGroup {
     val name: String
-    val attributes: Collection<AttributeDeclaration>
+    val newAttributes: Collection<AttributeDeclaration>
     val parentGroups: Collection<AttributeGroup>
 }
 
 trait ElementGroupDeclaration: AbstractElementDeclaration
 trait ElementDeclaration: AbstractElementDeclaration
 
-private trait AbstractElementDeclaration {
+trait AbstractElementDeclaration {
     val name: String
     val allowText: Boolean
     val elementGroups: Collection<ElementGroupDeclaration>
     val newAllowElements: Collection<ElementDeclaration>
     val attributeGroups: Collection<AttributeGroup>
-    val attributes: Collection<AttributeDeclaration>
+    val newAttributes: Collection<AttributeDeclaration>
 }
 
 
