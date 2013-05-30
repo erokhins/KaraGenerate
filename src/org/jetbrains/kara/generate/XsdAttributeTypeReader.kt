@@ -107,7 +107,7 @@ class AttributeTypeCache {
 
     fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): AttributeDeclaration {
         val attrDecl = getAttributeTypeDeclaration(xsDecl.getType()!!, xsDecl.getName()!!, elementName)
-        return AttributeDeclarationImpl(xsDecl.getName()!!, attrDecl)
+        return AttributeDeclarationImpl(xsDecl.getName()!!, attrDecl, xsDecl.getDefaultValue()?.value)
     }
 
     fun getAttributeTypeDeclaration(xsType: XSSimpleType, attributeDeclName: String, elementName: String? = null): AttributeTypeDeclaration {

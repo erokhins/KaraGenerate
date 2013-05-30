@@ -61,7 +61,7 @@ fun makeStr(attrTypeDecl: AttributeTypeDeclaration, indent: String = ""): String
 
 fun makeStr(attrDecl: AttributeDeclaration, indent: String = ""): String {
     return StrBuilder(indent).toString {
-        appendLine("AttributeDecl = ${attrDecl.name}")
+        appendLine("AttributeDecl = (${attrDecl.name}, ${attrDecl.defaultValue}})")
         appendLine("AttributeTypeDecl = (${attrDecl.attrTypeDeclaration.name}, ${attrDecl.attrTypeDeclaration.elementName})")
     }
 }
@@ -70,7 +70,9 @@ fun makeStr(attrGroupType: AttributeGroup, indent: String = ""): String {
     return StrBuilder(indent).toString {
         appendLine("AttributeGroup = ${attrGroupType.name}")
         appendLine { append("ParentGroups = ").appendCollection(attrGroupType.parentGroups, { name }) }
-        appendLine { append("NewAttributes = ").appendCollection(attrGroupType.newAttributes, { name })}
+        appendLine("NewAttributes = ")
+        val nextIndent = indent + "   "
+        attrGroupType.newAttributes.forEach { append(makeStr(it, nextIndent)).append("\n") }
     }
 }
 
@@ -84,9 +86,10 @@ fun makeStr(element: AbstractElementDeclaration, indent: String = "", isGroup: B
         appendLine { append("ElementGroups = ").appendCollection(element.elementGroups, {name}) }
         appendLine { append("NewAllowElements = ").appendCollection(element.newAllowElements, {name}) }
         appendLine { append("AttributeGroups = ").appendCollection(element.attributeGroups, {name}) }
-        appendLine { append("NewAttributes = ").appendCollection(element.newAttributes, {
-            "($name | ${attrTypeDeclaration.name} | ${attrTypeDeclaration.elementName})"
-        }) }
+
+        appendLine("NewAttributes = ")
+        val nextIndent = indent + "   "
+        element.newAttributes.forEach { append(makeStr(it, nextIndent)).append("\n") }
 
     }
 }

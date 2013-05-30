@@ -68,7 +68,8 @@ public enum class SimpleAttributeTypeDeclaration(attrType: AttributeType): Attri
 
 
 class AttributeDeclarationImpl(override val name: String,
-                               override val attrTypeDeclaration: AttributeTypeDeclaration
+                               override val attrTypeDeclaration: AttributeTypeDeclaration,
+                               override val defaultValue: String? = null
 ): AttributeDeclaration
 
 

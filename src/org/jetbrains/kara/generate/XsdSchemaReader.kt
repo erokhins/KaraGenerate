@@ -155,7 +155,7 @@ public fun main(args: Array<String>) {
     val schema = parser.getResult()!!.getSchema(HTML_NAMESPACE)!!
 
     val model = HtmlModelBuilder(schema).build()
-//    println(makeStr(model))
+    println(makeStr(model))
 }
 
 

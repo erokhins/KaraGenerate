@@ -42,6 +42,7 @@ trait AttributeTypeDeclaration {
 trait AttributeDeclaration {
     val name: String
     val attrTypeDeclaration: AttributeTypeDeclaration
+    val defaultValue: String?
 }
 
 trait AttributeGroup {
