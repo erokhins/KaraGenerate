@@ -36,7 +36,7 @@ trait AttributeTypeDeclaration {
     val name: String
     val attrType: AttributeType
     val elementName: String?
-    val values: Collection<String>
+    val values: List<String>
 }
 
 trait AttributeDeclaration {
@@ -47,8 +47,8 @@ trait AttributeDeclaration {
 
 trait AttributeGroup {
     val name: String
-    val newAttributes: Collection<AttributeDeclaration>
-    val parentGroups: Collection<AttributeGroup>
+    val newAttributes: List<AttributeDeclaration>
+    val parentGroups: List<AttributeGroup>
 }
 
 trait ElementGroupDeclaration: AbstractElementDeclaration
@@ -57,18 +57,18 @@ trait ElementDeclaration: AbstractElementDeclaration
 trait AbstractElementDeclaration {
     val name: String
     val allowText: Boolean
-    val elementGroups: Collection<ElementGroupDeclaration>
-    val newAllowElements: Collection<ElementDeclaration>
-    val attributeGroups: Collection<AttributeGroup>
-    val newAttributes: Collection<AttributeDeclaration>
+    val elementGroups: List<ElementGroupDeclaration>
+    val newAllowElements: List<ElementDeclaration>
+    val attributeGroups: List<AttributeGroup>
+    val newAttributes: List<AttributeDeclaration>
 }
 
 
 trait HtmlModel {
-    val attributeDeclarations: Collection<AttributeTypeDeclaration>
-    val attributeGroups: Collection<AttributeGroup>
-    val simpleElementDeclarations: Collection<ElementDeclaration>
-    val groupElementDeclaration: Collection<ElementGroupDeclaration>
+    val attributeDeclarations: List<AttributeTypeDeclaration>
+    val attributeGroups: List<AttributeGroup>
+    val simpleElementDeclarations: List<ElementDeclaration>
+    val groupElementDeclaration: List<ElementGroupDeclaration>
 }
 
 
