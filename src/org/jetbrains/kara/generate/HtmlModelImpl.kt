@@ -16,9 +16,9 @@
 
 package org.jetbrains.kara.generate
 
-import org.jetbrain.kara.generate.*
+import org.jetbrains.kara.generate.*
 import java.util.Collections
-import org.jetbrain.kara.generate.AttributeTypeDeclaration.AttributeType
+import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType
 import java.util.Comparator
 import java.util.ArrayList
 

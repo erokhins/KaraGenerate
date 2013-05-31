@@ -16,7 +16,7 @@
 
 package org.jetbrains.kara.generate.test
 
-import org.jetbrain.kara.generate.*
+import org.jetbrains.kara.generate.*
 
 
 

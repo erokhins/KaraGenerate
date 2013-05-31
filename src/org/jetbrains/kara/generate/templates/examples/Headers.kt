@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.jetbrain.kara.generate.templates.examples
+package org.jetbrains.kara.generate.templates.examples
 
 import java.util.HashMap
 

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.jetbrain.kara.generate
+package org.jetbrains.kara.generate
 
-import org.jetbrain.kara.generate.AttributeTypeDeclaration.AttributeType
+import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType
 
 
 

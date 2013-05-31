@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.jetbrain.kara.generate
+package org.jetbrains.kara.generate
 
 import com.sun.xml.xsom.parser.XSOMParser
 import com.sun.xml.xsom.*

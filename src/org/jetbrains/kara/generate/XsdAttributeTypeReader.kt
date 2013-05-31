@@ -16,15 +16,15 @@
 
 package org.jetbrains.kara.generate
 
-import org.jetbrain.kara.generate.AttributeTypeDeclaration.AttributeType.*
-import org.jetbrain.kara.generate.AttributeDeclaration
-import org.jetbrain.kara.generate.AttributeTypeDeclaration
-import org.jetbrain.kara.generate.Cache
+import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType.*
+import org.jetbrains.kara.generate.AttributeDeclaration
+import org.jetbrains.kara.generate.AttributeTypeDeclaration
+import org.jetbrains.kara.generate.Cache
 import com.sun.xml.xsom.*
 import java.util.HashSet
 import java.util.HashMap
 import java.util.ArrayList
-import org.jetbrain.kara.generate.getProcessedCollection
+import org.jetbrains.kara.generate.getProcessedCollection
 import org.jetbrains.kara.generate.test.makeStr
 
 
