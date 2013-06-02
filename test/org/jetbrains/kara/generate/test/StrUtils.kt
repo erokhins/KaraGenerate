@@ -61,7 +61,7 @@ fun makeStr(attrTypeDecl: AttributeTypeDeclaration, indent: String = ""): String
 
 fun makeStr(attrDecl: AttributeDeclaration, indent: String = ""): String {
     return StrBuilder(indent).toString {
-        appendLine("AttributeDecl = (${attrDecl.name}, ${attrDecl.defaultValue}})")
+        appendLine("AttributeDecl = (${attrDecl.name}, ${attrDecl.elementName}, ${attrDecl.defaultValue}})")
         appendLine("AttributeTypeDecl = (${attrDecl.attrTypeDeclaration.name}, ${attrDecl.attrTypeDeclaration.elementName})")
     }
 }
@@ -97,6 +97,11 @@ fun makeStr(element: AbstractElementDeclaration, indent: String = "", isGroup: B
 fun makeStr(htmlModel: HtmlModel): String {
     val indent = "   "
     return StrBuilder().toString() {
+        appendLine("AttributeTypeDecl:")
+        for (el in htmlModel.attributeTypeDeclarations) {
+            appendLine(makeStr(el, indent))
+        }
+
         appendLine("AttributeDecl:")
         for (el in htmlModel.attributeDeclarations) {
             appendLine(makeStr(el, indent))

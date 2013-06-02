@@ -26,20 +26,21 @@ import java.util.HashMap
 import java.util.ArrayList
 import org.jetbrains.kara.generate.getProcessedCollection
 import org.jetbrains.kara.generate.test.makeStr
+import java.util.Collections
 
 
 val XSD_NAMESPACE = "http://www.w3.org/2001/XMLSchema"
 
 private fun nameToType(name: String): SimpleAttributeTypeDeclaration? {
     return when (name) {
-        "boolean"           -> SimpleAttributeTypeDeclaration.boolean
-        "anyURI"            -> SimpleAttributeTypeDeclaration.anyUri
-        "anySimpleType"     -> SimpleAttributeTypeDeclaration.string
-        "string"            -> SimpleAttributeTypeDeclaration.string
-        "dateTime"          -> SimpleAttributeTypeDeclaration.dateTime
-        "float"             -> SimpleAttributeTypeDeclaration.float
-        "positiveInteger"   -> SimpleAttributeTypeDeclaration.positiveInteger
-        "integer"           -> SimpleAttributeTypeDeclaration.integer
+        "boolean" -> SimpleAttributeTypeDeclaration.boolean
+        "anyURI" -> SimpleAttributeTypeDeclaration.anyUri
+        "anySimpleType" -> SimpleAttributeTypeDeclaration.string
+        "string" -> SimpleAttributeTypeDeclaration.string
+        "dateTime" -> SimpleAttributeTypeDeclaration.dateTime
+        "float" -> SimpleAttributeTypeDeclaration.float
+        "positiveInteger" -> SimpleAttributeTypeDeclaration.positiveInteger
+        "integer" -> SimpleAttributeTypeDeclaration.integer
 
         else -> null
     }
@@ -54,60 +55,99 @@ private fun detectXsSimpleType(xsType: XSSimpleType): SimpleAttributeTypeDeclara
 }
 
 
+private class DuplicateNameController<T>(val isEquals: (o1: T, o2: T) -> Boolean) {
+    val elements = HashMap<String, MutableSet<T>>()
+
+    fun isDuplicateName(name: String): Boolean {
+        val set = elements.get(name)
+        if (set != null && set.size > 1) {
+            return true
+        }
+        return false
+    }
+
+    fun getAllElements(runUniqueName: T.() -> Unit): Collection<T> {
+        val allElements = ArrayList<T>()
+        for (set in elements.values()) {
+            if (set.size == 1) {
+                val element = set.first()!!
+                element.runUniqueName()
+                allElements.add(element)
+            } else {
+                allElements.addAll(set)
+            }
+        }
+        return allElements
+    }
+
+    fun getEqualsToThis(name: String, element: T): T {
+        val set = elements.get(name)
+        if (set != null) {
+            for (el in set) {
+                if (isEquals(element, el)) {
+                    return el
+                }
+            }
+            set.add(element)
+        } else {
+            val newSet = HashSet<T>()
+            newSet.add(element)
+            elements.put(name, newSet)
+        }
+        return element
+    }
+}
 
 
 class AttributeTypeCache {
-    private val cacheNotAnonymousType: MutableMap<String, MutableAttributeTypeDeclaration> = HashMap()
-
-    private val duplicateAttrName: MutableSet<String> = HashSet()
-    private val attrNameMap: MutableMap<String, MutableAttributeTypeDeclaration> = HashMap()
-
-    private val allDecl = ArrayList<MutableAttributeTypeDeclaration>();
+    val attrTypeDuplicateContr = DuplicateNameController<MutableAttributeTypeDeclaration>({(o1, o2) -> o1.equalsType(o2) })
+    val attrDuplicateContr = DuplicateNameController<MutableAttributeDeclaration>(
+            {(o1, o2) -> o1.attrTypeDeclaration.equalsType(o2.attrTypeDeclaration) })
 
     private fun parseNotXsSimpleTypeDeclaration(xsType: XSSimpleType, attributeDeclName: String, elementName: String? = null):
             MutableAttributeTypeDeclaration {
-        val wasType = cacheNotAnonymousType.get(xsType.getName());
-        if (wasType != null) {
-            return wasType
-        }
 
         val values: MutableList<String> = ArrayList<String>()
         var isStringEnum = false;
         if (xsType.isUnion()) {
-            for (union in xsType.asUnion()!!) { // union must be Restriction
+            for (union in xsType.asUnion()!!) {
+                // union must be Restriction
                 val restriction = union.asRestriction()!!
                 if (union.getBaseType().getName() == "string" && restriction.getDeclaredFacets().isEmpty()) {
                     isStringEnum = true
                 }
                 restriction.getDeclaredFacets().forEach { values.add(it!!.getValue()!!.value!!) }
             }
-        } else { // now xsType must be restriction
+        } else {
+            // now xsType must be restriction
             xsType.asRestriction()!!.getDeclaredFacets().forEach { values.add(it!!.getValue()!!.value!!) }
         }
 
         val attrName = xsType.getName() ?: attributeDeclName
         val typeDecl =
-            if (isStringEnum) {
-                MutableAttributeTypeDeclaration(strEnumType, attrName, elementName, values)
-            } else {
-                if (values.size == 1 && values.first == attrName) {
-                    MutableAttributeTypeDeclaration(ticker, attrName, elementName)
+                if (isStringEnum) {
+                    MutableAttributeTypeDeclaration(strEnumType, attrName, elementName, values)
                 } else {
-                    MutableAttributeTypeDeclaration(enumType, attrName, elementName, values)
+                    if (values.size == 1 && values.first == attrName) {
+                        // ticker
+                        MutableAttributeTypeDeclaration(ticker, attrName, elementName)
+                    } else {
+                        MutableAttributeTypeDeclaration(enumType, attrName, elementName, values)
+                    }
                 }
-            }
 
         if (xsType.getName() != null) {
             typeDecl.setElementName(null)
-            cacheNotAnonymousType.put(xsType.getName()!!, typeDecl)
         }
 
         return typeDecl
     }
 
     fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): AttributeDeclaration {
-        val attrDecl = getAttributeTypeDeclaration(xsDecl.getType()!!, xsDecl.getName()!!, elementName)
-        return AttributeDeclarationImpl(xsDecl.getName()!!, attrDecl, xsDecl.getDefaultValue()?.value)
+        val attrTypeDecl = getAttributeTypeDeclaration(xsDecl.getType()!!, xsDecl.getName()!!, elementName)
+        val attrDecl = MutableAttributeDeclaration(xsDecl.getName()!!, elementName, attrTypeDecl,
+                xsDecl.getDefaultValue()?.value)
+        return attrDuplicateContr.getEqualsToThis(xsDecl.getName()!!, attrDecl)
     }
 
     fun getAttributeTypeDeclaration(xsType: XSSimpleType, attributeDeclName: String, elementName: String? = null): AttributeTypeDeclaration {
@@ -117,30 +157,21 @@ class AttributeTypeCache {
         }
 
         var typeDecl = parseNotXsSimpleTypeDeclaration(xsType, attributeDeclName, elementName)
-        val wasType = attrNameMap.get(typeDecl.name)
-        if (wasType == null) {
-            attrNameMap.put(typeDecl.name, typeDecl);
-        } else {
-            if (wasType.equalsType(typeDecl)) {
-                typeDecl = wasType;
-            } else {
-                duplicateAttrName.add(typeDecl.name)
-            }
-        }
-        if (wasType !== typeDecl) { // if new type
-            allDecl.add(typeDecl)
+        if (typeDecl.attrType == ticker) {
+            return SimpleAttributeTypeDeclaration.ticker
         }
 
-        return typeDecl
+        return attrTypeDuplicateContr.getEqualsToThis(typeDecl.name, typeDecl)
     }
 
-    public fun getAllDecl(): Collection<AttributeTypeDeclaration> { // must be run !!
-        return allDecl.getProcessedCollection {
-            if (!duplicateAttrName.contains(it.name)) {
-                it.setElementName(null)
-            }
-            it
-        }
+    public fun getAllTypeDecl(): Collection<AttributeTypeDeclaration> {
+        // must be run !!
+        return attrTypeDuplicateContr.getAllElements { setElementName(null) }
+    }
+
+    public fun getAllDecl(): Collection<AttributeDeclaration> {
+        // must be run !!
+        return attrDuplicateContr.getAllElements { setElementName(null) }
     }
 
 

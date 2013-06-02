@@ -41,6 +41,7 @@ trait AttributeTypeDeclaration {
 
 trait AttributeDeclaration {
     val name: String
+    val elementName: String?
     val attrTypeDeclaration: AttributeTypeDeclaration
     val defaultValue: String?
 }
@@ -65,7 +66,8 @@ trait AbstractElementDeclaration {
 
 
 trait HtmlModel {
-    val attributeDeclarations: List<AttributeTypeDeclaration>
+    val attributeTypeDeclarations: List<AttributeTypeDeclaration>
+    val attributeDeclarations: List<AttributeDeclaration>
     val attributeGroups: List<AttributeGroup>
     val simpleElementDeclarations: List<ElementDeclaration>
     val groupElementDeclaration: List<ElementGroupDeclaration>

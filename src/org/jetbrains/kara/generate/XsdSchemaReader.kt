@@ -138,6 +138,7 @@ class HtmlModelBuilder(val schema: XSSchema) {
         val elementGroups = ArrayList(elementGroupXSModelGroupDeclCache.getAllResults())
         elementGroups.addAll(elementGroupXSComplexTypeCache.getAllResults())
         return HtmlModelImpl(
+                attrCache.getAllTypeDecl(),
                 attrCache.getAllDecl(),
                 attributeGroupCache.getAllResults(),
                 elementCache.getAllResults(),

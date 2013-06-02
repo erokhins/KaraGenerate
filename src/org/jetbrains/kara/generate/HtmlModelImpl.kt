@@ -64,15 +64,15 @@ class MutableAttributeTypeDeclaration(attrType: AttributeTypeDeclaration.Attribu
         mutableElementName = elementName
     }
 
-    fun equalsType(other: MutableAttributeTypeDeclaration): Boolean {
-        var equalValues = false;
-        if (values.size == other.values.size) {
-            equalValues = other.values.all { values.contains(it) }
-        }
-        return other.attrType == attrType && other.name == name && equalValues
-    }
 }
 
+fun AttributeTypeDeclaration.equalsType(other: AttributeTypeDeclaration): Boolean {
+    var equalValues = false;
+    if (values.size == other.values.size) {
+        equalValues = other.values.all { values.contains(it) }
+    }
+    return other.attrType == attrType && other.name == name && equalValues
+}
 
 public enum class SimpleAttributeTypeDeclaration(attrType: AttributeType): AttributeTypeDeclaration {
     override val name: String = attrType.name()
@@ -91,10 +91,21 @@ public enum class SimpleAttributeTypeDeclaration(attrType: AttributeType): Attri
 }
 
 
-class AttributeDeclarationImpl(override val name: String,
+class MutableAttributeDeclaration(override val name: String,
+                                  elementName: String? = null,
                                override val attrTypeDeclaration: AttributeTypeDeclaration,
                                override val defaultValue: String? = null
-): AttributeDeclaration
+): AttributeDeclaration {
+    var mutableElementName: String? = elementName
+    override val elementName: String?
+        get() {
+            return mutableElementName
+        }
+
+    fun setElementName(elementName: String?) {
+        mutableElementName = elementName
+    }
+}
 
 
 open class CommonElementDeclaration(name: String,
@@ -128,12 +139,14 @@ class SpecialGroupDeclaration(name: String, elementGroups: Collection<ElementGro
 }
 
 class HtmlModelImpl(
-        attributeDeclarations: Collection<AttributeTypeDeclaration>,
+        attributeTypeDeclarations: Collection<AttributeTypeDeclaration>,
+        attributeDeclarations: Collection<AttributeDeclaration>,
         attributeGroups: Collection<AttributeGroup>,
         simpleElementDeclarations: Collection<ElementDeclaration>,
         groupElementDeclaration: Collection<ElementGroupDeclaration>
 ): HtmlModel {
-    override val attributeDeclarations: List<AttributeTypeDeclaration> = attributeDeclarations.sort({(a,b) -> a.name.compareTo(b.name)} )
+    override val attributeTypeDeclarations: List<AttributeTypeDeclaration> = attributeTypeDeclarations.sort({(a,b) -> a.name.compareTo(b.name)} )
+    override val attributeDeclarations: List<AttributeDeclaration> = attributeDeclarations.sort({(a,b) -> a.name.compareTo(b.name)} )
     override val attributeGroups: List<AttributeGroup> = attributeGroups.sort({(a,b) -> a.name.compareTo(b.name)} )
     override val simpleElementDeclarations: List<ElementDeclaration> = simpleElementDeclarations.sort({(a,b) -> a.name.compareTo(b.name)} )
     override val groupElementDeclaration: List<ElementGroupDeclaration> = groupElementDeclaration.sort({(a,b) -> a.name.compareTo(b.name)} )
