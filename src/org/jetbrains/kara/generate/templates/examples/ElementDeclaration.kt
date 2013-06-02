@@ -16,6 +16,8 @@
 
 package org.jetbrains.kara.generate.templates.examples
 
+import kara.test.*
+
 class META(containingTag: BaseElement?): BaseElement(containingTag), AG1
 
 

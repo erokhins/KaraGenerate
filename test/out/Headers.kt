@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.jetbrains.kara.generate.templates.examples
+package kara.test
 
 import java.util.HashMap
 
@@ -47,7 +47,8 @@ public abstract class Attribute<T>(val name : String) {
 
 public class DateTimeAttribute(name: String): Attribute<String>(name)
 public class FloatAttribute(name: String): Attribute<Float>(name)
-public class PositiveInteger(name: String): Attribute<Int>(name)
+public class IntegerAttribute(name: String): Attribute<Int>(name)
+public class PositiveIntegerAttribute(name: String): Attribute<Int>(name)
 public class BooleanAttribute(name: String): Attribute<Boolean>(name)
 public class StringAttribute(name: String): Attribute<String>(name)
 public class TickerAttribute(name: String): Attribute<Boolean>(name)

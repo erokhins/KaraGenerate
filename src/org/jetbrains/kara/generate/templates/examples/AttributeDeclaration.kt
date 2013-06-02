@@ -16,12 +16,13 @@
 
 package org.jetbrains.kara.generate.templates.examples
 
+import kara.test.*
 
 
 object Attributes {
     val datetime = DateTimeAttribute("datetime")
     val value = DateTimeAttribute("value")
-    val span = PositiveInteger("span")
+    val span = PositiveIntegerAttribute("span")
     val spellcheck = BooleanAttribute("spellcheck")
     val alt = StringAttribute("alt")
     val disabled = TickerAttribute("disabled")
