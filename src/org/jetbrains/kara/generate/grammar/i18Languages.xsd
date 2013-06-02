@@ -82,10 +82,9 @@
 					<xsd:enumeration value="bs"/>
 					<xsd:enumeration value="bra"/>
 					<xsd:enumeration value="btk"/>
-					<xsd:enumeration value="bug"/>
 					<xsd:enumeration value="bua"/>
-					<xsd:enumeration value="bug"/>
-					<xsd:enumeration value="byn"/>
+                    <xsd:enumeration value="bug"/>
+                    <xsd:enumeration value="byn"/>
 					
 					<xsd:enumeration value="ca"/>
 					<xsd:enumeration value="cad"/>
