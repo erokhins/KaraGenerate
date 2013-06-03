@@ -33,8 +33,8 @@ class HtmlModelBuilder(val schema: XSSchema) {
 
     fun getAttributeGroup(groupDeclaration: XSAttGroupDecl): AttributeGroup {
         return attributeGroupCache.get(groupDeclaration) {
-            val attrGroups = getAttGroups().getProcessedCollection { getAttributeGroup(it) }
-            val attributes = getDeclaredAttributeUses()!!.getProcessedCollection { attrCache.getAttributeDeclaration(it.getDecl()!!, groupDeclaration.getName()!!) }
+            val attrGroups = getAttGroups().map { getAttributeGroup(it!!) }
+            val attributes = getDeclaredAttributeUses()!!.map { attrCache.getAttributeDeclaration(it!!.getDecl()!!, groupDeclaration.getName()!!) }
             AttributeGroupImp(getName()!!, attrGroups, attributes)
         }
     }
@@ -88,9 +88,9 @@ class HtmlModelBuilder(val schema: XSSchema) {
     }
 
     public fun buildAbstractElementDeclaration(complexType: XSComplexType, elementName: String): CommonElementDeclaration {
-        val attrGroups = complexType.getAttGroups().getProcessedCollection { getAttributeGroup(it) }
-        val attributes = complexType.getDeclaredAttributeUses()!!.getProcessedCollection {
-            attrCache.getAttributeDeclaration(it.getDecl()!!, elementName)
+        val attrGroups = complexType.getAttGroups().map { getAttributeGroup(it!!) }
+        val attributes = complexType.getDeclaredAttributeUses()!!.map {
+            attrCache.getAttributeDeclaration(it!!.getDecl()!!, elementName)
         }
 
         val elementGroups: MutableCollection<ElementGroupDeclaration> = ArrayList()
@@ -176,12 +176,4 @@ public class Cache<I, R> {
     fun getAllResults(): Collection<R> {
         return cache.values()
     }
-}
-
-fun <I, R> Collection<I?>.getProcessedCollection(processor: (I) -> R): Collection<R> {
-    val resultCollection: MutableCollection<R> = ArrayList<R>()
-    for (input in this) {
-        resultCollection.add(processor.invoke(input!!))
-    }
-    return resultCollection
 }
