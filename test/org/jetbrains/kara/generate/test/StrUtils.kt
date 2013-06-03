@@ -70,7 +70,7 @@ fun makeStr(attrGroupType: AttributeGroup, indent: String = ""): String {
     return StrBuilder(indent).toString {
         appendLine("AttributeGroup = ${attrGroupType.name}")
         appendLine { append("ParentGroups = ").appendCollection(attrGroupType.parentGroups, { name }) }
-        appendLine("NewAttributes = ")
+        appendLine("NewAttributes =")
         val nextIndent = indent + "   "
         attrGroupType.newAttributes.forEach { append(makeStr(it, nextIndent)).append("\n") }
     }
@@ -87,7 +87,7 @@ fun makeStr(element: AbstractElementDeclaration, indent: String = "", isGroup: B
         appendLine { append("NewAllowElements = ").appendCollection(element.newAllowElements, {name}) }
         appendLine { append("AttributeGroups = ").appendCollection(element.attributeGroups, {name}) }
 
-        appendLine("NewAttributes = ")
+        appendLine("NewAttributes =")
         val nextIndent = indent + "   "
         element.newAttributes.forEach { append(makeStr(it, nextIndent)).append("\n") }
 

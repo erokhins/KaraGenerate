@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema xmlns='test' xmlns:xsd='http://www.w3.org/2001/XMLSchema' version="1.0" targetNamespace='test'>
+
+    <xsd:element name="complex">
+        <xsd:complexType>
+            <xsd:attribute name="ticker1">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="ticker1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="ticker2">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="ticker2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="noTicker1">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="ticker1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="noTicker2">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="noTicker2"/>
+                        <xsd:enumeration value="noTicker3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

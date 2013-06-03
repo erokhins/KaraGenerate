@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema xmlns='test' xmlns:xsd='http://www.w3.org/2001/XMLSchema' version="1.0" targetNamespace='test'>
+
+    <xsd:attributeGroup name="group1">
+        <xsd:attribute name="attrInGroup1"/>
+    </xsd:attributeGroup>
+
+    <xsd:attributeGroup name="group2">
+        <xsd:attribute name="attrInGroup2"/>
+    </xsd:attributeGroup>
+
+    <xsd:attributeGroup name="group3">
+        <xsd:attributeGroup ref="group1"/>
+        <xsd:attributeGroup ref="group2"/>
+        <xsd:attribute name="attrInGroup3"/>
+    </xsd:attributeGroup>
+
+    <xsd:element name="simple">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="group3"/>
+            <xsd:attribute name="attrInElement" />
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

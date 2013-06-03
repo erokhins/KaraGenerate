@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema xmlns='test' xmlns:xsd='http://www.w3.org/2001/XMLSchema' version="1.0" targetNamespace='test'>
+
+    <xsd:attributeGroup name="primitiveAttributes">
+        <xsd:attribute name="boolAttr" type="xsd:boolean" default="true"/>
+        <xsd:attribute name="stringAttr" type="xsd:string" default=""/>
+        <xsd:attribute name="dateTimeAttr" type="xsd:dateTime" />
+        <xsd:attribute name="stringWithoutType"/>
+        <xsd:attribute name="floatAttr" type="xsd:float"/>
+        <xsd:attribute name="integerAttr" type="xsd:integer"/>
+        <xsd:attribute name="anyUriAttr" type="xsd:anyURI"/>
+        <xsd:attribute name="positiveIntegerAttr" type="xsd:positiveInteger" default="1"/>
+    </xsd:attributeGroup>
+
+    <xsd:element name="simple">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="primitiveAttributes"/>
+            <xsd:attribute name="boolAttrInElement" type="xsd:boolean"/>
+            <xsd:attribute name="strAttrInElement" type="xsd:string"/>
+            <xsd:attribute name="noTypeStrAttrInElement" />
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

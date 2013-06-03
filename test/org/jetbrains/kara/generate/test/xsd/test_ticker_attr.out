@@ -1,0 +1,41 @@
+AttributeTypeDecl:
+   AttributeTypeDecl = (noTicker1, null, enumType)
+   Values = [ticker1]
+
+   AttributeTypeDecl = (noTicker2, null, enumType)
+   Values = [noTicker2, noTicker3]
+
+AttributeDecl:
+   AttributeDecl = (noTicker1, null, null})
+   AttributeTypeDecl = (noTicker1, null)
+
+   AttributeDecl = (noTicker2, null, null})
+   AttributeTypeDecl = (noTicker2, null)
+
+   AttributeDecl = (ticker1, null, null})
+   AttributeTypeDecl = (ticker, null)
+
+   AttributeDecl = (ticker2, null, null})
+   AttributeTypeDecl = (ticker, null)
+
+AttributeGroupDecl:
+ElementDecl:
+   ElementDeclaration = (complex, false)
+   ElementGroups = []
+   NewAllowElements = []
+   AttributeGroups = []
+   NewAttributes =
+      AttributeDecl = (noTicker1, null, null})
+      AttributeTypeDecl = (noTicker1, null)
+
+      AttributeDecl = (noTicker2, null, null})
+      AttributeTypeDecl = (noTicker2, null)
+
+      AttributeDecl = (ticker1, null, null})
+      AttributeTypeDecl = (ticker, null)
+
+      AttributeDecl = (ticker2, null, null})
+      AttributeTypeDecl = (ticker, null)
+
+
+ElementGroup:

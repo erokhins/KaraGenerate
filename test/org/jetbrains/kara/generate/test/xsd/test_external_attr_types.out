@@ -1,0 +1,47 @@
+AttributeTypeDecl:
+   AttributeTypeDecl = (externalRestrictionEnumType, null, enumType)
+   Values = [value1, value2]
+
+   AttributeTypeDecl = (externalStrEnumType1, null, strEnumType)
+   Values = [value1, value2]
+
+   AttributeTypeDecl = (externalStrEnumType2, null, strEnumType)
+   Values = [value-1, value-2]
+
+   AttributeTypeDecl = (externalUnionEnumType, null, enumType)
+   Values = [value1, value2]
+
+AttributeDecl:
+   AttributeDecl = (elementRestrictionEnumType, null, null})
+   AttributeTypeDecl = (externalRestrictionEnumType, null)
+
+   AttributeDecl = (elementStrEnumType1, null, null})
+   AttributeTypeDecl = (externalStrEnumType1, null)
+
+   AttributeDecl = (elementStrEnumType2, null, null})
+   AttributeTypeDecl = (externalStrEnumType2, null)
+
+   AttributeDecl = (elementUnionEnumType, null, null})
+   AttributeTypeDecl = (externalUnionEnumType, null)
+
+AttributeGroupDecl:
+ElementDecl:
+   ElementDeclaration = (complex, false)
+   ElementGroups = []
+   NewAllowElements = []
+   AttributeGroups = []
+   NewAttributes =
+      AttributeDecl = (elementRestrictionEnumType, null, null})
+      AttributeTypeDecl = (externalRestrictionEnumType, null)
+
+      AttributeDecl = (elementStrEnumType1, null, null})
+      AttributeTypeDecl = (externalStrEnumType1, null)
+
+      AttributeDecl = (elementStrEnumType2, null, null})
+      AttributeTypeDecl = (externalStrEnumType2, null)
+
+      AttributeDecl = (elementUnionEnumType, null, null})
+      AttributeTypeDecl = (externalUnionEnumType, null)
+
+
+ElementGroup:

@@ -1,0 +1,81 @@
+AttributeTypeDecl:
+AttributeDecl:
+   AttributeDecl = (anyUriAttr, null, null})
+   AttributeTypeDecl = (anyUri, null)
+
+   AttributeDecl = (boolAttr, null, true})
+   AttributeTypeDecl = (boolean, null)
+
+   AttributeDecl = (boolAttrInElement, null, null})
+   AttributeTypeDecl = (boolean, null)
+
+   AttributeDecl = (dateTimeAttr, null, null})
+   AttributeTypeDecl = (dateTime, null)
+
+   AttributeDecl = (floatAttr, null, null})
+   AttributeTypeDecl = (float, null)
+
+   AttributeDecl = (integerAttr, null, null})
+   AttributeTypeDecl = (integer, null)
+
+   AttributeDecl = (noTypeStrAttrInElement, null, null})
+   AttributeTypeDecl = (string, null)
+
+   AttributeDecl = (positiveIntegerAttr, null, 1})
+   AttributeTypeDecl = (positiveInteger, null)
+
+   AttributeDecl = (strAttrInElement, null, null})
+   AttributeTypeDecl = (string, null)
+
+   AttributeDecl = (stringAttr, null, })
+   AttributeTypeDecl = (string, null)
+
+   AttributeDecl = (stringWithoutType, null, null})
+   AttributeTypeDecl = (string, null)
+
+AttributeGroupDecl:
+   AttributeGroup = primitiveAttributes
+   ParentGroups = []
+   NewAttributes =
+      AttributeDecl = (anyUriAttr, null, null})
+      AttributeTypeDecl = (anyUri, null)
+
+      AttributeDecl = (boolAttr, null, true})
+      AttributeTypeDecl = (boolean, null)
+
+      AttributeDecl = (dateTimeAttr, null, null})
+      AttributeTypeDecl = (dateTime, null)
+
+      AttributeDecl = (floatAttr, null, null})
+      AttributeTypeDecl = (float, null)
+
+      AttributeDecl = (integerAttr, null, null})
+      AttributeTypeDecl = (integer, null)
+
+      AttributeDecl = (positiveIntegerAttr, null, 1})
+      AttributeTypeDecl = (positiveInteger, null)
+
+      AttributeDecl = (stringAttr, null, })
+      AttributeTypeDecl = (string, null)
+
+      AttributeDecl = (stringWithoutType, null, null})
+      AttributeTypeDecl = (string, null)
+
+
+ElementDecl:
+   ElementDeclaration = (simple, false)
+   ElementGroups = []
+   NewAllowElements = []
+   AttributeGroups = [primitiveAttributes]
+   NewAttributes =
+      AttributeDecl = (boolAttrInElement, null, null})
+      AttributeTypeDecl = (boolean, null)
+
+      AttributeDecl = (noTypeStrAttrInElement, null, null})
+      AttributeTypeDecl = (string, null)
+
+      AttributeDecl = (strAttrInElement, null, null})
+      AttributeTypeDecl = (string, null)
+
+
+ElementGroup:

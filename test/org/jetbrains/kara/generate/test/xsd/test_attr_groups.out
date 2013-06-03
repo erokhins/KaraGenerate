@@ -1,0 +1,47 @@
+AttributeTypeDecl:
+AttributeDecl:
+   AttributeDecl = (attrInElement, null, null})
+   AttributeTypeDecl = (string, null)
+
+   AttributeDecl = (attrInGroup1, null, null})
+   AttributeTypeDecl = (string, null)
+
+   AttributeDecl = (attrInGroup2, null, null})
+   AttributeTypeDecl = (string, null)
+
+   AttributeDecl = (attrInGroup3, null, null})
+   AttributeTypeDecl = (string, null)
+
+AttributeGroupDecl:
+   AttributeGroup = group1
+   ParentGroups = []
+   NewAttributes =
+      AttributeDecl = (attrInGroup1, null, null})
+      AttributeTypeDecl = (string, null)
+
+
+   AttributeGroup = group2
+   ParentGroups = []
+   NewAttributes =
+      AttributeDecl = (attrInGroup2, null, null})
+      AttributeTypeDecl = (string, null)
+
+
+   AttributeGroup = group3
+   ParentGroups = [group1, group2]
+   NewAttributes =
+      AttributeDecl = (attrInGroup3, null, null})
+      AttributeTypeDecl = (string, null)
+
+
+ElementDecl:
+   ElementDeclaration = (simple, false)
+   ElementGroups = []
+   NewAllowElements = []
+   AttributeGroups = [group3]
+   NewAttributes =
+      AttributeDecl = (attrInElement, null, null})
+      AttributeTypeDecl = (string, null)
+
+
+ElementGroup:
