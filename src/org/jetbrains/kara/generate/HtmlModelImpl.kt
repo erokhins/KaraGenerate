@@ -125,8 +125,8 @@ open class CommonElementDeclaration(name: String,
 }
 
 
-class SpecialGroupDeclaration(name: String, elementGroups: Collection<ElementGroupDeclaration>,
-                              val newAllowElementsFun: () -> Collection<ElementDeclaration>     // cyclical dependency
+class UnCyclicalGroupDeclaration(name: String, elementGroups: Collection<ElementGroupDeclaration>,
+                              val newAllowElementsFun: () -> Collection<ElementDeclaration>
 ): CommonElementDeclaration(name, false, elementGroups) {
     private var realNewAllowElements: List<ElementDeclaration>? = null;
 

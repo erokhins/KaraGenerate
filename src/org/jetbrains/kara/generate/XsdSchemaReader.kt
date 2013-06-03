@@ -31,15 +31,15 @@ class HtmlModelBuilder(val schema: XSSchema) {
     val elementGroupXSModelGroupDeclCache = Cache<XSModelGroupDecl, ElementGroupDeclaration>()
     val attrCache = AttributeTypeCache()
 
-    fun getAttributeGroup(groupDeclaration: XSAttGroupDecl): AttributeGroup {
+    private fun buildAttributeGroup(groupDeclaration: XSAttGroupDecl): AttributeGroup {
         return attributeGroupCache.get(groupDeclaration) {
-            val attrGroups = getAttGroups().map { getAttributeGroup(it!!) }
+            val attrGroups = getAttGroups().map { buildAttributeGroup(it!!) }
             val attributes = getDeclaredAttributeUses()!!.map { attrCache.getAttributeDeclaration(it!!.getDecl()!!, groupDeclaration.getName()!!) }
             AttributeGroupImp(getName()!!, attrGroups, attributes)
         }
     }
 
-    public fun getElementGroupDeclaration(groupDecl: XSModelGroupDecl): ElementGroupDeclaration {
+    private fun buildElementGroupDeclaration(groupDecl: XSModelGroupDecl): ElementGroupDeclaration {  // example: <xsd:group name="phrasingContent">
         return elementGroupXSModelGroupDeclCache.get(groupDecl) {
             val modelGroup = getModelGroup()!!
             if (modelGroup.getCompositor() != Compositor.CHOICE) {
@@ -49,33 +49,33 @@ class HtmlModelBuilder(val schema: XSSchema) {
             modelGroup.forEach {
                 val term = it.getTerm()!!
                 if (term.isModelGroupDecl()) {
-                    elementGroups.add(getElementGroupDeclaration(term.asModelGroupDecl()!!));
+                    elementGroups.add(buildElementGroupDeclaration(term.asModelGroupDecl()!!));
                 }
             }
 
-            SpecialGroupDeclaration(getName()!!, elementGroups) {
-                val resultCollection: MutableCollection<ElementDeclaration> = ArrayList()
+            UnCyclicalGroupDeclaration(getName()!!, elementGroups) {
+                val newAllowElements: MutableCollection<ElementDeclaration> = ArrayList()
                 modelGroup.forEach {
                     val term = it.getTerm()!!
                     if (term.isElementDecl()) {
-                        resultCollection.add(getElementDeclaration(term.asElementDecl()!!));
+                        newAllowElements.add(buildElementDeclaration(term.asElementDecl()!!));
                     }
                 }
-                resultCollection
+                newAllowElements
             }
         }
     }
 
-    public fun getElementGroupDeclaration(complexType: XSComplexType): ElementGroupDeclaration {
+    private fun buildElementGroupDeclaration(complexType: XSComplexType): ElementGroupDeclaration {  // example: <xsd:element name="h1" type="simplePhrasingContentElement"/>
         return elementGroupXSComplexTypeCache.get(complexType) {
-            buildAbstractElementDeclaration(complexType, complexType.getName()!!)
+            buildCommonElementDeclaration(this, getName()!!)
         }
     }
 
-    public fun getContentElements(complexType: XSComplexType): Collection<XSTerm> {
+    private fun getContentXSTerm(complexType: XSComplexType): Collection<XSTerm> {
         val modelGroup = complexType.getContentType().asParticle()?.getTerm()?.asModelGroup();
 
-        if (modelGroup == null && complexType.getContentType().asEmpty() == null) {
+        if (modelGroup == null && complexType.getContentType().asSimpleType() != null) {
             throw IllegalStateException("unsupported xsd format")
         }
 
@@ -87,49 +87,48 @@ class HtmlModelBuilder(val schema: XSSchema) {
         return resultCollection
     }
 
-    public fun buildAbstractElementDeclaration(complexType: XSComplexType, elementName: String): CommonElementDeclaration {
-        val attrGroups = complexType.getAttGroups().map { getAttributeGroup(it!!) }
+    private fun buildCommonElementDeclaration(complexType: XSComplexType, elementName: String): CommonElementDeclaration {
+        val attrGroups = complexType.getAttGroups().map { buildAttributeGroup(it!!) }
         val attributes = complexType.getDeclaredAttributeUses()!!.map {
             attrCache.getAttributeDeclaration(it!!.getDecl()!!, elementName)
         }
 
         val elementGroups: MutableCollection<ElementGroupDeclaration> = ArrayList()
         val newAllowElement: MutableCollection<ElementDeclaration> = ArrayList()
-        for (term in getContentElements(complexType)) {
+        for (term in getContentXSTerm(complexType)) {
             if (term.isModelGroupDecl()) {
-                elementGroups.add(getElementGroupDeclaration(term.asModelGroupDecl()!!));
+                elementGroups.add(buildElementGroupDeclaration(term.asModelGroupDecl()!!));
             } else {
                 if (term.isElementDecl()) {
-                    newAllowElement.add(getElementDeclaration(term.asElementDecl()!!))
+                    newAllowElement.add(buildElementDeclaration(term.asElementDecl()!!))
                 } else {
-                    throw IllegalStateException("bad term type, element: " + elementName)
+                    throw IllegalStateException("bad term type, element name: ${elementName}")
                 }
             }
         }
         return CommonElementDeclaration(elementName, complexType.isMixed(), elementGroups, newAllowElement, attrGroups, attributes)
     }
 
-    public fun getElementDeclaration(elementDecl: XSElementDecl): ElementDeclaration {
+    private fun buildElementDeclaration(elementDecl: XSElementDecl): ElementDeclaration {
         return elementCache.get(elementDecl) {
-            if (!elementDecl.getType()!!.isComplexType()) {
-                throw IllegalStateException("element must have complex type")
+            if (!getType()!!.isComplexType()) {
+                throw IllegalStateException("element must have complex type, element name: ${getName()}")
             }
-            val complexType = elementDecl.getType()!!.asComplexType()!!
+            val complexType = getType()!!.asComplexType()!!
 
-            if (complexType.getName() == null) {
-                buildAbstractElementDeclaration(complexType, elementDecl.getName()!!)
-            } else {
-                val elementGroup = getElementGroupDeclaration(complexType);
-                CommonElementDeclaration(elementDecl.getName()!!, false, Collections.singleton(elementGroup))
+            if (complexType.getName() == null) {                             // anonymous type decl
+                buildCommonElementDeclaration(complexType, getName()!!)
+            } else {                                                         // ref to elements group
+                val elementGroup = buildElementGroupDeclaration(complexType);
+                CommonElementDeclaration(getName()!!, false, Collections.singleton(elementGroup)) // allowText from group
             }
         }
     }
 
-    public fun iterateAllElements() {
+    private fun iterateAllElements() {
         val elementDeclarationIterator = schema.iterateElementDecls()!!
         while (elementDeclarationIterator.hasNext()) {
-            val elementDeclaration = elementDeclarationIterator.next()
-            getElementDeclaration(elementDeclaration)
+            buildElementDeclaration(elementDeclarationIterator.next())
         }
     }
 
