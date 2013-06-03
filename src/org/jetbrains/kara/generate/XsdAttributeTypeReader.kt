@@ -24,7 +24,6 @@ import com.sun.xml.xsom.*
 import java.util.HashSet
 import java.util.HashMap
 import java.util.ArrayList
-import org.jetbrains.kara.generate.getProcessedCollection
 import org.jetbrains.kara.generate.test.makeStr
 import java.util.Collections
 

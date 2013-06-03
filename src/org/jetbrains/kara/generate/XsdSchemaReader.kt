@@ -135,45 +135,14 @@ class HtmlModelBuilder(val schema: XSSchema) {
 
     public fun build(): HtmlModel {
         iterateAllElements()
-        val elementGroups = ArrayList(elementGroupXSModelGroupDeclCache.getAllResults())
-        elementGroups.addAll(elementGroupXSComplexTypeCache.getAllResults())
+        val elementGroups = ArrayList(elementGroupXSModelGroupDeclCache.getAllElements())
+        elementGroups.addAll(elementGroupXSComplexTypeCache.getAllElements())
         return HtmlModelImpl(
                 attrCache.getAllTypeDecl(),
                 attrCache.getAllDecl(),
-                attributeGroupCache.getAllResults(),
-                elementCache.getAllResults(),
+                attributeGroupCache.getAllElements(),
+                elementCache.getAllElements(),
                 elementGroups
         )
-    }
-}
-
-val SCHEME_URL = "src/org/jetbrains/kara/generate/grammar/html_5.xsd"
-val HTML_NAMESPACE = "html-5"
-
-public fun main(args: Array<String>) {
-    val parser = XSOMParser()
-    parser.parse(SCHEME_URL)
-    val schema = parser.getResult()!!.getSchema(HTML_NAMESPACE)!!
-
-    val model = HtmlModelBuilder(schema).build()
-    println(makeStr(model))
-}
-
-
-public class Cache<I, R> {
-    private val cache: MutableMap<I, R> = HashMap<I, R>()
-
-    fun get(input: I, foo: I.() -> R): R {
-        if (cache.containsKey(input)) {
-            return cache.get(input)!!;
-        } else {
-            val result = input.foo()
-            cache.put(input, result)
-            return result
-        }
-    }
-
-    fun getAllResults(): Collection<R> {
-        return cache.values()
     }
 }
