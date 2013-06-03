@@ -126,13 +126,13 @@ class AttributeTypeCache {
         val attrName = xsType.getName() ?: attributeDeclName
         val typeDecl =
                 if (isStringEnum) {
-                    MutableAttributeTypeDeclaration(strEnumType, attrName, elementName, values)
+                    MutableAttributeTypeDeclaration(attrName, strEnumType, elementName, values)
                 } else {
                     if (values.size == 1 && values.first == attrName) {
                         // ticker
-                        MutableAttributeTypeDeclaration(ticker, attrName, elementName)
+                        MutableAttributeTypeDeclaration(attrName, ticker, elementName)
                     } else {
-                        MutableAttributeTypeDeclaration(enumType, attrName, elementName, values)
+                        MutableAttributeTypeDeclaration(attrName, enumType, elementName, values)
                     }
                 }
 
@@ -145,7 +145,7 @@ class AttributeTypeCache {
 
     fun getAttributeDeclaration(xsDecl: XSAttributeDecl, elementName: String): AttributeDeclaration {
         val attrTypeDecl = getAttributeTypeDeclaration(xsDecl.getType()!!, xsDecl.getName()!!, elementName)
-        val attrDecl = MutableAttributeDeclaration(xsDecl.getName()!!, elementName, attrTypeDecl,
+        val attrDecl = MutableAttributeDeclaration(xsDecl.getName()!!, attrTypeDecl, elementName,
                 xsDecl.getDefaultValue()?.value)
         return attrDuplicateContr.getEqualsToThis(xsDecl.getName()!!, attrDecl)
     }

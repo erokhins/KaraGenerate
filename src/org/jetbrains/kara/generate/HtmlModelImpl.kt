@@ -22,7 +22,7 @@ import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType
 import java.util.Comparator
 import java.util.ArrayList
 
-fun <T>Collection<T>.sort(compare: (o1: T, o2: T) -> Int): List<T> {
+fun <T>Iterable<T>.sort(compare: (o1: T, o2: T) -> Int): List<T> {
     return this.sort(object :Comparator<T> {
         public override fun compare(o1: T, o2: T): Int {
             return compare(o1, o2)
@@ -30,23 +30,24 @@ fun <T>Collection<T>.sort(compare: (o1: T, o2: T) -> Int): List<T> {
     })
 }
 
-public inline fun <T: Comparable<T>> Iterable<T>.sort() : List<T> {
+public inline fun <T: Comparable<T>> Iterable<T>.sort(): List<T> {
     val list = toCollection(ArrayList<T>())
     java.util.Collections.sort(list)
     return list
 }
 
 class AttributeGroupImp(name: String,
-                        newAttributes: Collection<AttributeDeclaration>,
-                        parentGroups: Collection<AttributeGroup>): AttributeGroup {
+                        parentGroups: Collection<AttributeGroup>,
+                        newAttributes: Collection<AttributeDeclaration>
+): AttributeGroup {
     override val name: String = name
-    override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a,b) -> a.name.compareTo(b.name)} )
-    override val parentGroups: List<AttributeGroup> = parentGroups.sort({(a,b) -> a.name.compareTo(b.name)} )
+    override val parentGroups: List<AttributeGroup> = parentGroups.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a, b) -> a.name.compareTo(b.name) })
 }
 
 
-class MutableAttributeTypeDeclaration(attrType: AttributeTypeDeclaration.AttributeType,
-                                      name: String,
+class MutableAttributeTypeDeclaration(name: String,
+                                      attrType: AttributeTypeDeclaration.AttributeType,
                                       elementName: String? = null,
                                       values: Collection<String> = Collections.emptyList()
 ): AttributeTypeDeclaration {
@@ -92,9 +93,9 @@ public enum class SimpleAttributeTypeDeclaration(attrType: AttributeType): Attri
 
 
 class MutableAttributeDeclaration(override val name: String,
+                                  override val attrTypeDeclaration: AttributeTypeDeclaration,
                                   elementName: String? = null,
-                               override val attrTypeDeclaration: AttributeTypeDeclaration,
-                               override val defaultValue: String? = null
+                                  override val defaultValue: String? = null
 ): AttributeDeclaration {
     var mutableElementName: String? = elementName
     override val elementName: String?
@@ -117,22 +118,22 @@ open class CommonElementDeclaration(name: String,
 ): ElementGroupDeclaration, ElementDeclaration {
     override val name: String = name
     override val allowText: Boolean = allowText
-    override val elementGroups: List<ElementGroupDeclaration> = elementGroups.sort({(a,b) -> a.name.compareTo(b.name)} )
-    override val newAllowElements: List<ElementDeclaration> = newAllowElements.sort({(a,b) -> a.name.compareTo(b.name)} )
-    override val attributeGroups: List<AttributeGroup> = attributeGroups.sort({(a,b) -> a.name.compareTo(b.name)} )
-    override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a,b) -> a.name.compareTo(b.name)} )
+    override val elementGroups: List<ElementGroupDeclaration> = elementGroups.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val newAllowElements: List<ElementDeclaration> = newAllowElements.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val attributeGroups: List<AttributeGroup> = attributeGroups.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a, b) -> a.name.compareTo(b.name) })
 }
 
 
 class SpecialGroupDeclaration(name: String, elementGroups: Collection<ElementGroupDeclaration>,
-                              val newAllowElementsFun: () -> Collection<ElementDeclaration>
+                              val newAllowElementsFun: () -> Collection<ElementDeclaration>     // cyclical dependency
 ): CommonElementDeclaration(name, false, elementGroups) {
     private var realNewAllowElements: List<ElementDeclaration>? = null;
 
     override val newAllowElements: List<ElementDeclaration>
         get() {
             if (realNewAllowElements == null) {
-                realNewAllowElements = newAllowElementsFun().sort({(a,b) -> a.name.compareTo(b.name)} )
+                realNewAllowElements = newAllowElementsFun().sort({(a, b) -> a.name.compareTo(b.name) })
             }
             return realNewAllowElements!!
         }
@@ -142,12 +143,12 @@ class HtmlModelImpl(
         attributeTypeDeclarations: Collection<AttributeTypeDeclaration>,
         attributeDeclarations: Collection<AttributeDeclaration>,
         attributeGroups: Collection<AttributeGroup>,
-        simpleElementDeclarations: Collection<ElementDeclaration>,
-        groupElementDeclaration: Collection<ElementGroupDeclaration>
+        elementDeclarations: Collection<ElementDeclaration>,
+        elementGroupDeclaration: Collection<ElementGroupDeclaration>
 ): HtmlModel {
-    override val attributeTypeDeclarations: List<AttributeTypeDeclaration> = attributeTypeDeclarations.sort({(a,b) -> a.name.compareTo(b.name)} )
-    override val attributeDeclarations: List<AttributeDeclaration> = attributeDeclarations.sort({(a,b) -> a.name.compareTo(b.name)} )
-    override val attributeGroups: List<AttributeGroup> = attributeGroups.sort({(a,b) -> a.name.compareTo(b.name)} )
-    override val simpleElementDeclarations: List<ElementDeclaration> = simpleElementDeclarations.sort({(a,b) -> a.name.compareTo(b.name)} )
-    override val groupElementDeclaration: List<ElementGroupDeclaration> = groupElementDeclaration.sort({(a,b) -> a.name.compareTo(b.name)} )
+    override val attributeTypeDeclarations: List<AttributeTypeDeclaration> = attributeTypeDeclarations.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val attributeDeclarations: List<AttributeDeclaration> = attributeDeclarations.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val attributeGroups: List<AttributeGroup> = attributeGroups.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val elementDeclarations: List<ElementDeclaration> = elementDeclarations.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val elementGroupDeclaration: List<ElementGroupDeclaration> = elementGroupDeclaration.sort({(a, b) -> a.name.compareTo(b.name) })
 }

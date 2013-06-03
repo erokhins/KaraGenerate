@@ -35,7 +35,7 @@ class HtmlModelBuilder(val schema: XSSchema) {
         return attributeGroupCache.get(groupDeclaration) {
             val attrGroups = getAttGroups().getProcessedCollection { getAttributeGroup(it) }
             val attributes = getDeclaredAttributeUses()!!.getProcessedCollection { attrCache.getAttributeDeclaration(it.getDecl()!!, groupDeclaration.getName()!!) }
-            AttributeGroupImp(getName()!!, attributes, attrGroups)
+            AttributeGroupImp(getName()!!, attrGroups, attributes)
         }
     }
 

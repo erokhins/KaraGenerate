@@ -112,11 +112,11 @@ fun makeStr(htmlModel: HtmlModel): String {
             appendLine(makeStr(el, indent))
         }
         appendLine("ElementDecl:")
-        for (el in htmlModel.simpleElementDeclarations) {
+        for (el in htmlModel.elementDeclarations) {
             appendLine(makeStr(el, indent))
         }
         appendLine("ElementGroup:")
-        for (el in htmlModel.groupElementDeclaration) {
+        for (el in htmlModel.elementGroupDeclaration) {
             appendLine(makeStr(el, indent))
         }
     }
