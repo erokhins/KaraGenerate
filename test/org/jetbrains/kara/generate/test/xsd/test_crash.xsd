@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema xmlns='test' xmlns:xsd='http://www.w3.org/2001/XMLSchema' version="1.0" targetNamespace='test'>
+
+
+    <xsd:element name="cyclicalElement" type="cyclicalType"/>
+    <xsd:complexType mixed="true" name="cyclicalType">
+        <xsd:choice>
+            <xsd:element ref="cyclicalElement"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:element name="noType"/>
+</xsd:schema>

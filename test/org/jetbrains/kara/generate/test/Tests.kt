@@ -64,4 +64,8 @@ public class HtmlModelBuildTest {
     test fun complexTypes() {
         runTest("complex_attr_types")
     }
+
+//    test fun crash() {
+//        runTest("crash")
+//    }
 }
