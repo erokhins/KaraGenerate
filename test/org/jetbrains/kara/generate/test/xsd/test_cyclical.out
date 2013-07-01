@@ -1,0 +1,29 @@
+AttributeTypeDecl:
+AttributeDecl:
+AttributeGroupDecl:
+ElementDecl:
+   ElementDeclaration = (cyclicalElement1, false)
+   ElementGroups = [cyclicalType]
+   NewAllowElements = []
+   AttributeGroups = []
+   NewAttributes =
+
+   ElementDeclaration = (cyclicalElement2, true)
+   ElementGroups = [cyclicalGroup]
+   NewAllowElements = []
+   AttributeGroups = []
+   NewAttributes =
+
+ElementGroup:
+   ElementDeclaration = (cyclicalGroup, false)
+   ElementGroups = []
+   NewAllowElements = [cyclicalElement2]
+   AttributeGroups = []
+   NewAttributes =
+
+   ElementDeclaration = (cyclicalType, true)
+   ElementGroups = []
+   NewAllowElements = [cyclicalElement1]
+   AttributeGroups = []
+   NewAttributes =
+

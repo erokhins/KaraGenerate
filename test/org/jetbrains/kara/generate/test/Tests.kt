@@ -65,6 +65,10 @@ public class HtmlModelBuildTest {
         runTest("complex_attr_types")
     }
 
+    test fun cyclical() {
+        runTest("cyclical")
+    }
+
 //    test fun crash() {
 //        runTest("crash")
 //    }

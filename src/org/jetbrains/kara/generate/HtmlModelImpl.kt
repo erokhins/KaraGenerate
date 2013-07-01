@@ -100,24 +100,17 @@ class MutableAttributeDeclaration(override val name: String,
 open class CommonElementDeclaration(name: String,
                                     allowText: Boolean = false,
                                     elementGroups: Collection<ElementGroupDeclaration> = Collections.emptyList(),
-                                    newAllowElements: Collection<ElementDeclaration> = Collections.emptyList(),
                                     attributeGroups: Collection<AttributeGroup> = Collections.emptyList(),
-                                    newAttributes: Collection<AttributeDeclaration> = Collections.emptyList()
+                                    newAttributes: Collection<AttributeDeclaration> = Collections.emptyList(),
+                                    val newAllowElementsFun: () -> Collection<ElementDeclaration> = {Collections.emptyList()}
 ): ElementGroupDeclaration, ElementDeclaration {
     override val name: String = name
     override val allowText: Boolean = allowText
-    override val elementGroups: List<ElementGroupDeclaration> = elementGroups.sort({(a, b) -> a.name.compareTo(b.name) })
-    override val newAllowElements: List<ElementDeclaration> = newAllowElements.sort({(a, b) -> a.name.compareTo(b.name) })
     override val attributeGroups: List<AttributeGroup> = attributeGroups.sort({(a, b) -> a.name.compareTo(b.name) })
     override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a, b) -> a.name.compareTo(b.name) })
-}
+    override val elementGroups: List<ElementGroupDeclaration> = elementGroups.sort({(a, b) -> a.name.compareTo(b.name) })
 
-
-class UnCyclicalGroupDeclaration(name: String, elementGroups: Collection<ElementGroupDeclaration>,
-                              val newAllowElementsFun: () -> Collection<ElementDeclaration>
-): CommonElementDeclaration(name, false, elementGroups) {
     private var realNewAllowElements: List<ElementDeclaration>? = null;
-
     override val newAllowElements: List<ElementDeclaration>
         get() {
             if (realNewAllowElements == null) {
@@ -126,6 +119,7 @@ class UnCyclicalGroupDeclaration(name: String, elementGroups: Collection<Element
             return realNewAllowElements!!
         }
 }
+
 
 class HtmlModelImpl(
         attributeTypeDeclarations: Collection<AttributeTypeDeclaration>,

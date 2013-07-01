@@ -53,7 +53,7 @@ class HtmlModelBuilder(val schema: XSSchema) {
                 }
             }
 
-            UnCyclicalGroupDeclaration(getName()!!, elementGroups) {
+            CommonElementDeclaration(getName()!!, false, elementGroups) {
                 val newAllowElements: MutableCollection<ElementDeclaration> = ArrayList()
                 modelGroup.forEach {
                     val term = it.getTerm()!!
@@ -94,19 +94,27 @@ class HtmlModelBuilder(val schema: XSSchema) {
         }
 
         val elementGroups: MutableCollection<ElementGroupDeclaration> = ArrayList()
-        val newAllowElement: MutableCollection<ElementDeclaration> = ArrayList()
         for (term in getContentXSTerm(complexType)) {
             if (term.isModelGroupDecl()) {
                 elementGroups.add(buildElementGroupDeclaration(term.asModelGroupDecl()!!));
             } else {
                 if (term.isElementDecl()) {
-                    newAllowElement.add(buildElementDeclaration(term.asElementDecl()!!))
+                    // added later
+                    //newAllowElement.add(buildElementDeclaration(term.asElementDecl()!!))
                 } else {
                     throw IllegalStateException("bad term type, element name: ${elementName}")
                 }
             }
         }
-        return CommonElementDeclaration(elementName, complexType.isMixed(), elementGroups, newAllowElement, attrGroups, attributes)
+        return CommonElementDeclaration(elementName, complexType.isMixed(), elementGroups, attrGroups, attributes) {
+            val newAllowElement: MutableCollection<ElementDeclaration> = ArrayList()
+            for (term in getContentXSTerm(complexType)) {
+                if (term.isElementDecl()) {
+                    newAllowElement.add(buildElementDeclaration(term.asElementDecl()!!))
+                }
+            }
+            newAllowElement
+        }
     }
 
     private fun buildElementDeclaration(elementDecl: XSElementDecl): ElementDeclaration {
