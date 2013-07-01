@@ -25,7 +25,7 @@ import java.util.ArrayList
 fun <T>Iterable<T>.sort(compare: (o1: T, o2: T) -> Int): List<T> {
     return this.sort(object :Comparator<T> {
         public override fun compare(o1: T, o2: T): Int {
-            return compare(o1, o2)
+            return compare.invoke(o1, o2)
         }
     })
 }
