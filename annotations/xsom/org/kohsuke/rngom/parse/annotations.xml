@@ -1,0 +1,32 @@
+<root>
+    <item name='org.kohsuke.rngom.parse.Parseable P parse(org.kohsuke.rngom.ast.builder.SchemaBuilder&lt;?,P,?,?,?,?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.Parseable P parseExternal(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder&lt;?,P,?,?,?,?&gt;, org.kohsuke.rngom.ast.builder.Scope, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.Parseable P parseInclude(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder&lt;?,P,?,?,?,?&gt;, org.kohsuke.rngom.ast.builder.IncludedGrammar&lt;P,?,?,?,?&gt;, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.Context org.kohsuke.rngom.parse.Context copy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.Parseable P parseInclude(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder&lt;?,P,?,?,?,?&gt;, org.kohsuke.rngom.ast.builder.IncludedGrammar&lt;P,?,?,?,?&gt;, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

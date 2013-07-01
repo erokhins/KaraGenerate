@@ -1,0 +1,14 @@
+<root>
+    <item name='com.sun.tools.xjc.addon.code_injector.PluginImpl java.lang.String getOptionName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.addon.code_injector.PluginImpl boolean run(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.Options, org.xml.sax.ErrorHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.addon.code_injector.PluginImpl boolean isCustomizationTagName(java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.addon.code_injector.PluginImpl java.lang.String getUsage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

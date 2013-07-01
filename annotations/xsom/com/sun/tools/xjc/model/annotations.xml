@@ -1,0 +1,605 @@
+<root>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CBuiltinLeafInfo com.sun.xml.bind.v2.runtime.Location getLocation()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model org.xml.sax.Locator getLocator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo void initContentType(com.sun.tools.xjc.model.TypeUse, com.sun.xml.xsom.XSElementDecl, com.sun.xml.xsom.XmlString) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse makeID(com.sun.tools.xjc.model.TypeUse, com.sun.xml.bind.v2.model.core.ID)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef com.sun.tools.xjc.model.nav.NType getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo T accept(com.sun.tools.xjc.model.CClassInfoParent.Visitor&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model java.lang.Iterable&lt;? extends com.sun.tools.xjc.model.CElementInfo&gt; getAllElements()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CWildcardTypeInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity boolean includes(com.sun.tools.xjc.model.Multiplicity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model com.sun.xml.bind.v2.model.core.NonElement getAnyTypeInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity multiply(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementPropertyInfo java.util.List&lt;com.sun.tools.xjc.model.CNonElement&gt; ref()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo CArrayInfo(com.sun.tools.xjc.model.Model, com.sun.tools.xjc.model.CNonElement, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef com.sun.tools.xjc.model.CNonElement getInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfoParent.Visitor T onElement(com.sun.tools.xjc.model.CElementInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo java.util.Collection&lt;? extends com.sun.tools.xjc.model.Constructor&gt; getConstructors()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CWildcardTypeInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUse com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementPropertyInfo java.util.Collection ref()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUse com.sun.tools.xjc.model.CNonElement getInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CWildcardTypeInfo org.xml.sax.Locator getLocator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CWildcardTypeInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model java.util.Map&lt;com.sun.tools.xjc.model.nav.NType,? extends com.sun.tools.xjc.model.CBuiltinLeafInfo&gt; builtins()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.tools.xjc.model.nav.NType getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfoParent.Visitor T onPackage(com.sun.codemodel.JPackage)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo java.lang.Object getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.tools.xjc.model.nav.NClass getClazz()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CBuiltinLeafInfo com.sun.tools.xjc.model.CNonElement getInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.tools.xjc.model.CCustomizations getCustomizations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse makeCollection(com.sun.tools.xjc.model.TypeUse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity group(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CWildcardTypeInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CBuiltinLeafInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo T accept(com.sun.tools.xjc.model.CClassInfoParent.Visitor&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo CEnumLeafInfo(com.sun.tools.xjc.model.Model, javax.xml.namespace.QName, com.sun.tools.xjc.model.CClassInfoParent, java.lang.String, com.sun.tools.xjc.model.CNonElement, java.util.Collection&lt;com.sun.tools.xjc.model.CEnumConstant&gt;, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations, org.xml.sax.Locator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CNonElement com.sun.tools.xjc.model.CNonElement getInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfoParent.Visitor T onBean(com.sun.tools.xjc.model.CClassInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CAttributePropertyInfo V accept(com.sun.tools.xjc.model.CPropertyVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUse com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model Model(com.sun.tools.xjc.Options, com.sun.codemodel.JCodeModel, com.sun.xml.bind.api.impl.NameConverter, com.sun.tools.xjc.api.ClassNameAllocator, com.sun.xml.xsom.XSSchemaSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CBuiltinLeafInfo org.xml.sax.Locator getLocator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model com.sun.tools.xjc.model.SymbolSpace getSymbolSpace(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CBuiltinLeafInfo com.sun.tools.xjc.model.TypeUse makeMimeTyped(javax.activation.MimeType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity choice(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CValuePropertyInfo CValuePropertyInfo(java.lang.String, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations, org.xml.sax.Locator, com.sun.tools.xjc.model.TypeUse, javax.xml.namespace.QName) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfoParent T accept(com.sun.tools.xjc.model.CClassInfoParent.Visitor&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CDefaultValue com.sun.tools.xjc.model.CDefaultValue create(com.sun.tools.xjc.model.TypeUse, com.sun.xml.xsom.XmlString)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CCustomizable org.xml.sax.Locator getLocator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo CClassInfo(com.sun.tools.xjc.model.Model, com.sun.codemodel.JPackage, java.lang.String, org.xml.sax.Locator, javax.xml.namespace.QName, javax.xml.namespace.QName, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo java.util.Iterator&lt;com.sun.tools.xjc.model.CClassInfo&gt; listSubclasses()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CBuiltinLeafInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity choice(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CCustomizable com.sun.tools.xjc.model.CCustomizations getCustomizations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CWildcardTypeInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse adapt(com.sun.tools.xjc.model.TypeUse, com.sun.tools.xjc.model.CAdapter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model com.sun.xml.bind.v2.model.nav.Navigator&lt;com.sun.tools.xjc.model.nav.NType,com.sun.tools.xjc.model.nav.NClass,java.lang.Void,java.lang.Void&gt; getNavigator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CValuePropertyInfo com.sun.xml.bind.v2.model.core.PropertyInfo getSource()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model com.sun.tools.xjc.model.CNonElement getTypeInfo(com.sun.xml.bind.v2.model.core.Ref&lt;com.sun.tools.xjc.model.nav.NType,com.sun.tools.xjc.model.nav.NClass&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo CClassInfo(com.sun.tools.xjc.model.Model, com.sun.codemodel.JCodeModel, java.lang.String, org.xml.sax.Locator, javax.xml.namespace.QName, javax.xml.namespace.QName, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse adapt(com.sun.tools.xjc.model.TypeUse, java.lang.Class&lt;? extends javax.xml.bind.annotation.adapters.XmlAdapter&gt;, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CTypeRef CTypeRef(com.sun.tools.xjc.model.CNonElement, com.sun.xml.xsom.XSElementDecl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.tools.xjc.model.CNonElement getInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CPropertyVisitor V onElement(com.sun.tools.xjc.model.CElementPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef java.lang.Object getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.tools.xjc.model.nav.NType getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity multiply(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model java.util.Map&lt;javax.xml.namespace.QName,com.sun.tools.xjc.model.TypeUse&gt; typeUses()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo CClassInfo(com.sun.tools.xjc.model.Model, com.sun.codemodel.JCodeModel, java.lang.String, org.xml.sax.Locator, javax.xml.namespace.QName, javax.xml.namespace.QName, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity create(java.math.BigInteger, java.math.BigInteger)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model com.sun.tools.xjc.model.CBuiltinLeafInfo getAnyTypeInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo java.lang.Object getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity group(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfoParent.Package T accept(com.sun.tools.xjc.model.CClassInfoParent.Visitor&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.xml.bind.v2.model.core.NonElement getItemType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse makeMimeTyped(com.sun.tools.xjc.model.TypeUse, javax.activation.MimeType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model java.util.Map&lt;com.sun.tools.xjc.model.nav.NClass,com.sun.tools.xjc.model.CClassInfo&gt; beans()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo CClassInfo(com.sun.tools.xjc.model.Model, com.sun.tools.xjc.model.CClassInfoParent, java.lang.String, org.xml.sax.Locator, javax.xml.namespace.QName, javax.xml.namespace.QName, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.tools.xjc.model.CCustomizations getCustomizations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.tools.xjc.model.CNonElement getInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CReferencePropertyInfo java.util.Collection ref()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CReferencePropertyInfo java.util.Set&lt;com.sun.tools.xjc.model.CElement&gt; getElements()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementPropertyInfo V accept(com.sun.tools.xjc.model.CPropertyVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse makeMimeTyped(com.sun.tools.xjc.model.TypeUse, javax.activation.MimeType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo void setSubstitutionHead(com.sun.tools.xjc.model.CElementInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef CClassRef(com.sun.tools.xjc.model.Model, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.reader.xmlschema.bindinfo.BIEnum, com.sun.tools.xjc.model.CCustomizations) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo org.xml.sax.Locator getLocator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity multiply(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo CClassInfo(com.sun.tools.xjc.model.Model, com.sun.codemodel.JCodeModel, java.lang.String, org.xml.sax.Locator, javax.xml.namespace.QName, javax.xml.namespace.QName, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CReferencePropertyInfo V accept(com.sun.tools.xjc.model.CPropertyVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity oneOrMore(com.sun.tools.xjc.model.Multiplicity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.tools.xjc.model.CNonElement getItemType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo java.lang.Object getClazz()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CBuiltinLeafInfo javax.xml.namespace.QName[] getTypeNames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo void addProperty(com.sun.tools.xjc.model.CPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo java.lang.Object getClazz()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model com.sun.tools.xjc.model.CClassInfoParent.Package getPackage(com.sun.codemodel.JPackage)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CReferencePropertyInfo java.util.Set&lt;? extends com.sun.tools.xjc.model.CTypeInfo&gt; ref()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity choice(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity makeRepeated()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo java.util.List&lt;com.sun.tools.xjc.model.CPropertyInfo&gt; getProperties()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse makeID(com.sun.tools.xjc.model.TypeUse, com.sun.xml.bind.v2.model.core.ID) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model java.util.Map&lt;javax.xml.namespace.QName,com.sun.tools.xjc.model.CClassInfo&gt; createTopLevelBindings()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CPropertyInfo com.sun.tools.xjc.model.CCustomizations getCustomizations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse adapt(com.sun.tools.xjc.model.TypeUse, java.lang.Class&lt;? extends javax.xml.bind.annotation.adapters.XmlAdapter&gt;, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CPropertyVisitor V onReference(com.sun.tools.xjc.model.CReferencePropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CTypeInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CPropertyInfo V accept(com.sun.tools.xjc.model.CPropertyVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementPropertyInfo java.util.List&lt;com.sun.tools.xjc.model.CTypeRef&gt; getTypes()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity oneOrMore(com.sun.tools.xjc.model.Multiplicity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.tools.xjc.model.nav.NClass getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity group(com.sun.tools.xjc.model.Multiplicity, com.sun.tools.xjc.model.Multiplicity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassInfo com.sun.tools.xjc.model.CNonElement getInfo()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CValuePropertyInfo V accept(com.sun.tools.xjc.model.CPropertyVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef CClassRef(com.sun.tools.xjc.model.Model, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.reader.xmlschema.bindinfo.BIClass, com.sun.tools.xjc.model.CCustomizations) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity makeOptional()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CWildcardTypeInfo com.sun.tools.xjc.model.CCustomizations getCustomizations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo CElementInfo(com.sun.tools.xjc.model.Model, javax.xml.namespace.QName, com.sun.tools.xjc.model.CClassInfoParent, java.lang.String, com.sun.tools.xjc.model.CCustomizations, org.xml.sax.Locator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo java.lang.Object getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo com.sun.tools.xjc.model.nav.NType getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CEnumLeafInfo com.sun.tools.xjc.model.nav.NClass getClazz()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo java.lang.Object getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CTypeInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CArrayInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.TypeUseFactory com.sun.tools.xjc.model.TypeUse adapt(com.sun.tools.xjc.model.TypeUse, com.sun.tools.xjc.model.CAdapter)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CPropertyInfo java.util.Collection&lt;? extends com.sun.tools.xjc.model.CTypeInfo&gt; ref()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CAttributePropertyInfo com.sun.xml.bind.v2.model.core.PropertyInfo getSource()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CTypeInfo com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model com.sun.xml.bind.v2.model.core.NonElement getTypeInfo(com.sun.xml.bind.v2.model.core.Ref) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CClassRef com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo com.sun.codemodel.JExpression createConstant(com.sun.tools.xjc.outline.Outline, com.sun.xml.xsom.XmlString) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.CBuiltinLeafInfo com.sun.tools.xjc.model.TypeUse makeAdapted(java.lang.Class&lt;? extends javax.xml.bind.annotation.adapters.XmlAdapter&gt;, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CAttributePropertyInfo CAttributePropertyInfo(java.lang.String, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations, org.xml.sax.Locator, javax.xml.namespace.QName, com.sun.tools.xjc.model.TypeUse, javax.xml.namespace.QName, boolean) 5'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity create(int, java.lang.Integer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementInfo CElementInfo(com.sun.tools.xjc.model.Model, javax.xml.namespace.QName, com.sun.tools.xjc.model.CClassInfoParent, com.sun.tools.xjc.model.TypeUse, com.sun.xml.xsom.XmlString, com.sun.xml.xsom.XSElementDecl, com.sun.tools.xjc.model.CCustomizations, org.xml.sax.Locator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.CElementPropertyInfo CElementPropertyInfo(java.lang.String, com.sun.tools.xjc.model.CElementPropertyInfo.CollectionMode, com.sun.xml.bind.v2.model.core.ID, javax.activation.MimeType, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.CCustomizations, org.xml.sax.Locator, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Model java.util.Map&lt;com.sun.tools.xjc.model.nav.NClass,com.sun.tools.xjc.model.CEnumLeafInfo&gt; enums()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.Multiplicity com.sun.tools.xjc.model.Multiplicity create(int, java.lang.Integer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

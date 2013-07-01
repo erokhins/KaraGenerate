@@ -1,0 +1,50 @@
+<root>
+    <item name='com.sun.istack.tools.DefaultAuthenticator.Receiver void onError(java.lang.Exception, org.xml.sax.Locator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.istack.tools.ProtectedTask java.lang.Object createDynamicElement(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.istack.tools.ProtectedTask java.lang.String getCoreClassName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.istack.tools.ParallelWorldClassLoader java.lang.Class findClass(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.istack.tools.ParallelWorldClassLoader java.net.URL toJarUrl(java.net.URL)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.istack.tools.DefaultAuthenticator.Receiver void onError(java.lang.Exception, org.xml.sax.Locator) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.istack.tools.MaskingClassLoader MaskingClassLoader(java.util.Collection&lt;java.lang.String&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.istack.tools.DefaultAuthenticator void setAuth(java.io.File, com.sun.istack.tools.DefaultAuthenticator.Receiver) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.istack.tools.DefaultAuthenticator.Receiver void onParsingError(java.lang.String, org.xml.sax.Locator) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.istack.tools.ParallelWorldClassLoader java.net.URL toJarUrl(java.net.URL) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.istack.tools.ParallelWorldClassLoader java.util.Enumeration&lt;java.net.URL&gt; findResources(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.istack.tools.MaskingClassLoader MaskingClassLoader(java.lang.ClassLoader, java.util.Collection&lt;java.lang.String&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -15,6 +15,12 @@
   <item name="com.sun.xml.xsom.parser.JAXPParser JAXPParser(javax.xml.parsers.SAXParserFactory) 0">
     <annotation name="org.jetbrains.annotations.NotNull" />
   </item>
+  <item name="com.sun.xml.xsom.parser.JAXPParser void parse(org.xml.sax.InputSource, org.xml.sax.ContentHandler, org.xml.sax.ErrorHandler, org.xml.sax.EntityResolver) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
   <item name="com.sun.xml.xsom.parser.SchemaDocument java.lang.String getTargetNamespace()">
     <annotation name="org.jetbrains.annotations.NotNull" />
     <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
@@ -22,6 +28,12 @@
     </annotation>
   </item>
   <item name="com.sun.xml.xsom.parser.SchemaDocument java.util.Set&lt;com.sun.xml.xsom.parser.SchemaDocument&gt; getImportedDocuments(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.sun.xml.xsom.parser.XMLParser void parse(org.xml.sax.InputSource, org.xml.sax.ContentHandler, org.xml.sax.ErrorHandler, org.xml.sax.EntityResolver) 0">
     <annotation name="org.jetbrains.annotations.NotNull" />
     <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
       <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />

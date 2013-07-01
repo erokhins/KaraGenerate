@@ -1,0 +1,233 @@
+<root>
+    <item name='org.kohsuke.rngom.nc.ChoiceNameClass boolean contains(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NsNameClass V accept(org.kohsuke.rngom.nc.NameClassVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Void visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Object visitNsNameExcept(java.lang.String, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeErrorNameClass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassVisitor V visitName(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.nc.NameClass makeNsName(java.lang.String, L, A)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.nc.NameClass makeChoice(java.util.List&lt;org.kohsuke.rngom.nc.NameClass&gt;, L, A) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass annotate(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeAnyName(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Void visitNsNameExcept(java.lang.String, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClass boolean hasOverlapWith(org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.ChoiceNameClass int containsSpecificity(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Object visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClass java.util.Set&lt;javax.xml.namespace.QName&gt; listNames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Void visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NsNameClass int containsSpecificity(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Void visitAnyNameExcept(org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.AnyNameExceptNameClass int containsSpecificity(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClass boolean contains(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeNsName(java.lang.String, org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.nc.NameClass makeAnyName(org.kohsuke.rngom.nc.NameClass, L, A)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassVisitor V visitAnyNameExcept(org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.SimpleNameClass int containsSpecificity(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeChoice(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassVisitor V visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Object visitName(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass annotateAfter(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NsNameExceptNameClass V accept(org.kohsuke.rngom.nc.NameClassVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeAnyName(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Object visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.nc.NameClass makeAnyName(L, A)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeNsName(java.lang.String, org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeAnyName(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.nc.NameClass makeName(java.lang.String, java.lang.String, java.lang.String, L, A)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassVisitor V visitNsNameExcept(java.lang.String, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClass V accept(org.kohsuke.rngom.nc.NameClassVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Object visitAnyNameExcept(org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassWalker java.lang.Void visitName(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClass int containsSpecificity(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NsNameExceptNameClass boolean contains(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.AnyNameExceptNameClass V accept(org.kohsuke.rngom.nc.NameClassVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass annotateAfter(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassVisitor V visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NsNameClass boolean contains(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeNsName(java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass commentAfter(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.builder.CommentList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.nc.NameClass makeNsName(java.lang.String, org.kohsuke.rngom.nc.NameClass, L, A)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.SimpleNameClass V accept(org.kohsuke.rngom.nc.NameClassVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.ChoiceNameClass V accept(org.kohsuke.rngom.nc.NameClassVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NsNameExceptNameClass int containsSpecificity(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.ast.om.ParsedNameClass makeName(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.NameClassBuilderImpl org.kohsuke.rngom.nc.NameClass makeErrorNameClass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.nc.SimpleNameClass boolean contains(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.nc.AnyNameExceptNameClass boolean contains(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

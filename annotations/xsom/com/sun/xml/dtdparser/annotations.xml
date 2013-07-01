@@ -1,0 +1,74 @@
+<root>
+    <item name='com.sun.xml.dtdparser.Resolver org.xml.sax.InputSource createInputSource(java.io.File)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.Resolver org.xml.sax.InputSource createInputSource(java.net.URL, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.DTDParser void parse(org.xml.sax.InputSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.Resolver org.xml.sax.InputSource createInputSource(java.lang.String, java.io.InputStream, boolean, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.XmlNames boolean isNmtoken(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.Resolver org.xml.sax.InputSource createInputSource(java.net.URL, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.DTDHandlerBase void error(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.dtdparser.Resolver org.xml.sax.InputSource createInputSource(java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.DTDHandlerBase void fatalError(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.dtdparser.InputEntity com.sun.xml.dtdparser.InputEntity getInputEntity(com.sun.xml.dtdparser.DTDEventListener, java.util.Locale)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.InputEntity void init(org.xml.sax.InputSource, java.lang.String, com.sun.xml.dtdparser.InputEntity, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.DTDEventListener void warning(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.dtdparser.XmlNames boolean isNCNmtoken(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.InputEntity void init(char[], java.lang.String, com.sun.xml.dtdparser.InputEntity, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.MessageCatalog MessageCatalog(java.lang.Class) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.dtdparser.DTDEventListener void error(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.dtdparser.DTDHandlerBase void warning(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.dtdparser.DTDEventListener void fatalError(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

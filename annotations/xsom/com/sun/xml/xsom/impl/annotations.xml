@@ -5,16 +5,22 @@
     <item name='com.sun.xml.xsom.impl.XPathImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl com.sun.xml.xsom.XSUnionSimpleType getBaseUnionType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='com.sun.xml.xsom.impl.ComplexTypeImpl void redefine(com.sun.xml.xsom.impl.ComplexTypeImpl) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.AttGroupDeclImpl AttGroupDeclImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, com.sun.xml.xsom.impl.WildcardImpl) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSElementDecl&gt; iterateElementDecls()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.AttributeDeclImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl com.sun.xml.xsom.XSTerm getTerm()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.lang.String, javax.xml.namespace.NamespaceContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ParticleImpl void visit(com.sun.xml.xsom.visitor.XSContentTypeVisitor) 0'>
@@ -26,10 +32,10 @@
     <item name='com.sun.xml.xsom.impl.AttGroupDeclImpl AttGroupDeclImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl java.util.List&lt;com.sun.xml.xsom.XSFacet&gt; getDeclaredFacets(java.lang.String)'>
+    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
+    <item name='com.sun.xml.xsom.impl.AttributeDeclImpl com.sun.xml.xsom.XSAttributeDecl getAttribute()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl IdentityConstraintImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, short, java.lang.String, com.sun.xml.xsom.impl.XPathImpl, java.util.List&lt;com.sun.xml.xsom.impl.XPathImpl&gt;, com.sun.xml.xsom.impl.Ref.IdentityConstraint) 6'>
@@ -38,43 +44,37 @@
     <item name='com.sun.xml.xsom.impl.AttributeUseImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ListSimpleTypeImpl com.sun.xml.xsom.XSListSimpleType getBaseListType()'>
+    <item name='com.sun.xml.xsom.impl.ModelGroupImpl T apply(com.sun.xml.xsom.visitor.XSTermFunctionWithParam&lt;T,P&gt;, P) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ModelGroupImpl T apply(com.sun.xml.xsom.visitor.XSTermFunctionWithParam&lt;T,P&gt;, P) 0'>
+    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl com.sun.xml.xsom.XSComplexType asComplexType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl com.sun.xml.xsom.XSModelGroupDecl asModelGroupDecl()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='com.sun.xml.xsom.impl.WildcardImpl com.sun.xml.xsom.XSTerm getTerm()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.ElementDecl com.sun.xml.xsom.XSElementDecl asElementDecl()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.ListSimpleTypeImpl ListSimpleTypeImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, boolean, java.util.Set&lt;com.sun.xml.xsom.XSVariety&gt;, com.sun.xml.xsom.impl.Ref.SimpleType) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl com.sun.xml.xsom.XSComplexType getType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.Ref.ComplexType com.sun.xml.xsom.XSComplexType getType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='com.sun.xml.xsom.impl.AttributesHolder com.sun.xml.xsom.XSAttributeUse getDeclaredAttributeUse(java.lang.String, java.lang.String) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.EmptyImpl com.sun.xml.xsom.XSContentType getContentType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl.Other void visit(com.sun.xml.xsom.visitor.XSWildcardVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl java.util.Collection getAttributeUses()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaImpl com.sun.xml.xsom.XSSchema getOwnerSchema()'>
+    <item name='com.sun.xml.xsom.impl.EmptyImpl com.sun.xml.xsom.XSContentType getContentType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.AttributesHolder java.util.Collection&lt;com.sun.xml.xsom.XSAttributeUse&gt; getAttributeUses()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ModelGroupImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
@@ -83,29 +83,41 @@
     <item name='com.sun.xml.xsom.impl.NotationImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl com.sun.xml.xsom.XSContentType getEmpty()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.AttGroupDeclImpl java.util.Collection getAttGroups()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl IdentityConstraintImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, short, java.lang.String, com.sun.xml.xsom.impl.XPathImpl, java.util.List&lt;com.sun.xml.xsom.impl.XPathImpl&gt;, com.sun.xml.xsom.impl.Ref.IdentityConstraint) 7'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.Ref.Attribute com.sun.xml.xsom.XSAttributeDecl getAttribute()'>
+    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSListSimpleType getBaseListType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl java.util.Collection&lt;? extends com.sun.xml.xsom.XSFacet&gt; getDeclaredFacets()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSAttGroupDecl&gt; iterateAttGroupDecls()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSContentType getContentType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl IdentityConstraintImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, short, java.lang.String, com.sun.xml.xsom.impl.XPathImpl, java.util.List&lt;com.sun.xml.xsom.impl.XPathImpl&gt;, com.sun.xml.xsom.impl.Ref.IdentityConstraint) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl T apply(com.sun.xml.xsom.visitor.XSTermFunctionWithParam&lt;T,P&gt;, P) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl com.sun.xml.xsom.XSUnionSimpleType getBaseUnionType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.UName UName(java.lang.String, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSType&gt; iterateTypes()'>
+    <item name='com.sun.xml.xsom.impl.ParticleImpl com.sun.xml.xsom.XSContentType getContentType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.Ref.IdentityConstraint com.sun.xml.xsom.XSIdentityConstraint get()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -116,19 +128,13 @@
     <item name='com.sun.xml.xsom.impl.ModelGroupImpl void visit(com.sun.xml.xsom.visitor.XSTermVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl com.sun.xml.xsom.XSVariety getVariety()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ElementDecl com.sun.xml.xsom.XSElementDecl asElementDecl()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.WildcardImpl com.sun.xml.xsom.XSTerm getTerm()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl java.util.Collection&lt;? extends com.sun.xml.xsom.XSFacet&gt; getDeclaredFacets()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl java.util.Collection getAttGroups()'>
+    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl com.sun.xml.xsom.XSComplexType getType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl void addSimpleType(com.sun.xml.xsom.XSSimpleType, boolean) 0'>
@@ -137,11 +143,17 @@
     <item name='com.sun.xml.xsom.impl.EmptyImpl void visit(com.sun.xml.xsom.visitor.XSContentTypeVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ParticleImpl com.sun.xml.xsom.XSParticle asParticle()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl.Finite void visit(com.sun.xml.xsom.visitor.XSWildcardVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl com.sun.xml.xsom.XSIdentityConstraint get()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.Ref.ContentType com.sun.xml.xsom.XSContentType getContentType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='com.sun.xml.xsom.impl.ParticleImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSContentTypeFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -150,6 +162,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ElementDecl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSComplexType&gt; iterateComplexTypes()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl.Finite boolean acceptsNamespace(java.lang.String) 0'>
@@ -164,13 +179,13 @@
     <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSIdentityConstraint&gt; iterateIdentityConstraints()'>
+    <item name='com.sun.xml.xsom.impl.ParticleImpl com.sun.xml.xsom.XSParticle asParticle()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.EmptyImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSContentTypeFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.AttributesHolder java.util.Iterator&lt;com.sun.xml.xsom.XSAttGroupDecl&gt; iterateAttGroups()'>
+    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl com.sun.xml.xsom.XSType getType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
@@ -179,16 +194,22 @@
     <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSSimpleTypeFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSSimpleType getType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSElementDecl&gt; iterateElementDecls()'>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSType&gt; iterateTypes()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.EmptyImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl com.sun.xml.xsom.XSXPath getSelector()'>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSNotation&gt; iterateNotations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSIdentityConstraint&gt; iterateIdentityConstraints()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl java.util.Iterator&lt;com.sun.xml.xsom.XSSimpleType&gt; iterator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.UName UName(com.sun.xml.xsom.XSDeclaration) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl void addModelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl, boolean) 0'>
@@ -200,13 +221,19 @@
     <item name='com.sun.xml.xsom.impl.SimpleTypeImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='com.sun.xml.xsom.impl.AttributesHolder java.util.Iterator&lt;com.sun.xml.xsom.XSAttGroupDecl&gt; iterateAttGroups()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.WildcardImpl com.sun.xml.xsom.impl.WildcardImpl union(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.WildcardImpl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.ListSimpleTypeImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSSimpleTypeFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ModelGroupImpl com.sun.xml.xsom.XSModelGroup asModelGroup()'>
+    <item name='com.sun.xml.xsom.impl.WildcardImpl com.sun.xml.xsom.XSWildcard asWildcard()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ElementDecl ElementDecl(com.sun.xml.xsom.impl.parser.PatcherManager, com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, java.lang.String, boolean, com.sun.xml.xsom.XmlString, com.sun.xml.xsom.XmlString, boolean, boolean, com.sun.xml.xsom.impl.Ref.Type, com.sun.xml.xsom.impl.Ref.Element, int, int, java.util.List&lt;com.sun.xml.xsom.impl.IdentityConstraintImpl&gt;) 16'>
+    <item name='com.sun.xml.xsom.impl.ElementDecl com.sun.xml.xsom.XSTerm getTerm()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl.Any boolean acceptsNamespace(java.lang.String) 0'>
@@ -218,8 +245,11 @@
     <item name='com.sun.xml.xsom.impl.ElementDecl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSNotation&gt; iterateNotations()'>
+    <item name='com.sun.xml.xsom.impl.Ref.Term com.sun.xml.xsom.XSTerm getTerm()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='com.sun.xml.xsom.impl.EmptyImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -233,10 +263,10 @@
     <item name='com.sun.xml.xsom.impl.ModelGroupImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.AttributesHolder java.util.Set&lt;com.sun.xml.xsom.XSAttGroupDecl&gt; getAttGroups()'>
+    <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSTermFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSTermFunction) 0'>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl com.sun.xml.xsom.impl.SchemaImpl createSchema(java.lang.String, org.xml.sax.Locator)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl T apply(com.sun.xml.xsom.visitor.XSTermFunctionWithParam&lt;T,P&gt;, P) 0'>
@@ -251,37 +281,46 @@
     <item name='com.sun.xml.xsom.impl.NotationImpl NotationImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, java.lang.String, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl com.sun.xml.xsom.XSRestrictionSimpleType asRestriction()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.AttributesHolder com.sun.xml.xsom.XSAttributeUse getDeclaredAttributeUse(java.lang.String, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl void addElementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl com.sun.xml.xsom.impl.SchemaImpl createSchema(java.lang.String, org.xml.sax.Locator)'>
+    <item name='com.sun.xml.xsom.impl.SchemaImpl java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.lang.String, javax.xml.namespace.NamespaceContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl com.sun.xml.xsom.XSVariety getVariety()'>
+    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl java.util.Collection getAttGroups()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.AttGroupDeclImpl java.util.Collection getAttributeUses()'>
+    <item name='com.sun.xml.xsom.impl.ComponentImpl java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.lang.String, javax.xml.namespace.NamespaceContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl.Other java.lang.Object apply(com.sun.xml.xsom.visitor.XSWildcardFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl com.sun.xml.xsom.XSSimpleType getAnySimpleType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl void addIdentityConstraint(com.sun.xml.xsom.impl.IdentityConstraintImpl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.ListSimpleTypeImpl com.sun.xml.xsom.XSVariety getVariety()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.UName UName(java.lang.String, java.lang.String, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.AttributesHolder AttributesHolder(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, boolean) 0'>
+    <item name='com.sun.xml.xsom.impl.EmptyImpl com.sun.xml.xsom.XSContentType asEmpty()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.AttributesHolder java.util.List&lt;com.sun.xml.xsom.XSAttributeUse&gt; getAttributeUses()'>
+    <item name='com.sun.xml.xsom.impl.AttributesHolder AttributesHolder(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.SimpleTypeImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSContentTypeFunction) 0'>
@@ -290,16 +329,10 @@
     <item name='com.sun.xml.xsom.impl.ComplexTypeImpl com.sun.xml.xsom.XSAttributeUse getAttributeUse(java.lang.String, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ModelGroupImpl com.sun.xml.xsom.XSTerm getTerm()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='com.sun.xml.xsom.impl.NotationImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.AttributeUseImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.EmptyImpl com.sun.xml.xsom.XSContentType asEmpty()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.Ref.SimpleType com.sun.xml.xsom.XSSimpleType getType()'>
@@ -311,29 +344,17 @@
     <item name='com.sun.xml.xsom.impl.UName UName(java.lang.String, java.lang.String, java.lang.String) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSModelGroupDecl&gt; iterateModelGroupDecls()'>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSSimpleType&gt; iterateSimpleTypes()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaImpl java.lang.String getTargetNamespace()'>
+    <item name='com.sun.xml.xsom.impl.ListSimpleTypeImpl com.sun.xml.xsom.XSListSimpleType getBaseListType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSListSimpleType getBaseListType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='com.sun.xml.xsom.impl.AttributeDeclImpl AttributeDeclImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, java.lang.String, java.lang.String, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, boolean, com.sun.xml.xsom.XmlString, com.sun.xml.xsom.XmlString, com.sun.xml.xsom.impl.Ref.SimpleType) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ElementDecl T apply(com.sun.xml.xsom.visitor.XSTermFunctionWithParam&lt;T,P&gt;, P) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.Ref.ContentType com.sun.xml.xsom.XSContentType getContentType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='com.sun.xml.xsom.impl.ElementDecl void visit(com.sun.xml.xsom.visitor.XSTermVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -342,12 +363,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl void visit(com.sun.xml.xsom.visitor.XSSimpleTypeVisitor) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.ListSimpleTypeImpl com.sun.xml.xsom.XSVariety getVariety()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl com.sun.xml.xsom.XSIdentityConstraint get()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl.Any void visit(com.sun.xml.xsom.visitor.XSWildcardVisitor) 0'>
@@ -365,43 +380,31 @@
     <item name='com.sun.xml.xsom.impl.ListSimpleTypeImpl void visit(com.sun.xml.xsom.visitor.XSSimpleTypeVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl RestrictionSimpleTypeImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, boolean, java.util.Set&lt;com.sun.xml.xsom.XSVariety&gt;, com.sun.xml.xsom.impl.Ref.SimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSType getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl com.sun.xml.xsom.XSComplexType getAnyType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.ListSimpleTypeImpl com.sun.xml.xsom.XSListSimpleType asList()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.Ref.Term com.sun.xml.xsom.XSTerm getTerm()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSComplexType&gt; iterateComplexTypes()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl RestrictionSimpleTypeImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, boolean, java.util.Set&lt;com.sun.xml.xsom.XSVariety&gt;, com.sun.xml.xsom.impl.Ref.SimpleType) 0'>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSModelGroupDecl&gt; iterateModelGroupDecls()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.FacetImpl void visit(com.sun.xml.xsom.visitor.XSVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl com.sun.xml.xsom.XSTerm getTerm()'>
+    <item name='com.sun.xml.xsom.impl.SchemaImpl com.sun.xml.xsom.XSSchema getOwnerSchema()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.AttGroupDeclImpl com.sun.xml.xsom.XSAttributeUse getAttributeUse(java.lang.String, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.Ref.IdentityConstraint com.sun.xml.xsom.XSIdentityConstraint get()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='com.sun.xml.xsom.impl.ModelGroupDeclImpl void visit(com.sun.xml.xsom.visitor.XSTermVisitor) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSAttributeDecl&gt; iterateAttributeDecls()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl com.sun.xml.xsom.XSComplexType asComplexType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSTermFunction) 0'>
@@ -410,10 +413,10 @@
     <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl UnionSimpleTypeImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, boolean, java.util.Set&lt;com.sun.xml.xsom.XSVariety&gt;, com.sun.xml.xsom.impl.Ref.SimpleType[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSContentType getContentType()'>
+    <item name='com.sun.xml.xsom.impl.AttGroupDeclImpl java.util.Collection getAttGroups()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl com.sun.xml.xsom.XSComplexType getAnyType()'>
+    <item name='com.sun.xml.xsom.impl.ModelGroupImpl com.sun.xml.xsom.XSModelGroup asModelGroup()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl void visit(com.sun.xml.xsom.visitor.XSTermVisitor) 0'>
@@ -422,10 +425,16 @@
     <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSSimpleTypeFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.WildcardImpl com.sun.xml.xsom.XSWildcard asWildcard()'>
+    <item name='com.sun.xml.xsom.impl.AttributesHolder java.util.Set&lt;com.sun.xml.xsom.XSAttGroupDecl&gt; getAttGroups()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSAttGroupDecl&gt; iterateAttGroupDecls()'>
+    <item name='com.sun.xml.xsom.impl.Ref.Type com.sun.xml.xsom.XSType getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl java.util.List&lt;com.sun.xml.xsom.XSElementDecl&gt; getElementDecls()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl void addAttGroupDecl(com.sun.xml.xsom.XSAttGroupDecl, boolean) 0'>
@@ -434,25 +443,19 @@
     <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl void visit(com.sun.xml.xsom.visitor.XSSimpleTypeVisitor) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSUnionSimpleType getBaseUnionType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='com.sun.xml.xsom.impl.AttGroupDeclImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ElementDecl com.sun.xml.xsom.XSTerm getTerm()'>
+    <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl com.sun.xml.xsom.XSXPath getSelector()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSSimpleType getType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl void addAttributeDecl(com.sun.xml.xsom.XSAttributeDecl) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl SchemaImpl(com.sun.xml.xsom.impl.SchemaSetImpl, org.xml.sax.Locator, java.lang.String) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl com.sun.xml.xsom.XSRestrictionSimpleType asRestriction()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ComplexTypeImpl ComplexTypeImpl(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, boolean, boolean, int, com.sun.xml.xsom.impl.Ref.Type, int, int, boolean) 0'>
@@ -464,46 +467,43 @@
     <item name='com.sun.xml.xsom.impl.UName UName(java.lang.String, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSSimpleType asSimpleType()'>
+    <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl com.sun.xml.xsom.XSUnionSimpleType asUnion()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSType getType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl com.sun.xml.xsom.XSSimpleType getAnySimpleType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.SchemaImpl java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.lang.String, javax.xml.namespace.NamespaceContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl com.sun.xml.xsom.XSType getType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.ModelGroupImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSTermFunction) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl java.util.Iterator&lt;com.sun.xml.xsom.XSSimpleType&gt; iterator()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.WildcardImpl com.sun.xml.xsom.impl.WildcardImpl union(com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.WildcardImpl)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.UName UName(java.lang.String, java.lang.String, java.lang.String) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.AttributeDeclImpl com.sun.xml.xsom.XSAttributeDecl getAttribute()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.Ref.Type com.sun.xml.xsom.XSType getType()'>
+    <item name='com.sun.xml.xsom.impl.Ref.ComplexType com.sun.xml.xsom.XSComplexType getType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='com.sun.xml.xsom.impl.UnionSimpleTypeImpl com.sun.xml.xsom.XSUnionSimpleType asUnion()'>
+    <item name='com.sun.xml.xsom.impl.ElementDecl ElementDecl(com.sun.xml.xsom.impl.parser.PatcherManager, com.sun.xml.xsom.impl.parser.SchemaDocumentImpl, com.sun.xml.xsom.impl.AnnotationImpl, org.xml.sax.Locator, com.sun.xml.xsom.impl.ForeignAttributesImpl, java.lang.String, java.lang.String, boolean, com.sun.xml.xsom.XmlString, com.sun.xml.xsom.XmlString, boolean, boolean, java.lang.Boolean, com.sun.xml.xsom.impl.Ref.Type, com.sun.xml.xsom.impl.Ref.Element, int, int, java.util.List&lt;com.sun.xml.xsom.impl.IdentityConstraintImpl&gt;) 17'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.lang.String, javax.xml.namespace.NamespaceContext)'>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSAttributeDecl&gt; iterateAttributeDecls()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSUnionSimpleType getBaseUnionType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SchemaSetImpl com.sun.xml.xsom.XSContentType getEmpty()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.ModelGroupImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSTermFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.UName UName(java.lang.String, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.RestrictionSimpleTypeImpl java.util.List&lt;com.sun.xml.xsom.XSFacet&gt; getDeclaredFacets(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.ComplexTypeImpl java.util.List&lt;com.sun.xml.xsom.XSComplexType&gt; getSubtypes()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SchemaImpl java.lang.String getTargetNamespace()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.IdentityConstraintImpl void setParent(com.sun.xml.xsom.impl.ElementDecl) 0'>
@@ -512,20 +512,20 @@
     <item name='com.sun.xml.xsom.impl.ParticleImpl java.lang.Object apply(com.sun.xml.xsom.visitor.XSFunction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.ParticleImpl com.sun.xml.xsom.XSContentType getContentType()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.ComponentImpl java.util.Collection&lt;com.sun.xml.xsom.XSComponent&gt; select(java.lang.String, javax.xml.namespace.NamespaceContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.SchemaSetImpl java.util.Iterator&lt;com.sun.xml.xsom.XSSimpleType&gt; iterateSimpleTypes()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='com.sun.xml.xsom.impl.SchemaImpl void addNotation(com.sun.xml.xsom.XSNotation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.ComplexTypeImpl T apply(com.sun.xml.xsom.visitor.XSFunction&lt;T&gt;) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.ModelGroupImpl com.sun.xml.xsom.XSTerm getTerm()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.Ref.Attribute com.sun.xml.xsom.XSAttributeDecl getAttribute()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='com.sun.xml.xsom.impl.SimpleTypeImpl void redefine(com.sun.xml.xsom.impl.SimpleTypeImpl) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -534,6 +534,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.WildcardImpl.Any java.lang.Object apply(com.sun.xml.xsom.visitor.XSWildcardFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.SimpleTypeImpl com.sun.xml.xsom.XSSimpleType asSimpleType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

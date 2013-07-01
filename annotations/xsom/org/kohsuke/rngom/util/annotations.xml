@@ -1,0 +1,17 @@
+<root>
+    <item name='org.kohsuke.rngom.util.Uri boolean isAbsolute(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.util.Uri java.lang.String resolve(java.lang.String, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.util.Uri boolean hasFragmentId(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.util.Uri boolean isValid(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.util.Uri java.lang.String escapeDisallowedChars(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

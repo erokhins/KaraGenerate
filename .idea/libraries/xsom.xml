@@ -4,13 +4,11 @@
       <root url="file://$PROJECT_DIR$/annotations/xsom" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/xsom.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/lib/xsom_src.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc-2.0.3.jar!/1.0" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc.src.zip!/" />
     </SOURCES>
   </library>
 </component>

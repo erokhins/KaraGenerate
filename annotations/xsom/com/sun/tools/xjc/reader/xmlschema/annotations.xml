@@ -1,0 +1,485 @@
+<root>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder java.util.Set&lt;com.sun.tools.xjc.reader.RawTypeSet.Ref&gt; getRefs()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void attributeDecl(com.sun.xml.xsom.XSAttributeDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BGMBuilder java.lang.String deriveName(java.lang.String, com.sun.xml.xsom.XSComponent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ClassSelector com.sun.codemodel.JPackage getPackage(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BGMBuilder void ying(com.sun.xml.xsom.XSComponent, com.sun.xml.xsom.XSComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder void modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter java.lang.Object wildcard(com.sun.xml.xsom.XSWildcard)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Expression modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder java.lang.Object modelGroup(com.sun.xml.xsom.XSModelGroup)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.CClassRef com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void complexType(com.sun.xml.xsom.XSComplexType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void attributeDecl(com.sun.xml.xsom.XSAttributeDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.CClassRef com.sun.tools.xjc.model.CTypeRef toTypeRef(com.sun.tools.xjc.model.CElementPropertyInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder java.lang.Object any(com.sun.xml.xsom.XSWildcard.Any)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder org.kohsuke.rngom.nc.NameClass other(com.sun.xml.xsom.XSWildcard.Other)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter java.lang.Object wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void attributeUse(com.sun.xml.xsom.XSAttributeUse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter java.lang.Object modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ParticleBinder java.lang.String getSpecDefaultName(com.sun.xml.xsom.XSModelGroup, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder java.lang.Object other(com.sun.xml.xsom.XSWildcard.Other)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Expression modelGroup(com.sun.xml.xsom.XSModelGroup)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.WildcardRef com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Expression wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void attributeDecl(com.sun.xml.xsom.XSAttributeDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter com.sun.tools.xjc.model.Multiplicity elementDecl(com.sun.xml.xsom.XSElementDecl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder void wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void complexType(com.sun.xml.xsom.XSComplexType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void attGroupDecl(com.sun.xml.xsom.XSAttGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder java.lang.Object modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void simpleType(com.sun.xml.xsom.XSSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ParticleBinder void build(com.sun.xml.xsom.XSParticle, java.util.Collection&lt;com.sun.xml.xsom.XSParticle&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Expression createTree(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter com.sun.tools.xjc.model.Multiplicity modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.XmlTypeRef XmlTypeRef(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter java.lang.Object modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void attContainer(com.sun.xml.xsom.XSAttContainer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.WildcardRef void toElementRef(com.sun.tools.xjc.model.CReferencePropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter com.sun.tools.xjc.model.Multiplicity wildcard(com.sun.xml.xsom.XSWildcard)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter com.sun.tools.xjc.model.Multiplicity modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void simpleType(com.sun.xml.xsom.XSSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void attributeUse(com.sun.xml.xsom.XSAttributeUse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Element elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.CElementInfoRef com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Expression modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder com.sun.tools.xjc.reader.RawTypeSet build(com.sun.xml.xsom.XSParticle, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder java.lang.Object wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.WildcardRef com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder org.kohsuke.rngom.nc.NameClass union(com.sun.xml.xsom.XSWildcard.Union) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void simpleType(com.sun.xml.xsom.XSSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindPurple void attGroupDecl(com.sun.xml.xsom.XSAttGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter com.sun.tools.xjc.model.Multiplicity modelGroup(com.sun.xml.xsom.XSModelGroup)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Element elementDecl(com.sun.xml.xsom.XSElementDecl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Expression modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder java.lang.Object union(com.sun.xml.xsom.XSWildcard.Union) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void attributeDecl(com.sun.xml.xsom.XSAttributeDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void attributeUse(com.sun.xml.xsom.XSAttributeUse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.XmlTypeRef com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.SimpleTypeBuilder boolean canBeMappedToTypeSafeEnum(com.sun.xml.xsom.XSSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BGMBuilder com.sun.tools.xjc.model.Model build(com.sun.xml.xsom.XSSchemaSet, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.ErrorReceiver, com.sun.tools.xjc.Options) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.CClassRef void toElementRef(com.sun.tools.xjc.model.CReferencePropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.CElementInfoRef com.sun.tools.xjc.model.CTypeRef toTypeRef(com.sun.tools.xjc.model.CElementPropertyInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void wildcard(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.CElementInfoRef void toElementRef(com.sun.tools.xjc.model.CReferencePropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.XmlTypeRef com.sun.tools.xjc.model.CTypeRef toTypeRef(com.sun.tools.xjc.model.CElementPropertyInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder com.sun.tools.xjc.reader.gbind.Expression particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.XmlTypeRef com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder java.lang.Object elementDecl(com.sun.xml.xsom.XSElementDecl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.SimpleTypeBuilder com.sun.tools.xjc.model.TypeUse buildDef(com.sun.xml.xsom.XSSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder java.lang.Object modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BGMBuilder com.sun.tools.xjc.reader.xmlschema.bindinfo.BindInfo getOrCreateBindInfo(com.sun.xml.xsom.XSComponent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder java.lang.Object modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BGMBuilder javax.xml.namespace.QName getName(com.sun.xml.xsom.XSDeclaration) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void attGroupDecl(com.sun.xml.xsom.XSAttGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.XmlTypeRef void toElementRef(com.sun.tools.xjc.model.CReferencePropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder org.kohsuke.rngom.nc.NameClass any(com.sun.xml.xsom.XSWildcard.Any)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder void modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder void elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BGMBuilder com.sun.tools.xjc.reader.xmlschema.bindinfo.BindInfo getBindInfo(com.sun.xml.xsom.XSComponent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter java.lang.Object modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder org.kohsuke.rngom.nc.NameClass build(com.sun.xml.xsom.XSWildcard) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter java.lang.Object modelGroup(com.sun.xml.xsom.XSModelGroup)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void complexType(com.sun.xml.xsom.XSComplexType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.CElementInfoRef com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ParticleBinder java.lang.String makeJavaName(com.sun.xml.xsom.XSParticle, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter java.lang.Object elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder.CClassRef com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.ExpressionBuilder java.lang.Object elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter com.sun.tools.xjc.model.Multiplicity particle(com.sun.xml.xsom.XSParticle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void attributeUse(com.sun.xml.xsom.XSAttributeUse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void simpleType(com.sun.xml.xsom.XSSimpleType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindRed void modelGroup(com.sun.xml.xsom.XSModelGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter java.lang.Object elementDecl(com.sun.xml.xsom.XSElementDecl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BGMBuilder com.sun.tools.xjc.model.Model build(com.sun.xml.xsom.XSSchemaSet, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.ErrorReceiver, com.sun.tools.xjc.Options) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void attGroupDecl(com.sun.xml.xsom.XSAttGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.RawTypeSetBuilder com.sun.tools.xjc.reader.RawTypeSet build(com.sun.xml.xsom.XSParticle, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder java.lang.Object other(com.sun.xml.xsom.XSWildcard.Other) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter com.sun.tools.xjc.model.Multiplicity modelGroupDecl(com.sun.xml.xsom.XSModelGroupDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.WildcardNameClassBuilder org.kohsuke.rngom.nc.NameClass other(com.sun.xml.xsom.XSWildcard.Other) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.MultiplicityCounter com.sun.tools.xjc.model.Multiplicity particle(com.sun.xml.xsom.XSParticle)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindYellow void elementDecl(com.sun.xml.xsom.XSElementDecl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.BindGreen void complexType(com.sun.xml.xsom.XSComplexType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

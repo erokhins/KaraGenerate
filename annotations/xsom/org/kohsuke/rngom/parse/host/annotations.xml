@@ -1,0 +1,188 @@
+<root>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeNotAllowed(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeErrorPattern()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.GrammarSectionHost org.kohsuke.rngom.ast.builder.Div makeDiv()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.GrammarHost GrammarHost(org.kohsuke.rngom.ast.builder.Grammar, org.kohsuke.rngom.ast.builder.Grammar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeInterleave(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.Base org.kohsuke.rngom.parse.host.LocationHost cast(org.kohsuke.rngom.ast.om.Location)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeChoice(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeAttribute(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeGroup(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeChoice(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern annotateAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.ParsedElementAnnotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern expandPattern(org.kohsuke.rngom.ast.om.ParsedPattern)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeOneOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.GrammarHost GrammarHost(org.kohsuke.rngom.ast.builder.Grammar, org.kohsuke.rngom.ast.builder.Grammar) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeList(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.builder.ElementAnnotationBuilder makeElementAnnotationBuilder(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.CommentList, org.kohsuke.rngom.parse.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeAttribute(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.ScopeHost org.kohsuke.rngom.ast.om.ParsedPattern makeParentRef(java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeValue(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.parse.Context, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.ScopeHost ScopeHost(org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.builder.Scope) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeElement(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.GrammarSectionHost void define(java.lang.String, org.kohsuke.rngom.ast.builder.GrammarSection.Combine, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeOptional(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeOneOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern annotate(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeExternalRef(org.kohsuke.rngom.parse.Parseable, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.builder.CommentList makeCommentList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeInterleave(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeMixed(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeAttribute(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern annotateAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.ScopeHost ScopeHost(org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.builder.Scope) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeText(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.builder.NameClassBuilder getNameClassBuilder()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern expandPattern(org.kohsuke.rngom.ast.om.ParsedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeMixed(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeList(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeElement(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.GrammarHost org.kohsuke.rngom.ast.om.ParsedPattern endGrammar(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.builder.Grammar makeGrammar(org.kohsuke.rngom.ast.builder.Scope)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeOptional(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.GrammarSectionHost void topLevelAnnotation(org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.IncludeHost void endInclude(org.kohsuke.rngom.parse.Parseable, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.builder.DataPatternBuilder makeDataPatternBuilder(java.lang.String, java.lang.String, org.kohsuke.rngom.ast.om.Location)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern commentAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.builder.CommentList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.Base org.kohsuke.rngom.parse.host.AnnotationsHost cast(org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.ScopeHost org.kohsuke.rngom.ast.om.ParsedPattern makeRef(java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern annotateAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeGroup(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeElement(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeValue(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.parse.Context, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern annotate(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeEmpty(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.Location makeLocation(java.lang.String, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeZeroOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern commentAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.builder.CommentList)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.builder.Annotations makeAnnotations(org.kohsuke.rngom.ast.builder.CommentList, org.kohsuke.rngom.parse.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeZeroOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.host.SchemaBuilderHost org.kohsuke.rngom.ast.om.ParsedPattern makeExternalRef(org.kohsuke.rngom.parse.Parseable, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

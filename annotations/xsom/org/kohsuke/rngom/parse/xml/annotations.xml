@@ -1,0 +1,20 @@
+<root>
+    <item name='org.kohsuke.rngom.parse.xml.SAXParseable org.kohsuke.rngom.ast.om.ParsedPattern parseExternal(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder, org.kohsuke.rngom.ast.builder.Scope, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.xml.SAXParseable org.kohsuke.rngom.ast.om.ParsedPattern parseInclude(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder, org.kohsuke.rngom.ast.builder.IncludedGrammar, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.xml.DtdContext DtdContext(org.kohsuke.rngom.parse.xml.DtdContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.xml.SAXParseable org.kohsuke.rngom.ast.om.ParsedPattern parseInclude(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder, org.kohsuke.rngom.ast.builder.IncludedGrammar, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.xml.SAXParseable org.kohsuke.rngom.ast.om.ParsedPattern parse(org.kohsuke.rngom.ast.builder.SchemaBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

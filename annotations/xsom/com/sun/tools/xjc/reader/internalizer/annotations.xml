@@ -1,0 +1,44 @@
+<root>
+    <item name='com.sun.tools.xjc.reader.internalizer.DOMForest DOMForest(com.sun.tools.xjc.reader.internalizer.InternalizationLogic, com.sun.tools.xjc.Options) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.InternalizationLogic org.xml.sax.helpers.XMLFilterImpl createExternalReferenceFinder(com.sun.tools.xjc.reader.internalizer.DOMForest)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.DOMForestScanner void scan(org.w3c.dom.Document, org.xml.sax.ContentHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.DOMForest org.w3c.dom.Document getOneDocument()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.DOMForest com.sun.xml.xsom.parser.XMLParser createParser()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.DOMForest javax.xml.transform.sax.SAXSource createSAXSource(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.DOMForest com.sun.tools.xjc.reader.internalizer.SCDBasedBindingSet transform(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.DOMForest org.w3c.dom.Document parse(org.xml.sax.InputSource, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.InternalizationLogic boolean checkIfValidTargetNode(com.sun.tools.xjc.reader.internalizer.DOMForest, org.w3c.dom.Element, org.w3c.dom.Element) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.DOMForest com.sun.tools.xjc.reader.internalizer.DOMForest.Handler getParserHandler(java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.internalizer.InternalizationLogic org.w3c.dom.Element refineTarget(org.w3c.dom.Element) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

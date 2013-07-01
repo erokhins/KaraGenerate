@@ -1,0 +1,17 @@
+<root>
+    <item name='com.sun.tools.xjc.api.util.FilerCodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.util.FilerCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.util.ApClassLoader java.lang.Class findClass(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.util.ToolsJarNotFoundException ToolsJarNotFoundException(java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.util.FilerCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

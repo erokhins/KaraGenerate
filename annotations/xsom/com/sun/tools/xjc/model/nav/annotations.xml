@@ -1,0 +1,104 @@
+<root>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl com.sun.xml.bind.v2.runtime.Location getClassLocation(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl boolean isParameterizedType(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl java.lang.Object getTypeArgument(java.lang.Object, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl com.sun.tools.xjc.model.nav.NType getBaseClass(com.sun.tools.xjc.model.nav.NType, com.sun.tools.xjc.model.nav.NClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl com.sun.tools.xjc.model.nav.NType getTypeArgument(com.sun.tools.xjc.model.nav.NType, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.EagerNClass com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NType com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NType com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NClass com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.EagerNClass com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.EagerNClass com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl java.lang.String getTypeName(com.sun.tools.xjc.model.nav.NType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl com.sun.tools.xjc.model.nav.NType createParameterizedType(com.sun.tools.xjc.model.nav.NClass, com.sun.tools.xjc.model.nav.NType...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl java.lang.Object getBaseClass(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NClass com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl java.lang.String getTypeName(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl com.sun.xml.bind.v2.runtime.Location getClassLocation(com.sun.tools.xjc.model.nav.NClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.EagerNClass com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NType com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl boolean isAbstract(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl boolean isParameterizedType(com.sun.tools.xjc.model.nav.NType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.EagerNClass com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NClass com.sun.codemodel.JClass toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.EagerNClass com.sun.codemodel.JType toType(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl boolean isAbstract(com.sun.tools.xjc.model.nav.NClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.model.nav.NavigatorImpl com.sun.tools.xjc.model.nav.NType createParameterizedType(java.lang.Class, com.sun.tools.xjc.model.nav.NType...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

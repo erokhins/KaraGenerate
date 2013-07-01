@@ -1,0 +1,5 @@
+<root>
+    <item name='org.kohsuke.rngom.ast.util.CheckingSchemaBuilder org.kohsuke.rngom.ast.om.ParsedPattern expandPattern(org.kohsuke.rngom.ast.om.ParsedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

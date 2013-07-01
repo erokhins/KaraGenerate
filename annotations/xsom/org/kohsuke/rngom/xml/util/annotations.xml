@@ -1,0 +1,17 @@
+<root>
+    <item name='org.kohsuke.rngom.xml.util.Naming boolean isQname(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.xml.util.Naming boolean isNmtoken(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.xml.util.Naming boolean isName(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.xml.util.Naming boolean isNcname(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.xml.util.EncodingMap void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

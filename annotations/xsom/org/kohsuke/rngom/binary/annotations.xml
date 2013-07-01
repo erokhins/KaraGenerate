@@ -1,0 +1,260 @@
+<root>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.builder.Annotations makeAnnotations(org.kohsuke.rngom.ast.builder.CommentList, org.kohsuke.rngom.parse.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern expandPattern(org.kohsuke.rngom.ast.om.ParsedPattern)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.builder.DataPatternBuilder makeDataPatternBuilder(java.lang.String, java.lang.String, org.kohsuke.rngom.ast.om.Location)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.builder.ElementAnnotationBuilder makeElementAnnotationBuilder(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.CommentList, org.kohsuke.rngom.parse.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.EmptyPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ErrorPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeZeroOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeInterleave(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.Pattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.RefPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl void addElement(org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeValue(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.parse.Context, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ErrorPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeChoice(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.TextPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern annotateAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.Location makeLocation(java.lang.String, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.GroupPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeList(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.BinaryPattern org.kohsuke.rngom.binary.Pattern getOperand2()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.DataExceptPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeGroup(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl void addLeadingComment(org.kohsuke.rngom.ast.builder.CommentList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.builder.Grammar makeGrammar(org.kohsuke.rngom.ast.builder.Scope)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeElement(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern expandPattern(org.kohsuke.rngom.ast.om.ParsedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.AfterPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.AttributePattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.DataPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.PatternBuilder PatternBuilder(org.kohsuke.rngom.binary.PatternBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.GroupPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeElement(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern annotateAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.InterleavePattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.DataPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.AttributePattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ChoicePattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern annotate(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeAttribute(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.AfterPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeNotAllowed(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.OneOrMorePattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.RefPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.Pattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeText(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.BinaryPattern org.kohsuke.rngom.binary.Pattern getOperand1()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.NotAllowedPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ListPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ValuePattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ValuePattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ListPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.builder.CommentList makeCommentList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.builder.NameClassBuilder getNameClassBuilder()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeExternalRef(org.kohsuke.rngom.parse.Parseable, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.NotAllowedPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ElementPattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.DataExceptPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.InterleavePattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.OneOrMorePattern java.lang.Object apply(org.kohsuke.rngom.binary.visitor.PatternFunction) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeAttribute(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeMixed(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeOptional(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeOneOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.SchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern commentAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.builder.CommentList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ChoicePattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.TextPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.ElementPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.EmptyPattern void accept(org.kohsuke.rngom.binary.visitor.PatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

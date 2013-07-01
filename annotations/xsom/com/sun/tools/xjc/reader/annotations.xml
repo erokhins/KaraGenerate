@@ -1,0 +1,68 @@
+<root>
+    <item name='com.sun.tools.xjc.reader.Util org.xml.sax.InputSource getInputSource(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.AbstractExtensionBindingChecker boolean isSupportedExtension(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.RawTypeSet.Ref com.sun.tools.xjc.model.CTypeRef toTypeRef(com.sun.tools.xjc.model.CElementPropertyInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.Util java.lang.String escapeSpace(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.ExtensionBindingChecker void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.AbstractExtensionBindingChecker org.xml.sax.SAXParseException error(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.ExtensionBindingChecker ExtensionBindingChecker(java.lang.String, com.sun.tools.xjc.Options, org.xml.sax.ErrorHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.TypeUtil com.sun.codemodel.JType getCommonBaseType(com.sun.codemodel.JCodeModel, java.util.Collection&lt;? extends com.sun.codemodel.JType&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.TypeUtil com.sun.codemodel.JType getType(com.sun.codemodel.JCodeModel, java.lang.String, com.sun.tools.xjc.ErrorReceiver, org.xml.sax.Locator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.RawTypeSet.Ref com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.AbstractExtensionBindingChecker AbstractExtensionBindingChecker(java.lang.String, com.sun.tools.xjc.Options, org.xml.sax.ErrorHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.TypeUtil com.sun.codemodel.JType getCommonBaseType(com.sun.codemodel.JCodeModel, com.sun.codemodel.JType...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.RawTypeSet.Ref com.sun.tools.xjc.reader.RawTypeSet.Mode canBeType(com.sun.tools.xjc.reader.RawTypeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.RawTypeSet.Ref void toElementRef(com.sun.tools.xjc.model.CReferencePropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.ExtensionBindingChecker void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.Ring void add(T) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

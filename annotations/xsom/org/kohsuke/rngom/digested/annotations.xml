@@ -1,0 +1,677 @@
+<root>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern expandPattern(org.kohsuke.rngom.ast.om.ParsedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DAttributePattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeOneOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onEmpty(org.kohsuke.rngom.digested.DEmptyPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onNotAllowed(org.kohsuke.rngom.digested.DNotAllowedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DValuePattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeChoice(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter void print(org.kohsuke.rngom.digested.DPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onGroup(org.kohsuke.rngom.digested.DGroupPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onText(org.kohsuke.rngom.digested.DTextPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeValue(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.parse.Context, java.lang.String, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Void visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DZeroOrMorePattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onData(org.kohsuke.rngom.digested.DDataPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onAttribute(org.kohsuke.rngom.digested.DAttributePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onList(org.kohsuke.rngom.digested.DListPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Object visitAnyNameExcept(org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onZeroOrMore(org.kohsuke.rngom.digested.DZeroOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor void unwrapGroup(org.kohsuke.rngom.digested.DPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.builder.Grammar makeGrammar(org.kohsuke.rngom.ast.builder.Scope)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onOneOrMore(org.kohsuke.rngom.digested.DOneOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onXmlToken(org.kohsuke.rngom.digested.DXmlTokenPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter void printDocument(org.kohsuke.rngom.digested.DGrammarPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DDataPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onAttribute(org.kohsuke.rngom.digested.DAttributePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onMixed(org.kohsuke.rngom.digested.DMixedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeZeroOrMore(org.kohsuke.rngom.digested.DPattern, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeOneOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onInterleave(org.kohsuke.rngom.digested.DInterleavePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Void visitNsNameExcept(java.lang.String, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onElement(org.kohsuke.rngom.digested.DElementPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.builder.DataPatternBuilder makeDataPatternBuilder(java.lang.String, java.lang.String, org.kohsuke.rngom.ast.om.Location)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeMixed(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.Location makeLocation(java.lang.String, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onContainer(org.kohsuke.rngom.digested.DContainerPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onChoice(org.kohsuke.rngom.digested.DChoicePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Object visitNsNameExcept(java.lang.String, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onChoice(org.kohsuke.rngom.digested.DChoicePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeChoice(java.util.List&lt;org.kohsuke.rngom.digested.DPattern&gt;, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onAttribute(org.kohsuke.rngom.digested.DAttributePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeErrorPattern()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onChoice(org.kohsuke.rngom.digested.DChoicePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onZeroOrMore(org.kohsuke.rngom.digested.DZeroOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeValue(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.parse.Context, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onData(org.kohsuke.rngom.digested.DDataPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.util.LocatorImpl makeLocation(java.lang.String, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeInterleave(java.util.List&lt;org.kohsuke.rngom.digested.DPattern&gt;, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onChoice(org.kohsuke.rngom.digested.DChoicePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeElement(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Object visitName(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor void unwrapChoice(org.kohsuke.rngom.digested.DPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DListPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onInterleave(org.kohsuke.rngom.digested.DInterleavePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeNotAllowed(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DChoicePattern V accept(org.kohsuke.rngom.digested.DPatternVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onGrammar(org.kohsuke.rngom.digested.DGrammarPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DOptionalPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.builder.ElementAnnotationBuilder makeElementAnnotationBuilder(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.CommentListImpl, org.kohsuke.rngom.parse.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onText(org.kohsuke.rngom.digested.DTextPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeGroup(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onGroup(org.kohsuke.rngom.digested.DGroupPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeAttribute(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onOneOrMore(org.kohsuke.rngom.digested.DOneOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter void print(org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onGrammar(org.kohsuke.rngom.digested.DGrammarPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onZeroOrMore(org.kohsuke.rngom.digested.DZeroOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onEmpty(org.kohsuke.rngom.digested.DEmptyPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DInterleavePattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onAttribute(org.kohsuke.rngom.digested.DAttributePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onOptional(org.kohsuke.rngom.digested.DOptionalPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onRef(org.kohsuke.rngom.digested.DRefPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onOneOrMore(org.kohsuke.rngom.digested.DOneOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onOptional(org.kohsuke.rngom.digested.DOptionalPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onRef(org.kohsuke.rngom.digested.DRefPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Object visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onElement(org.kohsuke.rngom.digested.DElementPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onGrammar(org.kohsuke.rngom.digested.DGrammarPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onList(org.kohsuke.rngom.digested.DListPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onOptional(org.kohsuke.rngom.digested.DOptionalPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeOptional(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onMixed(org.kohsuke.rngom.digested.DMixedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeGroup(java.util.List&lt;org.kohsuke.rngom.digested.DPattern&gt;, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onOptional(org.kohsuke.rngom.digested.DOptionalPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onNotAllowed(org.kohsuke.rngom.digested.DNotAllowedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeList(org.kohsuke.rngom.digested.DPattern, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern commentAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.builder.CommentList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DDataPattern java.util.List&lt;org.kohsuke.rngom.digested.DDataPattern.Param&gt; getParams()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onElement(org.kohsuke.rngom.digested.DElementPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onData(org.kohsuke.rngom.digested.DDataPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter void print(org.w3c.dom.Node) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.builder.NameClassBuilder getNameClassBuilder()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeAttribute(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Object visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onRef(org.kohsuke.rngom.digested.DRefPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeOptional(org.kohsuke.rngom.digested.DPattern, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeErrorPattern()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Void visitName(javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.builder.DataPatternBuilder makeDataPatternBuilder(java.lang.String, java.lang.String, org.kohsuke.rngom.ast.util.LocatorImpl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onRef(org.kohsuke.rngom.digested.DRefPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onGroup(org.kohsuke.rngom.digested.DGroupPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor void on(org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onUnary(org.kohsuke.rngom.digested.DUnaryPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onGrammar(org.kohsuke.rngom.digested.DGrammarPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeText(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeMixed(org.kohsuke.rngom.digested.DPattern, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DMixedPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onNotAllowed(org.kohsuke.rngom.digested.DNotAllowedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onInterleave(org.kohsuke.rngom.digested.DInterleavePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeOptional(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onList(org.kohsuke.rngom.digested.DListPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern annotateAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeExternalRef(org.kohsuke.rngom.parse.Parseable, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onChoice(org.kohsuke.rngom.digested.DChoicePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onText(org.kohsuke.rngom.digested.DTextPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onAttribute(org.kohsuke.rngom.digested.DAttributePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onOneOrMore(org.kohsuke.rngom.digested.DOneOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeNotAllowed(org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onGroup(org.kohsuke.rngom.digested.DGroupPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor void on(org.kohsuke.rngom.digested.DPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.builder.Annotations makeAnnotations(org.kohsuke.rngom.ast.builder.CommentList, org.kohsuke.rngom.parse.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onOneOrMore(org.kohsuke.rngom.digested.DOneOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeInterleave(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeChoice(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeElement(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onValue(org.kohsuke.rngom.digested.DValuePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPattern V accept(org.kohsuke.rngom.digested.DPatternVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onList(org.kohsuke.rngom.digested.DListPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeEmpty(org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DNotAllowedPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeMixed(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern annotate(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onGroup(org.kohsuke.rngom.digested.DGroupPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DOneOrMorePattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.builder.ElementAnnotationBuilder makeElementAnnotationBuilder(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.CommentList, org.kohsuke.rngom.parse.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern annotateAfter(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.ParsedElementAnnotation) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Void visitAnyNameExcept(org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onMixed(org.kohsuke.rngom.digested.DMixedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeInterleave(java.util.List&lt;org.kohsuke.rngom.digested.DPattern&gt;, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DGroupPattern V accept(org.kohsuke.rngom.digested.DPatternVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onText(org.kohsuke.rngom.digested.DTextPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onZeroOrMore(org.kohsuke.rngom.digested.DZeroOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onElement(org.kohsuke.rngom.digested.DElementPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPattern org.kohsuke.rngom.parse.Parseable createParseable()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onRef(org.kohsuke.rngom.digested.DRefPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeInterleave(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.Annotation makeAnnotations(org.kohsuke.rngom.digested.CommentListImpl, org.kohsuke.rngom.parse.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeEmpty(org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeList(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeZeroOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeGroup(java.util.List&lt;org.kohsuke.rngom.digested.DPattern&gt;, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onInterleave(org.kohsuke.rngom.digested.DInterleavePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeAttribute(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.digested.DPattern, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DTextPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onNotAllowed(org.kohsuke.rngom.digested.DNotAllowedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeText(org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeElement(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onValue(org.kohsuke.rngom.digested.DValuePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeList(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onMixed(org.kohsuke.rngom.digested.DMixedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onValue(org.kohsuke.rngom.digested.DValuePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeZeroOrMore(org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onInterleave(org.kohsuke.rngom.digested.DInterleavePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.Main void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeValue(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.parse.Context, java.lang.String, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DContainerPattern java.util.Iterator&lt;org.kohsuke.rngom.digested.DPattern&gt; iterator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeAttribute(org.kohsuke.rngom.ast.om.ParsedNameClass, org.kohsuke.rngom.ast.om.ParsedPattern, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onElement(org.kohsuke.rngom.digested.DElementPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DGrammarPattern V accept(org.kohsuke.rngom.digested.DPatternVisitor&lt;V&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.NameClassXMLPrinterVisitor java.lang.Void visitChoice(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.nc.NameClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onOptional(org.kohsuke.rngom.digested.DOptionalPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeChoice(java.util.List&lt;org.kohsuke.rngom.digested.DPattern&gt;, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternVisitor V onZeroOrMore(org.kohsuke.rngom.digested.DZeroOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DEmptyPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onData(org.kohsuke.rngom.digested.DDataPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DElementPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeValue(java.lang.String, java.lang.String, java.lang.String, org.kohsuke.rngom.parse.Context, java.lang.String, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Void onGrammar(org.kohsuke.rngom.digested.DGrammarPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onList(org.kohsuke.rngom.digested.DListPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeElement(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.digested.DPattern, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onMixed(org.kohsuke.rngom.digested.DMixedPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Void onEmpty(org.kohsuke.rngom.digested.DEmptyPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.digested.DPattern makeOneOrMore(org.kohsuke.rngom.digested.DPattern, org.kohsuke.rngom.ast.util.LocatorImpl, org.kohsuke.rngom.digested.Annotation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DXMLPrinter.DXMLPrinterVisitor java.lang.Object onEmpty(org.kohsuke.rngom.digested.DEmptyPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DSchemaBuilderImpl org.kohsuke.rngom.ast.om.ParsedPattern makeGroup(java.util.List, org.kohsuke.rngom.ast.om.Location, org.kohsuke.rngom.ast.builder.Annotations)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DPatternWalker java.lang.Object onValue(org.kohsuke.rngom.digested.DValuePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.digested.DRefPattern java.lang.Object accept(org.kohsuke.rngom.digested.DPatternVisitor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

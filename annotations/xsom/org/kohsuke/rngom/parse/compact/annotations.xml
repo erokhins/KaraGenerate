@@ -1,0 +1,116 @@
+<root>
+    <item name='org.kohsuke.rngom.parse.compact.UCode_UCodeESC_CharStream char[] GetSuffix(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.TokenMgrError java.lang.String addEscapes(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.Token org.kohsuke.rngom.parse.compact.Token newToken(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.Token org.kohsuke.rngom.parse.compact.Token newToken(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void IncludeComponent(org.kohsuke.rngom.ast.builder.GrammarSection, org.kohsuke.rngom.ast.builder.Scope) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void GrammarComponent(org.kohsuke.rngom.ast.builder.GrammarSection, org.kohsuke.rngom.ast.builder.Scope) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void AnnotationElementLiteral(org.kohsuke.rngom.ast.builder.ElementAnnotationBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax org.kohsuke.rngom.parse.compact.ParseException generateParseException()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax org.kohsuke.rngom.parse.compact.CompactSyntax.LocatedString Identifier()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void Define(org.kohsuke.rngom.ast.builder.GrammarSection, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.ParseException ParseException(org.kohsuke.rngom.parse.compact.Token, int[][], java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactParseable org.kohsuke.rngom.ast.om.ParsedPattern parseInclude(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder, org.kohsuke.rngom.ast.builder.IncludedGrammar, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax CompactSyntax(org.kohsuke.rngom.parse.compact.CompactParseable, java.io.Reader, java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder, org.xml.sax.ErrorHandler, java.lang.String) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax org.kohsuke.rngom.parse.compact.CompactSyntax.LocatedString NsName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax org.kohsuke.rngom.parse.Context copy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void AnnotationElementContent(org.kohsuke.rngom.ast.builder.ElementAnnotationBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactParseable org.kohsuke.rngom.ast.om.ParsedPattern parseExternal(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder, org.kohsuke.rngom.ast.builder.Scope, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax org.kohsuke.rngom.parse.compact.CompactSyntax.LocatedString LocatedLiteral()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactParseable org.kohsuke.rngom.ast.om.ParsedPattern parse(org.kohsuke.rngom.ast.builder.SchemaBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax org.kohsuke.rngom.parse.compact.CompactSyntax.LocatedString UnprefixedName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactParseable org.kohsuke.rngom.ast.om.ParsedPattern parseInclude(java.lang.String, org.kohsuke.rngom.ast.builder.SchemaBuilder, org.kohsuke.rngom.ast.builder.IncludedGrammar, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntaxTokenManager org.kohsuke.rngom.parse.compact.Token jjFillToken()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void Param(org.kohsuke.rngom.ast.builder.DataPatternBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax java.lang.String Prefix()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void Start(org.kohsuke.rngom.ast.builder.GrammarSection, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.JavaCharStream char[] GetSuffix(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.TokenMgrError TokenMgrError(boolean, int, int, int, java.lang.String, char, int) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax org.kohsuke.rngom.ast.om.ParsedPattern Except(org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.parse.compact.Token[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.ParseException ParseException(org.kohsuke.rngom.parse.compact.Token, int[][], java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax java.lang.String resolveNamespacePrefix(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax org.kohsuke.rngom.ast.om.ParsedPattern IncludedGrammar(org.kohsuke.rngom.ast.builder.IncludedGrammar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntaxTokenManager org.kohsuke.rngom.parse.compact.Token getNextToken()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void IncludeDiv(org.kohsuke.rngom.ast.builder.GrammarSection, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void Include(org.kohsuke.rngom.ast.builder.GrammarSection, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void Definition(org.kohsuke.rngom.ast.builder.GrammarSection, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.CompactSyntax void Div(org.kohsuke.rngom.ast.builder.GrammarSection, org.kohsuke.rngom.ast.builder.Scope, org.kohsuke.rngom.ast.builder.Annotations) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.parse.compact.TokenMgrError java.lang.String LexicalError(boolean, int, int, int, java.lang.String, char) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

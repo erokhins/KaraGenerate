@@ -1,0 +1,17 @@
+<root>
+    <item name='com.sun.tools.xjc.addon.episode.PluginImpl java.lang.String getOptionName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.addon.episode.PluginImpl int parseArgument(com.sun.tools.xjc.Options, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.addon.episode.PluginImpl boolean run(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.Options, org.xml.sax.ErrorHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.addon.episode.PluginImpl java.lang.String getUsage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

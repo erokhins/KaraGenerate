@@ -1,0 +1,20 @@
+<root>
+    <item name='com.sun.tools.xjc.generator.util.WhitespaceNormalizer com.sun.codemodel.JExpression generate(com.sun.codemodel.JCodeModel, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.util.WhitespaceNormalizer com.sun.codemodel.JExpression generate(com.sun.codemodel.JCodeModel, com.sun.codemodel.JExpression) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.util.WhitespaceNormalizer com.sun.tools.xjc.generator.util.WhitespaceNormalizer parse(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.util.WhitespaceNormalizer com.sun.tools.xjc.generator.util.WhitespaceNormalizer parse(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

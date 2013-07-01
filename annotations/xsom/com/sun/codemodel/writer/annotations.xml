@@ -1,0 +1,104 @@
+<root>
+    <item name='com.sun.codemodel.writer.FileCodeWriter FileCodeWriter(java.io.File, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.FileCodeWriter FileCodeWriter(java.io.File, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.ProgressCodeWriter ProgressCodeWriter(com.sun.codemodel.CodeWriter, java.io.PrintStream) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.ZipCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.writer.ProgressCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.FileCodeWriter FileCodeWriter(java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.PrologCodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.SingleStreamCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.writer.FileCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.ProgressCodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.ZipCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.FilterCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.writer.FilterCodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.writer.FilterCodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.FileCodeWriter java.io.File getFile(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.FileCodeWriter java.io.File getFile(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.FileCodeWriter FileCodeWriter(java.io.File, boolean, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.PrologCodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.writer.FileCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.ProgressCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.writer.FileCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.writer.SingleStreamCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.SingleStreamCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.ZipCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.writer.FilterCodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.writer.ProgressCodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

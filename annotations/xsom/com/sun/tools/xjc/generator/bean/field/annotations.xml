@@ -1,0 +1,254 @@
+<root>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractFieldWithVar.Accessor Accessor(com.sun.tools.xjc.generator.bean.field.AbstractFieldWithVar, com.sun.codemodel.JExpression) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UnboxedField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField.Accessor Accessor(com.sun.tools.xjc.generator.bean.field.SingleField, com.sun.codemodel.JExpression) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.IsSetField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UnboxedField UnboxedField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.DummyListField com.sun.tools.xjc.generator.bean.field.DummyListField.Accessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.IsSetFieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getArray()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getRequiredUnboxed()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField SingleField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractFieldWithVar.Accessor void fromRawValue(com.sun.codemodel.JBlock, java.lang.String, com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.ContentListField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getConst(com.sun.tools.xjc.generator.bean.field.FieldRenderer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.NoExtendedContentField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.DummyListField DummyListField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.NoExtendedContentField com.sun.tools.xjc.generator.bean.field.NoExtendedContentField.Accessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.ContentListField com.sun.tools.xjc.generator.bean.field.ContentListField.Accessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.GenericFieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.DummyListField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField.Accessor Accessor(com.sun.tools.xjc.generator.bean.field.SingleField, com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListField com.sun.tools.xjc.generator.bean.field.UntypedListField.Accessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.NoExtendedContentField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractListField.Accessor com.sun.codemodel.JExpression count()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.DummyListField com.sun.tools.xjc.generator.bean.field.DummyListField.Accessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.ContentListField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField SingleField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getList(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListField com.sun.tools.xjc.generator.bean.field.UntypedListField.Accessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.DummyListField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.IsSetFieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UnboxedField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.GenericFieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.IsSetField IsSetField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, com.sun.tools.xjc.outline.FieldOutline, boolean, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListField UntypedListField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, com.sun.codemodel.JClass) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.ContentListField com.sun.tools.xjc.generator.bean.field.ContentListField.Accessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListField com.sun.codemodel.JType getRawType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.IsSetFieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getDummyList(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField SingleField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.NoExtendedContentField com.sun.codemodel.JType getRawType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListField com.sun.codemodel.JClass getCoreListType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractFieldWithVar.Accessor void fromRawValue(com.sun.codemodel.JBlock, java.lang.String, com.sun.codemodel.JExpression) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.DummyListField DummyListField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, com.sun.codemodel.JClass) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SinglePrimitiveAccessField SinglePrimitiveAccessField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getContentList(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractListField.Accessor Accessor(com.sun.tools.xjc.generator.bean.field.AbstractListField, com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.DummyListField com.sun.codemodel.JType getRawType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListFieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.ContentListField ContentListField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.GenericFieldRenderer GenericFieldRenderer(java.lang.Class) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractFieldWithVar.Accessor Accessor(com.sun.tools.xjc.generator.bean.field.AbstractFieldWithVar, com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getSinglePrimitiveAccess()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.NoExtendedContentField NoExtendedContentField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getSingle()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UnboxedField UnboxedField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField.Accessor void unsetValues(com.sun.codemodel.JBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.DummyListField com.sun.codemodel.JClass getCoreListType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SingleField SingleField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractFieldWithVar.Accessor void toRawValue(com.sun.codemodel.JBlock, com.sun.codemodel.JVar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRendererFactory com.sun.tools.xjc.generator.bean.field.FieldRenderer getDefault()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.NoExtendedContentField com.sun.tools.xjc.generator.bean.field.NoExtendedContentField.Accessor create(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.ContentListField com.sun.codemodel.JType getRawType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.SinglePrimitiveAccessField SinglePrimitiveAccessField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.IsSetField com.sun.tools.xjc.outline.FieldAccessor create(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractListField.Accessor void unsetValues(com.sun.codemodel.JBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.FieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListField UntypedListField(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo, com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.AbstractListField.Accessor Accessor(com.sun.tools.xjc.generator.bean.field.AbstractListField, com.sun.codemodel.JExpression) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListFieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.field.UntypedListFieldRenderer com.sun.tools.xjc.outline.FieldOutline generate(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.model.CPropertyInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

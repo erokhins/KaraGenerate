@@ -1,23 +1,26 @@
 <root>
+    <item name='com.sun.xml.xsom.impl.parser.BaseContentRef BaseContentRef(com.sun.xml.xsom.impl.parser.NGCCRuntimeEx, com.sun.xml.xsom.impl.Ref.Type) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.ComplexType java.lang.String getErrorProperty()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Attribute java.lang.String getErrorProperty()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.AttGroup java.lang.String getErrorProperty()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.ComplexType ComplexType(com.sun.xml.xsom.impl.parser.PatcherManager, org.xml.sax.Locator, com.sun.xml.xsom.impl.SchemaImpl, com.sun.xml.xsom.impl.UName) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.parser.SAXParserFactoryAdaptor javax.xml.parsers.SAXParser newSAXParser()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Attribute java.lang.Object resolveReference(com.sun.xml.xsom.impl.UName) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.SimpleType SimpleType(com.sun.xml.xsom.impl.parser.PatcherManager, org.xml.sax.Locator, com.sun.xml.xsom.impl.SchemaImpl, com.sun.xml.xsom.impl.UName) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Type java.lang.String getErrorProperty()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef java.lang.String getErrorProperty()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx com.sun.xml.xsom.impl.UName parseUName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Type Type(com.sun.xml.xsom.impl.parser.PatcherManager, org.xml.sax.Locator, com.sun.xml.xsom.impl.SchemaImpl, com.sun.xml.xsom.impl.UName) 2'>
@@ -32,10 +35,13 @@
     <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx com.sun.xml.xsom.impl.UName parseUName(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx com.sun.xml.xsom.impl.ForeignAttributesImpl parseForeignAttributes(com.sun.xml.xsom.impl.ForeignAttributesImpl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.ModelGroup java.lang.Object resolveReference(com.sun.xml.xsom.impl.UName) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx org.xml.sax.ErrorHandler getErrorHandler()'>
+    <item name='com.sun.xml.xsom.impl.parser.ParserContext com.sun.xml.xsom.impl.parser.NGCCRuntimeEx newNGCCRuntime()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx void onEnterElementConsumed(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) 3'>
@@ -50,11 +56,11 @@
     <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx void parseEntity(org.xml.sax.InputSource, boolean, java.lang.String, org.xml.sax.Locator) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.AttGroup java.lang.String getErrorProperty()'>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef java.lang.String getErrorProperty()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.ModelGroup java.lang.String getErrorProperty()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.ParserContext void parse(org.xml.sax.InputSource) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -62,19 +68,10 @@
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.IdentityConstraint java.lang.Object resolveReference(com.sun.xml.xsom.impl.UName) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Element java.lang.String getErrorProperty()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.parser.SAXParserFactoryAdaptor javax.xml.parsers.SAXParser newSAXParser()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx org.xml.sax.Locator copyLocator()'>
+    <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx org.xml.sax.ErrorHandler getErrorHandler()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef void redefine(com.sun.xml.xsom.XSDeclaration) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx com.sun.xml.xsom.impl.ForeignAttributesImpl parseForeignAttributes(com.sun.xml.xsom.impl.ForeignAttributesImpl)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.IdentityConstraint IdentityConstraint(com.sun.xml.xsom.impl.parser.PatcherManager, org.xml.sax.Locator, com.sun.xml.xsom.impl.SchemaImpl, com.sun.xml.xsom.impl.UName) 2'>
@@ -83,25 +80,31 @@
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Type java.lang.Object resolveReference(com.sun.xml.xsom.impl.UName) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.parser.ParserContext com.sun.xml.xsom.impl.parser.NGCCRuntimeEx newNGCCRuntime()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.SimpleType java.lang.String getErrorProperty()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Element java.lang.Object resolveReference(com.sun.xml.xsom.impl.UName) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Attribute java.lang.String getErrorProperty()'>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Element java.lang.String getErrorProperty()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.IdentityConstraint java.lang.String getErrorProperty()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.SchemaDocumentImpl java.util.Set&lt;com.sun.xml.xsom.parser.SchemaDocument&gt; getImportedDocuments(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.SimpleType java.lang.String getErrorProperty()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx boolean ignorableDuplicateComponent(com.sun.xml.xsom.XSDeclaration) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.AttGroup AttGroup(com.sun.xml.xsom.impl.parser.PatcherManager, org.xml.sax.Locator, com.sun.xml.xsom.impl.SchemaImpl, com.sun.xml.xsom.impl.UName) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.ModelGroup java.lang.String getErrorProperty()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.xml.xsom.impl.parser.SchemaDocumentImpl java.lang.String getTargetNamespace()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef java.lang.Object resolveReference(com.sun.xml.xsom.impl.UName) 0'>
@@ -119,13 +122,13 @@
     <item name='com.sun.xml.xsom.impl.parser.DelayedRef.SimpleType java.lang.Object resolveReference(com.sun.xml.xsom.impl.UName) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.ComplexType java.lang.String getErrorProperty()'>
+    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.Type java.lang.String getErrorProperty()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.parser.DelayedRef.IdentityConstraint java.lang.String getErrorProperty()'>
+    <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx com.sun.xml.xsom.impl.UName parseUName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='com.sun.xml.xsom.impl.parser.SchemaDocumentImpl java.lang.String getTargetNamespace()'>
+    <item name='com.sun.xml.xsom.impl.parser.NGCCRuntimeEx org.xml.sax.Locator copyLocator()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

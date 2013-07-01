@@ -1,0 +1,119 @@
+<root>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitInterleave(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitChoice(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitGroup(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.ChildElementFinder void visitAttribute(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitGroup(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitChoice(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.ChildElementFinder void visitElement(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.ChildElementFinder java.util.Set getChildren()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitList(org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitElement(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitOneOrMore(org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitChoice(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitInterleave(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitAttribute(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitList(org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitGroup(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitChoice(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitBinary(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitElement(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitInterleave(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.ChildElementFinder void visitList(org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitGroup(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitBinary(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitOneOrMore(org.kohsuke.rngom.binary.Pattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternVisitor void visitAttribute(org.kohsuke.rngom.nc.NameClass, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.kohsuke.rngom.binary.visitor.PatternWalker void visitInterleave(org.kohsuke.rngom.binary.Pattern, org.kohsuke.rngom.binary.Pattern) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

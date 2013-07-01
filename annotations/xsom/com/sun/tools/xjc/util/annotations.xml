@@ -1,0 +1,110 @@
+<root>
+    <item name='com.sun.tools.xjc.util.MimeTypeRange void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils org.w3c.dom.Element[] getElements(org.w3c.dom.NodeList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.StringCutter java.lang.String next(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils org.w3c.dom.Element getElement(org.w3c.dom.Document, javax.xml.namespace.QName) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.Util boolean equals(org.xml.sax.Locator, org.xml.sax.Locator) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.MimeTypeRange com.sun.tools.xjc.util.MimeTypeRange merge(java.util.Collection&lt;com.sun.tools.xjc.util.MimeTypeRange&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.CodeModelClassFactory com.sun.codemodel.JDefinedClass createClass(com.sun.codemodel.JClassContainer, int, java.lang.String, org.xml.sax.Locator, com.sun.codemodel.ClassType) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils org.w3c.dom.Element getElement(org.w3c.dom.Document, javax.xml.namespace.QName) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.CodeModelClassFactory com.sun.codemodel.JDefinedClass createInterface(com.sun.codemodel.JClassContainer, int, java.lang.String, org.xml.sax.Locator) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.ErrorReceiverFilter void warning(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.util.CodeModelClassFactory com.sun.codemodel.JDefinedClass createClass(com.sun.codemodel.JClassContainer, java.lang.String, org.xml.sax.Locator) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.SubtreeCutter void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.util.CodeModelClassFactory com.sun.codemodel.JDefinedClass createInterface(com.sun.codemodel.JClassContainer, java.lang.String, org.xml.sax.Locator) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.CodeModelClassFactory com.sun.codemodel.JDefinedClass createClass(com.sun.codemodel.JClassContainer, int, java.lang.String, org.xml.sax.Locator) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.ErrorReceiverFilter void error(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.util.ForkContentHandler org.xml.sax.ContentHandler create(org.xml.sax.ContentHandler[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.Util boolean equals(org.xml.sax.Locator, org.xml.sax.Locator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils org.w3c.dom.Element getElement(org.w3c.dom.Document, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.MimeTypeRange java.util.List&lt;com.sun.tools.xjc.util.MimeTypeRange&gt; parseRanges(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.ErrorReceiverFilter void fatalError(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.util.MimeTypeRange javax.activation.MimeType toMimeType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils org.w3c.dom.Element getElement(org.w3c.dom.Document, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.CodeModelClassFactory com.sun.codemodel.JDefinedClass createClass(com.sun.codemodel.JClassContainer, java.lang.String, org.xml.sax.Locator, com.sun.codemodel.ClassType) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils org.w3c.dom.Element[] getChildElements(org.w3c.dom.Element, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.Util java.lang.String getSystemProperty(java.lang.Class, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.SubtreeCutter void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils org.w3c.dom.Element getFirstChildElement(org.w3c.dom.Element, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils org.w3c.dom.Element[] getChildElements(org.w3c.dom.Element) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.DOMUtils java.lang.String getElementText(org.w3c.dom.Element) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.util.ErrorReceiverFilter void info(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

@@ -1,0 +1,53 @@
+<root>
+    <item name='com.sun.tools.xjc.api.impl.s2j.SchemaCompilerImpl void warning(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.SchemaCompilerImpl com.sun.tools.xjc.Options getOptions()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.SchemaCompilerImpl void error(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.ElementAdapter.FieldAccessorImpl com.sun.codemodel.JInvocation createJAXBElement(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.ElementAdapter.FieldAccessorImpl FieldAccessorImpl(com.sun.tools.xjc.api.impl.s2j.ElementAdapter, com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.SchemaCompilerImpl void parseSchema(org.xml.sax.InputSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.SchemaCompilerImpl void fatalError(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.ElementAdapter.FieldAccessorImpl com.sun.tools.xjc.outline.FieldOutline owner()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.ElementAdapter.FieldAccessorImpl void unsetValues(com.sun.codemodel.JBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.SchemaCompilerImpl void info(org.xml.sax.SAXParseException) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.SchemaCompilerImpl org.xml.sax.ContentHandler getParserHandler(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.api.impl.s2j.ElementAdapter.FieldAccessorImpl com.sun.codemodel.JInvocation createJAXBElement(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,14 @@
+<root>
+    <item name='org.kohsuke.rngom.dt.builtin.BuiltinDatatypeLibrary org.relaxng.datatype.DatatypeBuilder createDatatypeBuilder(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.dt.builtin.BuiltinDatatypeLibrary org.relaxng.datatype.Datatype createDatatype(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.dt.builtin.BuiltinDatatypeLibraryFactory org.relaxng.datatype.DatatypeLibrary createDatatypeLibrary(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.kohsuke.rngom.dt.builtin.BuiltinDatatypeLibrary org.relaxng.datatype.DatatypeBuilder createDatatypeBuilder(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

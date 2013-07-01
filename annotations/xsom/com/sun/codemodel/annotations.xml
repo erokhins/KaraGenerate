@@ -1,0 +1,1565 @@
+<root>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass substituteParams(com.sun.codemodel.JTypeVar[], java.util.List&lt;com.sun.codemodel.JClass&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(short)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression lit(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JType com.sun.codemodel.JPrimitiveType parse(com.sun.codemodel.JCodeModel, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JMethod method(int, java.lang.Class&lt;?&gt;, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JFieldRef ref(com.sun.codemodel.JExpression, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression gte(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression lit(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression xor(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JPackage _package()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JMethod _throws(java.lang.Class&lt;? extends java.lang.Throwable&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPrimitiveType com.sun.codemodel.JExpression wrap(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JType _ref(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass wildcard()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(java.io.File, java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod boolean hasSignature(com.sun.codemodel.JType[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression mod(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression shrz(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression ne(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JNullType com.sun.codemodel.JClass substituteParams(com.sun.codemodel.JTypeVar[], java.util.List&lt;com.sun.codemodel.JClass&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _extends(com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar com.sun.codemodel.JAnnotationUse annotate(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JInvocation invoke(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JFieldVar void name(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JTypeVar com.sun.codemodel.JTypeVar bound(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JForLoop void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JType java.lang.String fullName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDocComment com.sun.codemodel.JCommentPart addParam(com.sun.codemodel.JVar)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter i()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(com.sun.codemodel.JType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _class(int, java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JSwitch com.sun.codemodel.JCase _case(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JFieldRef refthis(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JDefinedClass _interface(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass java.lang.String name()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass void removeField(com.sun.codemodel.JFieldVar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, java.lang.Enum&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JFieldRef ref(com.sun.codemodel.JExpression, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JFieldRef ref(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression band(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JDefinedClass _class(int, java.lang.String, com.sun.codemodel.ClassType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArray newArray(com.sun.codemodel.JType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression shrz(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass _class(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JForLoop com.sun.codemodel.JVar init(com.sun.codemodel.JType, java.lang.String, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JInvocation invoke(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression dotclass(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment com.sun.codemodel.JCommentPart addParam(com.sun.codemodel.JVar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPrimitiveType com.sun.codemodel.JClass getWrapperClass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JEnumConstant com.sun.codemodel.JAnnotationUse annotate(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCommentPart com.sun.codemodel.JCommentPart append(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JArray com.sun.codemodel.JArray add(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression _null()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression xor(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment com.sun.codemodel.JDocComment append(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(byte)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDeclaration void declare(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JResourceFile void build(java.io.OutputStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JMods void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JAnnotationUse annotate(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JAnnotationUse annotate(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JClass ref(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JType[] listParamTypes()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression minus(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JDefinedClass _annotationTypeDeclaration(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JInvocation com.sun.codemodel.JInvocation arg(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAssignmentTarget com.sun.codemodel.JExpression assignPlus(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JPrimitiveType com.sun.codemodel.JType unboxify()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JPackage subPackage(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression assignPlus(com.sun.codemodel.JAssignmentTarget, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression ne(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JJavaName boolean isJavaIdentifier(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JClass substituteParams(com.sun.codemodel.JTypeVar[], java.util.List&lt;com.sun.codemodel.JClass&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JVar decl(int, com.sun.codemodel.JType, java.lang.String, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression shrz(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationArrayMember paramArray(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter o()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass _class(int, java.lang.String, com.sun.codemodel.ClassType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression _instanceof(com.sun.codemodel.JExpression, com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JInvocation void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JVar param(java.lang.Class&lt;?&gt;, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression div(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JGenerifiable com.sun.codemodel.JTypeVar generify(java.lang.String, java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JVar param(int, java.lang.Class&lt;?&gt;, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JPackage getPackage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JArrayCompRef component(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression plus(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JNullType java.lang.String fullName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JType _ref(java.lang.Class&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression minus()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JClass directClass(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JFieldVar field(int, java.lang.Class&lt;?&gt;, java.lang.String, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArray newArray(com.sun.codemodel.JType, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter nl()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JInvocation invoke(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter t(com.sun.codemodel.JType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArray newArray(com.sun.codemodel.JType, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter t(com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression bor(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JType com.sun.codemodel.JType erasure()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression band(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JFieldRef ref(com.sun.codemodel.JVar)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression mul(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JPackage getPackage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArrayCompRef component(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JFieldRef staticRef(com.sun.codemodel.JVar)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JInvocation invoke(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _enum(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression lit(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.CodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression gt(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JType com.sun.codemodel.JType unboxify()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JWhileLoop void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPrimitiveType com.sun.codemodel.JExpression unwrap(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _implements(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter g(com.sun.codemodel.JGenerable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression xor(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter b(com.sun.codemodel.JVar)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JInvocation com.sun.codemodel.JInvocation arg(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JInvocation invoke(com.sun.codemodel.JMethod)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression minus(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JDefinedClass _class(int, java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JTypeVar generify(java.lang.String, java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JFieldRef ref(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass anonymousClass(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JNullType java.lang.String name()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr java.lang.String quotify(char, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JFieldRef ref(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JClass ref(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JStatement void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.CodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression minus()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JNullType com.sun.codemodel.JPackage _package()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAssignment void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JType int compareTo(com.sun.codemodel.JType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression mul(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JDefinedClass _annotationTypeDeclaration(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JForEach com.sun.codemodel.JVar var()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _interface(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage void declare(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.CodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _extends(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JClass ref(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JFieldRef staticRef(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JFieldRef staticRef(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression assign(com.sun.codemodel.JAssignmentTarget, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression decr()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage W annotate2(java.lang.Class&lt;W&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotatable com.sun.codemodel.JAnnotationUse annotate(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JType com.sun.codemodel.JPrimitiveType parse(com.sun.codemodel.JCodeModel, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JInvocation com.sun.codemodel.JInvocation arg(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage int compareTo(com.sun.codemodel.JPackage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JCast cast(com.sun.codemodel.JType, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFieldVar void declare(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, short)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(java.lang.Enum&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(com.sun.codemodel.JEnumConstant)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression mod(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod W annotate2(java.lang.Class&lt;W&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression ne(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression eq(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression mod(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression shr(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression _this()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression not()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPrimitiveType void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass newAnonymousClass(com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JMethod _throws(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar void bind(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass substituteParams(com.sun.codemodel.JTypeVar[], java.util.List&lt;com.sun.codemodel.JClass&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JInvocation invoke(com.sun.codemodel.JExpression, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JBlock assignPlus(com.sun.codemodel.JAssignmentTarget, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JType unboxify()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JDefinedClass _class(int, java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JFieldRef ref(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JInvocation void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JGenerable void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JMethod constructor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JPackage rootPackage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JTypeVar void declare(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass newAnonymousClass(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JInvocation _new(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JType com.sun.codemodel.JPrimitiveType parse(com.sun.codemodel.JCodeModel, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JInvocation staticInvoke(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFieldRef com.sun.codemodel.JExpression assignPlus(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JFieldRef ref(com.sun.codemodel.JExpression, com.sun.codemodel.JVar)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotatable W annotate2(java.lang.Class&lt;W&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JPackage _package(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter d(com.sun.codemodel.JDeclaration)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression div(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter p(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JFieldRef refthis(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JMethod method(int, java.lang.Class&lt;?&gt;, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression incr()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment java.util.Map&lt;java.lang.String,java.lang.String&gt; addXdoclet(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationUse annotate(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter s(com.sun.codemodel.JStatement) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression lte(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JMethod method(int, com.sun.codemodel.JType, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression shl(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JVar varParam(com.sun.codemodel.JType, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArrayCompRef component(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JFieldVar field(int, java.lang.Class&lt;?&gt;, java.lang.String, com.sun.codemodel.JExpression) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression eq(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFieldRef void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JInvocation staticInvoke(com.sun.codemodel.JClass, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JEnumConstant com.sun.codemodel.JAnnotationUse annotate(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression _super()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArrayCompRef component(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPrimitiveType com.sun.codemodel.JCodeModel owner()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JEnumConstant void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationUse annotate(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JEnumConstant void declare(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression lte(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod void declare(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JTypeVar com.sun.codemodel.JClass substituteParams(com.sun.codemodel.JTypeVar[], java.util.List&lt;com.sun.codemodel.JClass&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JFieldVar field(int, com.sun.codemodel.JType, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JForLoop com.sun.codemodel.JVar init(int, com.sun.codemodel.JType, java.lang.String, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JVar decl(com.sun.codemodel.JType, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression lit(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JInvocation invoke(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JTypeVar generify(java.lang.String, com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JTryBlock com.sun.codemodel.JCatchBlock _catch(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCommentPart void format(com.sun.codemodel.JFormatter, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(java.lang.Class&lt;?&gt;...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression shl(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass _class(java.lang.String, com.sun.codemodel.ClassType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(com.sun.codemodel.JType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar W annotate2(java.lang.Class&lt;W&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JArray void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment com.sun.codemodel.JCommentPart addThrows(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _annotationTypeDeclaration(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JDefinedClass _interface(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JVar param(int, java.lang.Class&lt;?&gt;, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter d(com.sun.codemodel.JDeclaration) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JTypeVar generify(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment com.sun.codemodel.JCommentPart addParam(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, byte)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar com.sun.codemodel.JExpression assign(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment java.util.Map&lt;java.lang.String,java.lang.String&gt; addXdoclet(java.lang.String, java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(java.io.File, java.io.File, java.io.PrintStream) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JForEach void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JType com.sun.codemodel.JCodeModel owner()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JType com.sun.codemodel.JClass boxify()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JType erasure()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(com.sun.codemodel.JClass...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JDefinedClass _class(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JStringLiteral void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JBlock assign(com.sun.codemodel.JAssignmentTarget, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JExpression dotclass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JDefinedClass _class(int, java.lang.String, com.sun.codemodel.ClassType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression plus(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(java.io.File, java.io.File, java.io.PrintStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JTypeVar generify(java.lang.String, com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JVar param(com.sun.codemodel.JType, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression shl(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDoLoop void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression lit(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression complement(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage void remove(com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JVar varParam(java.lang.Class&lt;?&gt;, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression lt(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression incr(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JTypeVar generify(java.lang.String, java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JInvocation staticInvoke(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(com.sun.codemodel.CodeWriter, com.sun.codemodel.CodeWriter) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JTypeVar void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression _instanceof(com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass _class(int, java.lang.String, com.sun.codemodel.ClassType) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JInvocation invoke(com.sun.codemodel.JMethod)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JClass ref(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCase void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar com.sun.codemodel.JExpression assignPlus(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse annotate(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JFieldVar field(int, java.lang.Class&lt;?&gt;, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JConditional void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JJavaName boolean isJavaPackageName(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, com.sun.codemodel.JType) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JFieldVar field(int, com.sun.codemodel.JType, java.lang.String, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression decr()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _enum(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass anonymousClass(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(com.sun.codemodel.CodeWriter, com.sun.codemodel.CodeWriter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter b(com.sun.codemodel.JVar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JVar param(java.lang.Class&lt;?&gt;, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter t(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass java.util.Collection&lt;com.sun.codemodel.JMethod&gt; methods()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _extends(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar com.sun.codemodel.JAnnotationUse annotate(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression incr()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JFieldRef ref(com.sun.codemodel.JVar)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression lit(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar com.sun.codemodel.JType type(com.sun.codemodel.JType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JInvocation invoke(com.sun.codemodel.JExpression, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JStatement directStatement(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment com.sun.codemodel.JCommentPart append(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression shr(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JInvocation invoke(com.sun.codemodel.JExpression, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression _instanceof(com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JJavaName java.lang.String getPluralForm(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JSwitch void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(java.util.List&lt;? extends com.sun.codemodel.JClass&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JAnnotationUse annotate(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JLabel label(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression decr(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass void declare(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JEnumConstant com.sun.codemodel.JEnumConstant arg(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _class(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JDefinedClass _interface(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JTryBlock void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression gt(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JDefinedClass _enum(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JBlock void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JAnnotationUse annotate(java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment java.util.Map&lt;java.lang.String,java.lang.String&gt; addXdoclet(java.lang.String, java.util.Map&lt;java.lang.String,java.lang.String&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(java.io.File, java.io.PrintStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(java.lang.Class&lt;?&gt;...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(com.sun.codemodel.JAnnotationUse)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar void declare(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JType int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression gt(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPrimitiveType com.sun.codemodel.JExpression wrap(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter g(com.sun.codemodel.JGenerable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JEnumConstant com.sun.codemodel.JEnumConstant arg(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter id(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JFieldRef ref(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JInvocation invoke(com.sun.codemodel.JMethod)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JInvocation invoke(com.sun.codemodel.JExpression, com.sun.codemodel.JMethod)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JDefinedClass _class(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotatable com.sun.codemodel.JAnnotationUse annotate(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JAssignment void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JInvocation invoke(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression complement()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JLabel void state(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, com.sun.codemodel.JEnumConstant)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JVar param(int, com.sun.codemodel.JType, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JType parseType(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression gte(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression gte(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JDefinedClass _class(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.CodeWriter java.io.OutputStream openBinary(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JAssignmentTarget com.sun.codemodel.JExpression assign(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression direct(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArray newArray(com.sun.codemodel.JType, com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass _getClass(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression minus(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JGenerifiable com.sun.codemodel.JTypeVar generify(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JAnnotationUse annotate(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass boxify()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression shr(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter p(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression mul(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass W annotate2(java.lang.Class&lt;W&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JInvocation invoke(com.sun.codemodel.JExpression, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _implements(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass anonymousClass(com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JJavaName boolean isFullyQualifiedClassName(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCatchBlock void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression not()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.CodeWriter java.io.Writer openSource(com.sun.codemodel.JPackage, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JInvocation invoke(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JType java.lang.String name()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression complement()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JNullType com.sun.codemodel.JClass substituteParams(com.sun.codemodel.JTypeVar[], java.util.List&lt;com.sun.codemodel.JClass&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember W annotate2(java.lang.Class&lt;W&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression lt(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression bor(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JDefinedClass _interface(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JTypeVar generify(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember com.sun.codemodel.JAnnotationArrayMember param(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter s(com.sun.codemodel.JStatement)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JInvocation _new(com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JVar decl(com.sun.codemodel.JType, java.lang.String, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JArrayCompRef component(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JVar com.sun.codemodel.JVar init(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _class(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _class(int, java.lang.String, com.sun.codemodel.ClassType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArray newArray(com.sun.codemodel.JType, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse annotationParam(java.lang.String, java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JTypeVar[] typeParams()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JEnumConstant W annotate2(java.lang.Class&lt;W&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFieldRef com.sun.codemodel.JExpression assign(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression minus(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JVar void name(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JFieldRef ref(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass _class(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JPrimitiveType com.sun.codemodel.JClass boxify()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationUse com.sun.codemodel.JAnnotationUse param(java.lang.String, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass void declareBody(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JMethod com.sun.codemodel.JAnnotationUse annotate(com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass narrow(com.sun.codemodel.JClass...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JBlock com.sun.codemodel.JBlock add(com.sun.codemodel.JStatement)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(java.io.File, java.io.File) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JDefinedClass _interface(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JFieldVar field(int, java.lang.Class&lt;?&gt;, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JGenerifiable com.sun.codemodel.JTypeVar generify(java.lang.String, com.sun.codemodel.JClass)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JDefinedClass com.sun.codemodel.JClass substituteParams(com.sun.codemodel.JTypeVar[], java.util.List&lt;com.sun.codemodel.JClass&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JAnnotationArrayMember void generate(com.sun.codemodel.JFormatter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression band(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel com.sun.codemodel.JDefinedClass _class(java.lang.String, com.sun.codemodel.ClassType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JDocComment com.sun.codemodel.JCommentPart addThrows(java.lang.Class&lt;? extends java.lang.Throwable&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression lte(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JArrayCompRef component(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JInvocation staticInvoke(com.sun.codemodel.JMethod)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression lt(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClassContainer com.sun.codemodel.JDefinedClass _class(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JArray newArray(com.sun.codemodel.JType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpr com.sun.codemodel.JExpression lit(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression plus(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpression com.sun.codemodel.JExpression div(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JPackage com.sun.codemodel.JDefinedClass _enum(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass java.util.Iterator&lt;com.sun.codemodel.JClass&gt; _implements()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JExpression eq(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JCodeModel void build(com.sun.codemodel.CodeWriter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter g(java.util.Collection&lt;? extends com.sun.codemodel.JGenerable&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JClass com.sun.codemodel.JClass erasure()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JFormatter com.sun.codemodel.JFormatter g(java.util.Collection&lt;? extends com.sun.codemodel.JGenerable&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression not(com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JExpressionImpl com.sun.codemodel.JArrayCompRef component(com.sun.codemodel.JExpression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression bor(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.JOp com.sun.codemodel.JExpression cond(com.sun.codemodel.JExpression, com.sun.codemodel.JExpression, com.sun.codemodel.JExpression)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

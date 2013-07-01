@@ -1,0 +1,134 @@
+<root>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CReferencePropertyInfo createContentExtendedMixedReferenceProperty(java.lang.String, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIEnumMember javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIDom javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIXSubstitutable javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIEnum javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.ForkingFilter void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIGlobalBinding boolean isEqual(com.sun.tools.xjc.reader.xmlschema.bindinfo.BIGlobalBinding) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CPropertyInfo createElementOrReferenceProperty(java.lang.String, boolean, com.sun.xml.xsom.XSParticle, com.sun.tools.xjc.reader.RawTypeSet) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.EnumMemberMode com.sun.tools.xjc.reader.xmlschema.bindinfo.EnumMemberMode getModeWithEnum()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CElementPropertyInfo createElementProperty(java.lang.String, boolean, com.sun.xml.xsom.XSParticle, com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CReferencePropertyInfo createDummyExtendedMixedReferenceProperty(java.lang.String, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.reader.RawTypeSet) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CAttributePropertyInfo createAttributeProperty(com.sun.xml.xsom.XSAttributeUse, com.sun.tools.xjc.model.TypeUse)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CReferencePropertyInfo createContentExtendedMixedReferenceProperty(java.lang.String, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.reader.RawTypeSet) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BISchemaBinding javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIConversion javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CAttributePropertyInfo createAttributeProperty(com.sun.xml.xsom.XSAttributeUse, com.sun.tools.xjc.model.TypeUse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.AnnotationParserFactoryImpl com.sun.xml.xsom.parser.AnnotationParser create()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIDeclaration javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CElementPropertyInfo createElementProperty(java.lang.String, boolean, com.sun.xml.xsom.XSParticle, com.sun.tools.xjc.reader.RawTypeSet) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BindInfo void addDecl(com.sun.tools.xjc.reader.xmlschema.bindinfo.BIDeclaration) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CValuePropertyInfo createValueProperty(java.lang.String, boolean, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.TypeUse, javax.xml.namespace.QName) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIGlobalBinding javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.ForkingFilter void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIClass javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BindInfo com.sun.tools.xjc.model.CCustomizations toCustomizationList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CReferencePropertyInfo createReferenceProperty(java.lang.String, boolean, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.reader.RawTypeSet, boolean, boolean, boolean, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIFactoryMethod javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.ForkingFilter void startForking(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes, org.xml.sax.ContentHandler) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CValuePropertyInfo createValueProperty(java.lang.String, boolean, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.TypeUse, javax.xml.namespace.QName)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIInlineBinaryData javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CPropertyInfo createElementOrReferenceProperty(java.lang.String, boolean, com.sun.xml.xsom.XSParticle, com.sun.tools.xjc.reader.RawTypeSet) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CReferencePropertyInfo createDummyExtendedMixedReferenceProperty(java.lang.String, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CPropertyInfo createElementOrReferenceProperty(java.lang.String, boolean, com.sun.xml.xsom.XSParticle, com.sun.tools.xjc.reader.RawTypeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIConversion.User javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BindInfo void absorb(com.sun.tools.xjc.reader.xmlschema.bindinfo.BindInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CReferencePropertyInfo createReferenceProperty(java.lang.String, boolean, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.reader.RawTypeSet, boolean, boolean, boolean, boolean) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CElementPropertyInfo createElementProperty(java.lang.String, boolean, com.sun.xml.xsom.XSParticle, com.sun.tools.xjc.reader.RawTypeSet) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIGlobalBinding boolean canBeMappedToTypeSafeEnum(com.sun.xml.xsom.XSDeclaration) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CAttributePropertyInfo createAttributeProperty(com.sun.xml.xsom.XSAttributeUse, com.sun.tools.xjc.model.TypeUse) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty javax.xml.namespace.QName getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.bindinfo.BIProperty com.sun.tools.xjc.model.CValuePropertyInfo createValueProperty(java.lang.String, boolean, com.sun.xml.xsom.XSComponent, com.sun.tools.xjc.model.TypeUse, javax.xml.namespace.QName) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

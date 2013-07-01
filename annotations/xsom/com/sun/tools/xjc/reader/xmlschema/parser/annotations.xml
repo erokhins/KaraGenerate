@@ -1,0 +1,17 @@
+<root>
+    <item name='com.sun.tools.xjc.reader.xmlschema.parser.XMLSchemaInternalizationLogic org.xml.sax.helpers.XMLFilterImpl createExternalReferenceFinder(com.sun.tools.xjc.reader.internalizer.DOMForest)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.parser.XMLSchemaInternalizationLogic boolean checkIfValidTargetNode(com.sun.tools.xjc.reader.internalizer.DOMForest, org.w3c.dom.Element, org.w3c.dom.Element) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.parser.XMLSchemaInternalizationLogic org.w3c.dom.Element refineTarget(org.w3c.dom.Element) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.parser.IncorrectNamespaceURIChecker void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.xmlschema.parser.SchemaConstraintChecker void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

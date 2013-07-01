@@ -1,0 +1,77 @@
+<root>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder java.lang.Object onZeroOrMore(org.kohsuke.rngom.digested.DZeroOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder java.lang.Object onAttribute(org.kohsuke.rngom.digested.DAttributePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder java.lang.Object onOneOrMore(org.kohsuke.rngom.digested.DOneOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler RELAXNGCompiler(org.kohsuke.rngom.digested.DPattern, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.Options) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler RELAXNGCompiler(org.kohsuke.rngom.digested.DPattern, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.Options) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder java.lang.Void onZeroOrMore(org.kohsuke.rngom.digested.DZeroOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder java.lang.Void onAttribute(org.kohsuke.rngom.digested.DAttributePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder java.lang.Void onOneOrMore(org.kohsuke.rngom.digested.DOneOrMorePattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder java.lang.Object onElement(org.kohsuke.rngom.digested.DElementPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder com.sun.tools.xjc.reader.RawTypeSet build(com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler, org.kohsuke.rngom.digested.DPattern, com.sun.tools.xjc.model.Multiplicity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler com.sun.tools.xjc.model.Model build(org.kohsuke.rngom.digested.DPattern, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.Options) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder java.lang.Void onElement(org.kohsuke.rngom.digested.DElementPattern) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RawTypeSetBuilder com.sun.tools.xjc.reader.RawTypeSet build(com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler, org.kohsuke.rngom.digested.DPattern, com.sun.tools.xjc.model.Multiplicity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler com.sun.tools.xjc.model.Model build(org.kohsuke.rngom.digested.DPattern, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.Options) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler RELAXNGCompiler(org.kohsuke.rngom.digested.DPattern, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.Options) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler com.sun.tools.xjc.model.Model build(org.kohsuke.rngom.digested.DPattern, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.Options)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGCompiler com.sun.tools.xjc.model.Model build(org.kohsuke.rngom.digested.DPattern, com.sun.codemodel.JCodeModel, com.sun.tools.xjc.Options) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGInternalizationLogic org.xml.sax.helpers.XMLFilterImpl createExternalReferenceFinder(com.sun.tools.xjc.reader.internalizer.DOMForest)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGInternalizationLogic boolean checkIfValidTargetNode(com.sun.tools.xjc.reader.internalizer.DOMForest, org.w3c.dom.Element, org.w3c.dom.Element) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.relaxng.RELAXNGInternalizationLogic org.w3c.dom.Element refineTarget(org.w3c.dom.Element) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

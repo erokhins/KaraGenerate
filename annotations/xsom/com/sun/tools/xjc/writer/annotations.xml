@@ -1,0 +1,5 @@
+<root>
+    <item name='com.sun.tools.xjc.writer.SignatureWriter void write(com.sun.tools.xjc.outline.Outline, java.io.Writer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

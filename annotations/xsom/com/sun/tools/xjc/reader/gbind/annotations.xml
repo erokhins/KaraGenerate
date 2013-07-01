@@ -1,0 +1,20 @@
+<root>
+    <item name='com.sun.tools.xjc.reader.gbind.Element void addNext(com.sun.tools.xjc.reader.gbind.Element) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.gbind.Choice Choice(com.sun.tools.xjc.reader.gbind.Expression, com.sun.tools.xjc.reader.gbind.Expression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.gbind.SinkNode java.lang.String toString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.gbind.ElementSets com.sun.tools.xjc.reader.gbind.ElementSet union(com.sun.tools.xjc.reader.gbind.ElementSet, com.sun.tools.xjc.reader.gbind.ElementSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.gbind.Sequence Sequence(com.sun.tools.xjc.reader.gbind.Expression, com.sun.tools.xjc.reader.gbind.Expression) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.gbind.SourceNode java.lang.String toString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

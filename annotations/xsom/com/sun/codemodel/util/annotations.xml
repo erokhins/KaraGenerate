@@ -1,0 +1,32 @@
+<root>
+    <item name='com.sun.codemodel.util.UnicodeEscapeWriter void write(java.lang.String, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.UnicodeEscapeWriter void write(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.UnicodeEscapeWriter void write(char[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.JavadocEscapeWriter void write(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.ClassNameComparator int compare(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.ClassNameComparator int compare(java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.JavadocEscapeWriter void write(java.lang.String, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.ClassNameComparator int compare(com.sun.codemodel.JClass, com.sun.codemodel.JClass) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.ClassNameComparator int compare(com.sun.codemodel.JClass, com.sun.codemodel.JClass) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.codemodel.util.JavadocEscapeWriter void write(char[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

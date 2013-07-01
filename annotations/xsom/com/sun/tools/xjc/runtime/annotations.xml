@@ -1,0 +1,5 @@
+<root>
+    <item name='com.sun.tools.xjc.runtime.JAXBContextFactory javax.xml.bind.JAXBContext createContext(java.lang.Class[], java.util.Map) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,62 @@
+<root>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.DOMUtil java.util.List&lt;org.w3c.dom.Element&gt; getChildElements(org.w3c.dom.Element) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.DOMUtil org.w3c.dom.Element getElement(org.w3c.dom.Element, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BindInfo com.sun.tools.xjc.reader.dtd.bindinfo.BIConversion conversion(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BIInterface java.lang.String[] members()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BindInfo BindInfo(com.sun.tools.xjc.model.Model, org.w3c.dom.Document, com.sun.tools.xjc.ErrorReceiver) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BindInfo BindInfo(com.sun.tools.xjc.model.Model, org.w3c.dom.Document, com.sun.tools.xjc.ErrorReceiver) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BIConversion com.sun.tools.xjc.model.TypeUse getTransducer()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BindInfo BindInfo(com.sun.tools.xjc.model.Model, org.xml.sax.InputSource, com.sun.tools.xjc.ErrorReceiver) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BIConstructor void createDeclaration(com.sun.tools.xjc.model.CClassInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BIInterface java.lang.String[] fields()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.DOMUtil java.util.List&lt;org.w3c.dom.Element&gt; getChildElements(org.w3c.dom.Element, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BIUserConversion com.sun.tools.xjc.model.TypeUse getTransducer()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.DOMUtil java.util.List&lt;org.w3c.dom.Element&gt; getChildElements(org.w3c.dom.Element, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BindInfo com.sun.codemodel.JPackage getTargetPackage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BIElement java.util.List&lt;com.sun.tools.xjc.reader.dtd.bindinfo.BIContent&gt; getContents()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.DOMUtil java.lang.String getAttribute(org.w3c.dom.Element, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.BIElement com.sun.tools.xjc.reader.dtd.bindinfo.BIConversion conversion(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.DOMUtil org.w3c.dom.Element getElement(org.w3c.dom.Element, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.reader.dtd.bindinfo.DOMUtil java.util.List&lt;org.w3c.dom.Element&gt; getChildElements(org.w3c.dom.Element)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

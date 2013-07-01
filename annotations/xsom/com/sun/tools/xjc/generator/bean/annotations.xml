@@ -1,0 +1,110 @@
+<root>
+    <item name='com.sun.tools.xjc.generator.bean.ImplStructureStrategy void _extends(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.generator.bean.ClassOutlineImpl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.ImplStructureStrategy com.sun.tools.xjc.generator.bean.MethodWriter createMethodWriter(com.sun.tools.xjc.generator.bean.ClassOutlineImpl)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.ImplStructureStrategy com.sun.tools.xjc.generator.bean.MethodWriter createMethodWriter(com.sun.tools.xjc.generator.bean.ClassOutlineImpl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.MethodWriter com.sun.codemodel.JVar addParameter(com.sun.codemodel.JType, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.tools.xjc.outline.ClassOutline getClazz(com.sun.tools.xjc.model.CClassInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.tools.xjc.util.CodeModelClassFactory getClassFactory()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.codemodel.JClass generateStaticClass(java.lang.Class, com.sun.codemodel.JPackage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.PackageOutlineImpl PackageOutlineImpl(com.sun.tools.xjc.generator.bean.BeanGenerator, com.sun.tools.xjc.model.Model, com.sun.codemodel.JPackage) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.PackageOutlineImpl com.sun.codemodel.JPackage _package()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator void generateAdapterIfNecessary(com.sun.tools.xjc.model.CPropertyInfo, com.sun.codemodel.JAnnotatable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.ImplStructureStrategy com.sun.tools.xjc.generator.bean.ImplStructureStrategy.Result createClasses(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.model.CClassInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.codemodel.JType resolve(com.sun.tools.xjc.model.CTypeRef, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.PackageOutlineImpl com.sun.tools.xjc.generator.bean.ObjectFactoryGenerator objectFactoryGenerator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.tools.xjc.generator.bean.ClassOutlineImpl getClazz(com.sun.tools.xjc.model.CClassInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.ImplStructureStrategy com.sun.codemodel.JPackage getPackage(com.sun.codemodel.JPackage, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.codemodel.JClass generateStaticClass(java.lang.Class, com.sun.codemodel.JPackage)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.ImplStructureStrategy void _extends(com.sun.tools.xjc.generator.bean.ClassOutlineImpl, com.sun.tools.xjc.generator.bean.ClassOutlineImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.codemodel.JClassContainer getContainer(com.sun.tools.xjc.model.CClassInfoParent, com.sun.tools.xjc.outline.Aspect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.PackageOutlineImpl PackageOutlineImpl(com.sun.tools.xjc.generator.bean.BeanGenerator, com.sun.tools.xjc.model.Model, com.sun.codemodel.JPackage) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.tools.xjc.outline.PackageOutline getPackageContext(com.sun.codemodel.JPackage)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.tools.xjc.generator.bean.PackageOutlineImpl getPackageContext(com.sun.codemodel.JPackage)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.codemodel.JClass generateStaticClass(java.lang.Class, com.sun.codemodel.JPackage) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.ImplStructureStrategy com.sun.tools.xjc.generator.bean.ImplStructureStrategy.Result createClasses(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.model.CClassInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.MethodWriter MethodWriter(com.sun.tools.xjc.outline.ClassOutline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.codemodel.JClassContainer getContainer(com.sun.tools.xjc.model.CClassInfoParent, com.sun.tools.xjc.outline.Aspect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.BeanGenerator com.sun.codemodel.JClass addRuntime(java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.sun.tools.xjc.generator.bean.ImplStructureStrategy com.sun.tools.xjc.generator.bean.ImplStructureStrategy.Result createClasses(com.sun.tools.xjc.outline.Outline, com.sun.tools.xjc.model.CClassInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>
