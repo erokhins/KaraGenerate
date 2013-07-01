@@ -5,10 +5,12 @@
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/xsom.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc-2.0.3.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/lib/xsom_src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc-2.0.3.jar!/1.0" />
     </SOURCES>
   </library>
 </component>
