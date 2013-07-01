@@ -18,7 +18,14 @@ package org.jetbrains.kara.generate
 
 import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType
 
-
+/**
+ * elementName:
+ *      example: attribute type may be on element input, script e.t.c.
+ *      but if type declarations for different elements is equal it is null
+ *      if only 1 element has this attribute - this is null
+ * values:
+ *      for enum & strEnum types
+ */
 
 trait AttributeTypeDeclaration {
     public enum class AttributeType {

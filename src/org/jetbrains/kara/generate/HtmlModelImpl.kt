@@ -22,19 +22,7 @@ import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType
 import java.util.Comparator
 import java.util.ArrayList
 
-fun <T>Iterable<T>.sort(compare: (o1: T, o2: T) -> Int): List<T> {
-    return this.sort(object :Comparator<T> {
-        public override fun compare(o1: T, o2: T): Int {
-            return compare.invoke(o1, o2)
-        }
-    })
-}
 
-public inline fun <T: Comparable<T>> Iterable<T>.sort(): List<T> {
-    val list = toCollection(ArrayList<T>())
-    java.util.Collections.sort(list)
-    return list
-}
 
 class AttributeGroupImp(name: String,
                         parentGroups: Collection<AttributeGroup>,

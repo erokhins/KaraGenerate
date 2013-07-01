@@ -65,12 +65,12 @@ private class DuplicateNameController<T>(val isEquals: (o1: T, o2: T) -> Boolean
         return false
     }
 
-    fun getAllElements(runUniqueName: T.() -> Unit): Collection<T> {
+    fun getAllElements(runForUniqueName: T.() -> Unit): Collection<T> {
         val allElements = ArrayList<T>()
         for (set in elements.values()) {
             if (set.size == 1) {
                 val element = set.first()!!
-                element.runUniqueName()
+                element.runForUniqueName()
                 allElements.add(element)
             } else {
                 allElements.addAll(set)
@@ -79,6 +79,7 @@ private class DuplicateNameController<T>(val isEquals: (o1: T, o2: T) -> Boolean
         return allElements
     }
 
+    // if exist element equals $element with this name return this, else return $element
     fun getEqualsToThis(name: String, element: T): T {
         val set = elements.get(name)
         if (set != null) {
@@ -163,13 +164,11 @@ class AttributeTypeCache {
         return attrTypeDuplicateContr.getEqualsToThis(typeDecl.name, typeDecl)
     }
 
-    public fun getAllTypeDecl(): Collection<AttributeTypeDeclaration> {
-        // must be run !!
+    public fun getAllTypeDecl(): Collection<AttributeTypeDeclaration> { // must be run !!
         return attrTypeDuplicateContr.getAllElements { setElementName(null) }
     }
 
-    public fun getAllDecl(): Collection<AttributeDeclaration> {
-        // must be run !!
+    public fun getAllDecl(): Collection<AttributeDeclaration> { // must be run !!
         return attrDuplicateContr.getAllElements { setElementName(null) }
     }
 

@@ -17,6 +17,8 @@
 package org.jetbrains.kara.generate
 
 import java.util.HashMap
+import java.util.Comparator
+import java.util.ArrayList
 
 
 public class Cache<I, R> {
@@ -35,4 +37,18 @@ public class Cache<I, R> {
     fun getAllElements(): Collection<R> {
         return cache.values()
     }
+}
+
+fun <T>Iterable<T>.sort(compare: (o1: T, o2: T) -> Int): List<T> {
+    return this.sort(object :Comparator<T> {
+        public override fun compare(o1: T, o2: T): Int {
+            return compare.invoke(o1, o2)
+        }
+    })
+}
+
+public inline fun <T: Comparable<T>> Iterable<T>.sort(): List<T> {
+    val list = toCollection(ArrayList<T>())
+    java.util.Collections.sort(list)
+    return list
 }
