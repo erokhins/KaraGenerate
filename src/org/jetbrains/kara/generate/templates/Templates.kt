@@ -97,7 +97,7 @@ fun attrTypeToTypeName(attrType: AttributeType): String? {
         integer -> "Int"
         positiveInteger -> "Int"
         boolean -> "Boolean"
-        string -> "StringAttribute"
+        string -> "String"
         ticker -> "Boolean"
         anyUri -> "Link"
 
@@ -124,6 +124,16 @@ fun renderAttributeGroup(saveGroupName: String, extendedGroups: List<String>, at
     s.appendLine("""public trait ${saveGroupName}${extendedGroups.toExtendString()} {""")
     for (attr in attributes) {
         s.appendLine { append(INDENT).append("public var ${attr.attrName}: ${attr.typeName}") }
+    }
+    s.appendLine("}")
+    return s.toString()
+}
+
+fun renderMainAttributeClass(attributes: List<AttributeRender>, startIndent: String = ""): String {
+    val s = StrBuilder(startIndent)
+    s.appendLine("""public class AttributesImpl: BaseAttributeGroupImpl() {""")
+    for (attr in attributes) {
+        s.appendLine { append(INDENT).append("protected var ${attr.attrName}: ${attr.typeName} by Attributes.${attr.attrName}") }
     }
     s.appendLine("}")
     return s.toString()

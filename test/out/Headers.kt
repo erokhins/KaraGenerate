@@ -64,3 +64,8 @@ public trait EnumValues<T : Enum<T>> : Enum<T> { // Enum must implements this tr
 public class EnumAttribute<T : EnumValues<T>>(name: String, val klass : Class<T>): Attribute<T>(name)
 
 public class StrEnumAttribute<T>(name: String, val klass : Class<T>): Attribute<T>(name)
+
+
+public open class BaseAttributeGroupImpl: AttributeGroup {
+    override val attributesMap: MutableMap<String, Any> = HashMap()
+}

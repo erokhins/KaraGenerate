@@ -19,6 +19,7 @@ package org.jetbrains.kara.generate.templates
 import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType.*
 import java.util.HashMap
 import java.util.ArrayList
+import org.jetbrains.kara.generate.sort
 import org.jetbrains.kara.generate.templates.SaveName
 import org.jetbrains.kara.generate.templates.renderEnumAttributeClass
 import org.jetbrains.kara.generate.templates.renderEnumAttributeTypeDeclaration
@@ -26,6 +27,7 @@ import org.jetbrains.kara.generate.AttributeTypeDeclaration
 import org.jetbrains.kara.generate.AttributeDeclaration
 import org.jetbrains.kara.generate.HtmlModel
 import org.jetbrains.kara.generate.AttributeGroup
+import java.util.HashSet
 
 class AttributeRender(val attrName: String, val typeName: String)
 
@@ -146,4 +148,15 @@ class AttributesGenerator(val htmlModel: HtmlModel) {
         }
     }
 
+
+    fun generateMainAttributeFile(): String {
+        return renderFile("kara.test") {
+            val allAttrInGroups: MutableSet<AttributeDeclaration> = HashSet<AttributeDeclaration>()
+            for (attrGroup in htmlModel.attributeGroups) {
+                allAttrInGroups.addAll(attrGroup.newAttributes)
+            }
+            val allAttrRenders = allAttrInGroups.sort({(a, b) -> a.name.compareTo(b.name) }).map { getAttributeRender(it) }
+            append(renderMainAttributeClass(allAttrRenders, INDENT))
+        }
+    }
 }
