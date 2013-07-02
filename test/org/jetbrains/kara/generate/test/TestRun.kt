@@ -38,4 +38,5 @@ public fun main(args: Array<String>) {
     val attrGenerator = AttributesGenerator(model)
     writeFile(WRITE_PATCH + "Enums.kt", attrGenerator.generateFileEnumClasses())
     writeFile(WRITE_PATCH + "Attributes.kt", attrGenerator.generateAttributesFile())
+    writeFile(WRITE_PATCH + "AttributeGroups.kt", attrGenerator.generateAttributesGroupFile())
 }

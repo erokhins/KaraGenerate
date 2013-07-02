@@ -25,6 +25,11 @@ import org.jetbrains.kara.generate.templates.renderEnumAttributeTypeDeclaration
 import org.jetbrains.kara.generate.AttributeTypeDeclaration
 import org.jetbrains.kara.generate.AttributeDeclaration
 import org.jetbrains.kara.generate.HtmlModel
+import org.jetbrains.kara.generate.AttributeGroup
+
+class AttributeRender(val attrName: String, val typeName: String)
+
+
 
 class AttributesGenerator(val htmlModel: HtmlModel) {
     val specialAttrNames: Map<String, String> = createSpecialAttrNames()
@@ -92,6 +97,31 @@ class AttributesGenerator(val htmlModel: HtmlModel) {
     }
 
 
+
+
+    fun getAttributeRender(attrDecl: AttributeDeclaration): AttributeRender {
+        val saveName = getSaveName(attrDecl.name, attrDecl.elementName)
+        val attributeType = attrDecl.attrTypeDeclaration.attrType
+        val className =
+            if (attributeType == enumType || attributeType == strEnumType) {
+                getAttributeTypeClassName(attrDecl.attrTypeDeclaration)
+            } else {
+                attrTypeToTypeName(attributeType)
+            }
+        return AttributeRender(saveName, className!!)
+    }
+
+
+    fun getSaveGroupName(name: String): String {
+        return upFirstLetter(getSaveValue(name));
+    }
+
+    fun generateAttributesGroup(attrGroup: AttributeGroup): String {
+        val saveGroupName = getSaveGroupName(attrGroup.name)
+        val parentGroupsNames = attrGroup.parentGroups.map { getSaveGroupName(it.name) }
+        return renderAttributeGroup(saveGroupName, parentGroupsNames, attrGroup.newAttributes.map { getAttributeRender(it) }, INDENT)
+    }
+
     fun generateFileEnumClasses(): String {
         return renderFile("kara.test") {
             for (attrTypeDecl in htmlModel.attributeTypeDeclarations) {
@@ -104,6 +134,14 @@ class AttributesGenerator(val htmlModel: HtmlModel) {
         return renderAttributesFile("kara.test") {
             for (attrDecl in htmlModel.attributeDeclarations) {
                 append(INDENT).append(generateAttributeDeclaration(attrDecl)).append("\n")
+            }
+        }
+    }
+
+    fun generateAttributesGroupFile(): String {
+        return renderFile("kara.test") {
+            for (attrGroup in htmlModel.attributeGroups) {
+                append(generateAttributesGroup(attrGroup)).append("\n")
             }
         }
     }

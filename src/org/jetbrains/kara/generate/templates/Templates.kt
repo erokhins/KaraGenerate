@@ -19,6 +19,8 @@ package org.jetbrains.kara.generate.templates
 import org.jetbrains.kara.generate.test.StrBuilder
 import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType.*
 import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType
+import org.jetbrains.kara.generate.toStringList
+import org.jetbrains.kara.generate.AttributeTypeDeclaration
 
 class SaveName(val saveName: String, val realName: String)
 val INDENT = "    "
@@ -43,18 +45,24 @@ fun renderAttributesFile(packageName: String = "kara", append: StringBuilder.() 
     }
 }
 
-fun renderEnumElement(className: String, value: SaveName): String {
-    return """${value.saveName}: ${className}("${value.realName}")"""
+fun <T>Collection<T>.toExtendString(toStrFun: T.() -> String = { toString() }): String {
+    val str = this.toStringList(toStrFun, ", ")
+    return if (str.isEmpty()) {
+        ""
+    } else {
+        ": " + str
+    }
 }
+
 
 fun renderEnumAttributeClass(className: String, values: List<SaveName>, startIndent: String = ""): String {
     val s = StrBuilder(startIndent)
-    val header = """public enum class ${className}(override val value: String) : EnumValues<${className}> {"""
+    val header = """public enum class ${className}(override val value: String): EnumValues<${className}> {"""
     val tail = """}"""
 
     s.appendLine(header)
     for (value in values) {
-        s.appendLine{ append(INDENT).append(renderEnumElement(className, value)) }
+        s.appendLine{ append(INDENT).append("""${value.saveName}: ${className}("${value.realName}")""") }
     }
 
     s.appendLine(tail)
@@ -82,6 +90,21 @@ fun attrTypeToClassName(attrType: AttributeType): String?  {
     }
 }
 
+fun attrTypeToTypeName(attrType: AttributeType): String? {
+    return when (attrType) {
+        dateTime -> "String"
+        float -> "Float"
+        integer -> "Int"
+        positiveInteger -> "Int"
+        boolean -> "Boolean"
+        string -> "StringAttribute"
+        ticker -> "Boolean"
+        anyUri -> "Link"
+
+        else -> null
+    }
+}
+
 fun renderSimpleAttributeTypeDeclaration(attrName: String, realName: String, attrType: AttributeType): String  {
     return """val ${attrName} = ${attrTypeToClassName(attrType)}("${realName}")"""
 }
@@ -93,4 +116,15 @@ fun renderEnumAttributeTypeDeclaration(attrName: String, realName: String, nameC
 // TODO:
 fun renderStrEnumAttributeTypeDeclaration(attrName: String, realName: String, nameClass: String): String {
     return renderEnumAttributeTypeDeclaration(attrName, realName, nameClass)
+}
+
+
+fun renderAttributeGroup(saveGroupName: String, extendedGroups: List<String>, attributes: List<AttributeRender>, startIndent: String = ""): String {
+    val s = StrBuilder(startIndent)
+    s.appendLine("""public trait ${saveGroupName}${extendedGroups.toExtendString()} {""")
+    for (attr in attributes) {
+        s.appendLine { append(INDENT).append("public var ${attr.attrName}: ${attr.typeName}") }
+    }
+    s.appendLine("}")
+    return s.toString()
 }

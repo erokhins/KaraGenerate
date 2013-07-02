@@ -47,6 +47,17 @@ fun <T>Iterable<T>.sort(compare: (o1: T, o2: T) -> Int): List<T> {
     })
 }
 
+fun <T>Collection<T>.toStringList(toStrFun: T.() -> String = {toString()}, separator: String = ", "): String {
+    if (this.isEmpty()) return ""
+
+    val s = StringBuilder()
+    for (element in this) {
+        if (s.length() > 0) s.append(separator)
+        s.append(element.toStrFun())
+    }
+    return s.toString()
+}
+
 public inline fun <T: Comparable<T>> Iterable<T>.sort(): List<T> {
     val list = toCollection(ArrayList<T>())
     java.util.Collections.sort(list)
