@@ -668,8 +668,7 @@
             </xsd:sequence>
              -->
             <xsd:choice>
-                <xsd:element ref="dd"/>
-                <xsd:element ref="dt"/>
+                <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
         </xsd:complexType>
@@ -1256,7 +1255,7 @@
         </xsd:complexType>
     </xsd:element>
 
-    <xsd:element name="input">
+        <xsd:element name="input">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
             <xsd:attribute name="type">
