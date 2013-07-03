@@ -20,8 +20,15 @@ import org.jetbrains.kara.generate.*
 
 
 
-class StrBuilder(val indent: String = "") {
+class StrBuilder(val indent: String = "", val separator: String = ", ") {
     private val stringBuilder = StringBuilder()
+
+    public fun separate(): StrBuilder {
+        if (stringBuilder.length() > 0) {
+            append(separator)
+        }
+        return this
+    }
 
     public fun append(any: Any?): StrBuilder {
         stringBuilder.append(any)
@@ -37,7 +44,7 @@ class StrBuilder(val indent: String = "") {
     }
 
     public fun appendCollection<T>(values: Collection<T>, strMaker: T.() -> String = { this.toString() }): StrBuilder {
-        values.map { it.strMaker() }.appendString(stringBuilder, ", ", "[", "]")
+        values.map { it.strMaker() }.appendString(stringBuilder, separator, "[", "]")
         return this
     }
 
