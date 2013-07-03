@@ -131,7 +131,7 @@ fun renderAttributeGroup(saveGroupName: String, extendedGroups: List<String>, at
 
 fun renderMainAttributeClass(attributes: List<AttributeRender>, startIndent: String = ""): String {
     val s = StrBuilder(startIndent)
-    s.appendLine("""public class AttributesImpl: BaseAttributeGroupImpl() {""")
+    s.appendLine("""public open class AttributesImpl: BaseAttributeGroupImpl() {""")
     for (attr in attributes) {
         s.appendLine { append(INDENT).append("protected var ${attr.attrName}: ${attr.typeName} by Attributes.${attr.attrName}") }
     }

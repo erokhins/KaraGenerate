@@ -20,6 +20,7 @@ import com.sun.xml.xsom.parser.XSOMParser
 import org.jetbrains.kara.generate.HtmlModelBuilder
 import org.jetbrains.kara.generate.templates.AttributesGenerator
 import java.io.File
+import org.jetbrains.kara.generate.templates.ElementGenerator
 
 val SCHEME_URL = "src/org/jetbrains/kara/generate/grammar/html_5.xsd"
 val HTML_NAMESPACE = "html-5"
@@ -36,10 +37,16 @@ public fun main(args: Array<String>) {
 
     val model = HtmlModelBuilder(schema).build()
     val attrGenerator = AttributesGenerator(model)
+
+    val elementGenerator = ElementGenerator(model)
+
+    writeFile(WRITE_PATCH + "model.out", makeStr(model))
     writeFile(WRITE_PATCH + "Enums.kt", attrGenerator.generateFileEnumClasses())
     writeFile(WRITE_PATCH + "Attributes.kt", attrGenerator.generateAttributesFile())
     writeFile(WRITE_PATCH + "AttributeGroups.kt", attrGenerator.generateAttributesGroupFile())
     writeFile(WRITE_PATCH + "AttributesImpl.kt", attrGenerator.generateMainAttributeFile())
+
+    writeFile(WRITE_PATCH + "HtmlElement.kt", elementGenerator.renderHtmlElementFile())
 
 
 }
