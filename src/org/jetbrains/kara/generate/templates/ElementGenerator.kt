@@ -23,6 +23,7 @@ import java.util.ArrayList
 import org.jetbrains.kara.generate.templates.ElementGenerator.Argument
 import org.jetbrains.kara.generate.ElementDeclaration
 import java.util.HashSet
+import java.util.HashMap
 
 
 class ElementGenerator(val htmlModel: HtmlModel) {
@@ -43,16 +44,29 @@ class ElementGenerator(val htmlModel: HtmlModel) {
     //    fun HtmlBodyTag.ul(c : StyleClass? = null, id : String? = null, contents : UL.() -> Unit = empty_contents) = contentTag(UL(this), c, id, contents)
 
     class ElementInformationProvider(val element: ElementDeclaration) {
+        val replaceMap: Map<String, String>
+        {
+            val replaceMap = HashMap<String, String>()
+            replaceMap.put("var", "var_")
+            replaceMap.put("object", "object_")
+
+            this.replaceMap = replaceMap
+        }
+
         fun isBodyTagElement(): Boolean {
             return true // TODO:
         }
 
+        fun getSaveName(): String {
+            return replaceMap.get(element.name) ?: element.name
+        }
+
         fun getNameTag(): String {
-            return element.name.toLowerCase()
+            return getSaveName().toLowerCase()
         }
 
         fun getClassNameForTag(): String {
-            return element.name.toUpperCase()
+            return getSaveName().toUpperCase()
         }
 
         fun getArguments(): List<Argument> {
