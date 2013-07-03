@@ -30,11 +30,11 @@ class ElementGenerator(val htmlModel: HtmlModel) {
 
     class Argument(val name: String, val argType: String, val defaultValue: String? = null)
 
-    fun renderFunctionHeader(functionName: String, arguments: List<Argument>): String {
+    fun renderFunctionHeader(functionName: String, arguments: List<Argument>, addDefaultValue: Boolean = true): String {
         return arguments.map{
             val s = "${it.name}: ${it.argType}"
-            if (it.defaultValue != null) {
-                s + "= ${it.defaultValue}"
+            if (it.defaultValue != null && addDefaultValue) {
+                s + " = ${it.defaultValue}"
             } else {
                 s
             }
@@ -61,11 +61,15 @@ class ElementGenerator(val htmlModel: HtmlModel) {
             return replaceMap.get(element.name) ?: element.name
         }
 
+        fun getReaTagName(): String {
+            return element.name
+        }
+
         fun getNameTag(): String {
             return getSaveName().toLowerCase()
         }
 
-        fun getClassNameForTag(): String {
+        fun getClassName(): String {
             return getSaveName().toUpperCase()
         }
 
@@ -74,7 +78,7 @@ class ElementGenerator(val htmlModel: HtmlModel) {
             if (isBodyTagElement()) {
                 args.add(Argument("c", "StyleClass?", "null"))
                 args.add(Argument("id", "String?", "null"))
-                args.add(Argument("contents", "${getClassNameForTag()}.() -> Unit", "empty_contents"))
+                args.add(Argument("contents", "${getClassName()}.() -> Unit", "empty_contents"))
             } else {
                 // TODO:
             }
@@ -96,7 +100,7 @@ class ElementGenerator(val htmlModel: HtmlModel) {
         if (inf.isBodyTagElement()) {
             val functionHeader = renderFunctionHeader(inf.getNameTag(), inf.getArguments())
             s.append(indent)
-            s.append("${prefix}${functionHeader}: Unit = contentTag(${inf.getClassNameForTag()}(this), c, id, contents)")
+            s.append("${prefix}${functionHeader}: Unit = contentTag(${inf.getClassName()}(this), c, id, contents)")
         } else {
             // TODO:
         }
@@ -143,10 +147,29 @@ class ElementGenerator(val htmlModel: HtmlModel) {
         }
         for (element in group.newAllowElements) {
             val inf = ElementInformationProvider(element)
-            val functionHeader = renderFunctionHeader(inf.getNameTag(), inf.getArguments())
+            val functionHeader = renderFunctionHeader(inf.getNameTag(), inf.getArguments(), false)
             s.appendLine("${INDENT}public fun $functionHeader")
         }
         s.appendLine("}")
+        return s.toString()
+    }
+
+    fun renderElement(element: ElementDeclaration, indent: String = ""): String {
+        val s = StrBuilder(indent)
+        val elementInf = ElementInformationProvider(element)
+        var ext = renderTraitExtension(element)
+        if (ext.length() > 0) {
+            ext = ext + ", "
+        }
+        s.appendLine("""class ${elementInf.getClassName()}(containingTag: HtmlElement): ${ext}HtmlElement(containingTag, "${elementInf.getReaTagName()}") {""")
+        for (attr in element.newAttributes) {
+            //TODO: attrGenerate
+        }
+        s.appendLine("}")
+        for (el in element.newAllowElements) {
+            val inf = ElementInformationProvider(el)
+            s.appendLine(renderFunction(inf, "public fun ${elementInf.getClassName()}.", indent))
+        }
         return s.toString()
     }
 
@@ -165,6 +188,14 @@ class ElementGenerator(val htmlModel: HtmlModel) {
         return renderFile("kara.test") {
             for (group in htmlModel.elementGroupDeclaration) {
                 append(renderElementGroupClass(group)).append("\n")
+            }
+        }
+    }
+
+    fun renderAllElementsFile(): String {
+        return renderFile("kara.test") {
+            for (element in htmlModel.elementDeclarations) {
+                append(renderElement(element)).append("\n")
             }
         }
     }
