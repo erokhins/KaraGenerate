@@ -49,5 +49,6 @@ public fun main(args: Array<String>) {
     writeFile(WRITE_PATCH + "HtmlElement.kt", elementGenerator.renderHtmlElementFile())
     writeFile(WRITE_PATCH + "ElementGroups.kt", elementGenerator.renderElementGroupFile())
     writeFile(WRITE_PATCH + "Elements.kt", elementGenerator.renderAllElementsFile())
+    writeFile(WRITE_PATCH + "DeprecatedFun.kt", elementGenerator.renderDeprecatedTraitFile())
 
 }

@@ -124,6 +124,21 @@ class ElementGenerator(val htmlModel: HtmlModel) {
         return s.toString()
     }
 
+    fun renderDeprecatedTrait(elementInfList: List<ElementInformationProvider>, indent: String = ""): String {
+        val s = StrBuilder(indent)
+        s.appendLine("trait DeprecatedFun {")
+
+        for (inf in elementInfList) {
+            s.appendLine {
+                val functionHeader = renderFunctionHeader(inf.getNameTag(), inf.getArguments(), false)
+                s.appendLine("""${INDENT}deprecated("") public fun $functionHeader""")
+            }
+        }
+
+        s.appendLine("}")
+        return s.toString()
+    }
+
     fun renderTraitExtension(decl: AbstractElementDeclaration): String {
         val allTraits = HashSet<String>()
         if (decl.allowText) {
@@ -197,6 +212,12 @@ class ElementGenerator(val htmlModel: HtmlModel) {
             for (element in htmlModel.elementDeclarations) {
                 append(renderElement(element)).append("\n")
             }
+        }
+    }
+
+    fun renderDeprecatedTraitFile(): String {
+        return renderFile("kara.test") {
+            append(renderDeprecatedTrait(htmlModel.elementDeclarations.map { ElementInformationProvider(it) }))
         }
     }
 }
