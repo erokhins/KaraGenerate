@@ -83,13 +83,20 @@ class ElementGenerator(val htmlModel: HtmlModel) {
         }
     }
 
+    class ElementGroupInfProvider(val group: ElementGroupDeclaration) {
+
+        fun getClassName(): String {
+            return upFirstLetter(group.name)
+        }
+    }
+
     // prefix need for Extension function
-    fun renderFunction(inf: ElementInformationProvider, prefix: String = "", indent: String = INDENT): String {
+    fun renderFunction(inf: ElementInformationProvider, prefix: String = "fun ", indent: String = INDENT): String {
         val s = StrBuilder(indent)
         if (inf.isBodyTagElement()) {
             val functionHeader = renderFunctionHeader(inf.getNameTag(), inf.getArguments())
             s.append(indent)
-            s.append("fun ${prefix}${functionHeader} = contentTag(${inf.getClassNameForTag()}(this), c, id, contents)")
+            s.append("${prefix}${functionHeader}: Unit = contentTag(${inf.getClassNameForTag()}(this), c, id, contents)")
         } else {
             // TODO:
         }
@@ -105,10 +112,40 @@ class ElementGenerator(val htmlModel: HtmlModel) {
 
         for (elementInf in elementInfList) {
             s.appendLine {
-                append(renderFunction(elementInf, indent = indent + INDENT))
+                append(renderFunction(elementInf, "protected fun ", indent + INDENT))
             }
         }
 
+        s.appendLine("}")
+        return s.toString()
+    }
+
+    fun renderTraitExtension(decl: AbstractElementDeclaration): String {
+        val allTraits = HashSet<String>()
+        if (decl.allowText) {
+            allTraits.add("AllowText")
+        }
+        allTraits.addAll(decl.attributeGroups.map { getSaveGroupName(it.name) })
+        allTraits.addAll(decl.elementGroups.map { ElementGroupInfProvider(it).getClassName() })
+        return allTraits.makeString(", ")
+    }
+
+    fun renderElementGroupClass(group: ElementGroupDeclaration, indent: String = ""): String {
+        val s = StrBuilder(indent)
+        val groupInf = ElementGroupInfProvider(group)
+        var ext = renderTraitExtension(group)
+        if (ext.length() > 0) {
+            ext = ": " + ext
+        }
+        s.appendLine("trait ${groupInf.getClassName()}${ext} {")
+        for (attr in group.newAttributes) {
+            //TODO: attrGenerate
+        }
+        for (element in group.newAllowElements) {
+            val inf = ElementInformationProvider(element)
+            val functionHeader = renderFunctionHeader(inf.getNameTag(), inf.getArguments())
+            s.appendLine("${INDENT}public fun $functionHeader")
+        }
         s.appendLine("}")
         return s.toString()
     }
@@ -124,4 +161,11 @@ class ElementGenerator(val htmlModel: HtmlModel) {
         }
     }
 
+    fun renderElementGroupFile() : String {
+        return renderFile("kara.test") {
+            for (group in htmlModel.elementGroupDeclaration) {
+                append(renderElementGroupClass(group)).append("\n")
+            }
+        }
+    }
 }

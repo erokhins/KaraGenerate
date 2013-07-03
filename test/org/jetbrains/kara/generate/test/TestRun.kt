@@ -47,6 +47,6 @@ public fun main(args: Array<String>) {
     writeFile(WRITE_PATCH + "AttributesImpl.kt", attrGenerator.generateMainAttributeFile())
 
     writeFile(WRITE_PATCH + "HtmlElement.kt", elementGenerator.renderHtmlElementFile())
-
+    writeFile(WRITE_PATCH + "ElementGroups.kt", elementGenerator.renderElementGroupFile())
 
 }

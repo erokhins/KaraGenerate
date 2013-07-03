@@ -33,7 +33,7 @@ class AttributeRender(val attrName: String, val typeName: String)
 
 
 
-class AttributesGenerator(val htmlModel: HtmlModel) {
+
     val specialAttrNames: Map<String, String> = createSpecialAttrNames()
 
     fun createSpecialAttrNames(): Map<String, String> {
@@ -124,6 +124,7 @@ class AttributesGenerator(val htmlModel: HtmlModel) {
         return renderAttributeGroup(saveGroupName, parentGroupsNames, attrGroup.newAttributes.map { getAttributeRender(it) }, INDENT)
     }
 
+class AttributesGenerator(val htmlModel: HtmlModel) {
     fun generateFileEnumClasses(): String {
         return renderFile("kara.test") {
             for (attrTypeDecl in htmlModel.attributeTypeDeclarations) {
