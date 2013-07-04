@@ -69,6 +69,11 @@ public class HtmlModelBuildTest {
         runTest("cyclical")
     }
 
+
+    test fun duplicateEnumAttribute() {
+        runTest("duplicate_enum_attr")
+    }
+
 //    test fun crash() {
 //        runTest("crash")
 //    }

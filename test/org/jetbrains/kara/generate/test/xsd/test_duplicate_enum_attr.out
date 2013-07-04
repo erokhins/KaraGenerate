@@ -1,0 +1,56 @@
+AttributeTypeDecl:
+   AttributeTypeDecl = (equalsAttr, null, enumType)
+   Values = [auto, false, true]
+
+   AttributeTypeDecl = (noEqualAttr, el1, enumType)
+   Values = [auto, false, true]
+
+   AttributeTypeDecl = (noEqualAttr, el3, enumType)
+   Values = [false, true]
+
+AttributeDecl:
+   AttributeDecl = (equalsAttr, null, null})
+   AttributeTypeDecl = (equalsAttr, null)
+
+   AttributeDecl = (noEqualAttr, el1, null})
+   AttributeTypeDecl = (noEqualAttr, el1)
+
+   AttributeDecl = (noEqualAttr, el3, null})
+   AttributeTypeDecl = (noEqualAttr, el3)
+
+AttributeGroupDecl:
+ElementDecl:
+   ElementDeclaration = (el1, false)
+   ElementGroups = []
+   NewAllowElements = []
+   AttributeGroups = []
+   NewAttributes =
+      AttributeDecl = (equalsAttr, null, null})
+      AttributeTypeDecl = (equalsAttr, null)
+
+      AttributeDecl = (noEqualAttr, el1, null})
+      AttributeTypeDecl = (noEqualAttr, el1)
+
+
+   ElementDeclaration = (el2, false)
+   ElementGroups = []
+   NewAllowElements = []
+   AttributeGroups = []
+   NewAttributes =
+      AttributeDecl = (equalsAttr, null, null})
+      AttributeTypeDecl = (equalsAttr, null)
+
+      AttributeDecl = (noEqualAttr, el3, null})
+      AttributeTypeDecl = (noEqualAttr, el3)
+
+
+   ElementDeclaration = (el3, false)
+   ElementGroups = []
+   NewAllowElements = []
+   AttributeGroups = []
+   NewAttributes =
+      AttributeDecl = (noEqualAttr, el3, null})
+      AttributeTypeDecl = (noEqualAttr, el3)
+
+
+ElementGroup:

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema xmlns='test' xmlns:xsd='http://www.w3.org/2001/XMLSchema' version="1.0" targetNamespace='test'>
+
+    <xsd:element name="el1">
+        <xsd:complexType>
+            <xsd:attribute name="equalsAttr">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="true"/>
+                        <xsd:enumeration value="false"/>
+                        <xsd:enumeration value="auto"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="noEqualAttr">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="true"/>
+                        <xsd:enumeration value="false"/>
+                        <xsd:enumeration value="auto"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:element name="el2">
+        <xsd:complexType>
+            <xsd:attribute name="equalsAttr">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="true"/>
+                        <xsd:enumeration value="false"/>
+                        <xsd:enumeration value="auto"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="noEqualAttr">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="true"/>
+                        <xsd:enumeration value="false"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="el3">
+        <xsd:complexType>
+            <xsd:attribute name="noEqualAttr">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="true"/>
+                        <xsd:enumeration value="false"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
