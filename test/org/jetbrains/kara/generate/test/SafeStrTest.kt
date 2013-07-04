@@ -18,30 +18,71 @@ package org.jetbrains.kara.generate.test
 import org.junit.Test as test
 import kotlin.test.assertEquals
 import org.jetbrains.kara.generate.templates.SafeStr
+import org.jetbrains.kara.generate.templates.TagSafeName
+import org.jetbrains.kara.generate.templates.AttributeSafeName
 
 class SafeStrTest {
     test fun unsavedCharsTest() {
         assertEquals("_6_sazZa____09", SafeStr.replaceUnsafeChars("%6 sazZa&-?_09"))
     }
-
     test fun keyWordReplace() {
         assertEquals("c", SafeStr.generateSafeName("class"))
     }
-
     test fun keyWordReplace2() {
         assertEquals("var_", SafeStr.generateSafeName("var"))
     }
-
     test fun numberStart() {
         assertEquals("_0", SafeStr.generateSafeName("0"))
     }
-
     test fun emptyStr() {
         assertEquals("_", SafeStr.generateSafeName(""))
     }
-
     test fun rightStr() {
         assertEquals("a09_zAZ", SafeStr.generateSafeName("a09_zAZ"))
     }
+    test fun upperEmptyStr() {
+        assertEquals("", SafeStr.upperFirstLetter(""))
+    }
+    test fun upperStrOneLetter() {
+        assertEquals("Z", SafeStr.upperFirstLetter("z"))
+    }
+    test fun upperStr() {
+        assertEquals("AbcZ", SafeStr.upperFirstLetter("abcZ"))
+    }
+    test fun lowerEmptyStr() {
+        assertEquals("", SafeStr.lowerFirstLetter(""))
+    }
+    test fun lowerStrOneLetter() {
+        assertEquals("z", SafeStr.lowerFirstLetter("Z"))
+    }
+    test fun lowerStr() {
+        assertEquals("abcZ", SafeStr.lowerFirstLetter("AbcZ"))
+    }
+}
 
+class TagSafeNameTest {
+    test fun safeName() {
+        assertEquals("_a", TagSafeName("\$a").safeName)
+    }
+    test fun safeKeyName() {
+        assertEquals("var_", TagSafeName("var").safeName)
+    }
+    test fun className() {
+        assertEquals("OBJECT_", TagSafeName("object").className)
+    }
+    test fun functionName() {
+        assertEquals("myTag", TagSafeName("MyTag").functionName)
+    }
+}
+
+class AttributeSafeNameTest {
+    test fun safeName() {
+        assertEquals("inputType", AttributeSafeName("type", "Input").safeName)
+    }
+    test fun safeNameNullElementName() {
+        assertEquals("typeAttr", AttributeSafeName("TypeAttr", null).safeName)
+    }
+    test fun enumClassName() {
+        assertEquals("MyAttr", AttributeSafeName("myAttr").enumClassName)
+    }
 }

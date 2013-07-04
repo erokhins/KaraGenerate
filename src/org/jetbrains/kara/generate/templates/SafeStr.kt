@@ -17,6 +17,25 @@ package org.jetbrains.kara.generate.templates
 
 import java.util.HashMap
 
+class TagSafeName(val realName: String) {
+    public val safeName: String = SafeStr.generateSafeName(realName)
+    public val className: String = safeName.toUpperCase()
+    public val functionName: String = SafeStr.lowerFirstLetter(safeName)
+}
+
+class AttributeSafeName(val realName: String, elementName: String? = null) {
+    public val safeName: String
+    public val enumClassName: String
+    {
+        if (elementName != null) {
+            safeName = elementName.toLowerCase() + SafeStr.upperFirstLetter(SafeStr.replaceUnsafeChars(realName))
+        } else {
+            safeName = SafeStr.generateSafeName(SafeStr.lowerFirstLetter(realName))
+        }
+        enumClassName = SafeStr.upperFirstLetter(safeName)
+    }
+}
+
 object SafeStr {
     private val specialReplaceMap: Map<String, String>
     {
@@ -50,5 +69,15 @@ object SafeStr {
             return "_" + safeChars
         }
         return specialReplace(safeChars) ?: safeChars
+    }
+
+    public fun upperFirstLetter(str: String): String {
+        if (str.isEmpty()) return ""
+        return str.substring(0, 1).toUpperCase() +str.substring(1)
+    }
+
+    public fun lowerFirstLetter(str: String): String {
+        if (str.isEmpty()) return ""
+        return str.substring(0, 1).toLowerCase() +str.substring(1)
     }
 }
