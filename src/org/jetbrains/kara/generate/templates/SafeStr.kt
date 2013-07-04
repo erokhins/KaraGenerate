@@ -60,6 +60,10 @@ object SafeStr {
         return str.replaceAll("[^a-zA-Z_0-9]", "_")
     }
 
+    public fun safeEnumValue(str: String): String {
+        return lowerFirstLetter(replaceUnsafeChars(str))
+    }
+
     public fun generateSafeName(str: String): String {
         val safeChars = replaceUnsafeChars(str)
         if (safeChars.isEmpty()) {
