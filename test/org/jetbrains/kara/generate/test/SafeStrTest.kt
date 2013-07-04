@@ -17,33 +17,31 @@ package org.jetbrains.kara.generate.test
 
 import org.junit.Test as test
 import kotlin.test.assertEquals
-import org.jetbrains.kara.generate.templates.SaveStr
+import org.jetbrains.kara.generate.templates.SafeStr
 
-class SaveStrTest {
-
+class SafeStrTest {
     test fun unsavedCharsTest() {
-        assertEquals("_6_sazZa____09", SaveStr.replaceUnsavedChars("%6 sazZa&-?_09"))
+        assertEquals("_6_sazZa____09", SafeStr.replaceUnsafeChars("%6 sazZa&-?_09"))
     }
 
     test fun keyWordReplace() {
-        assertEquals("c", SaveStr.generateSaveName("class"))
+        assertEquals("c", SafeStr.generateSafeName("class"))
     }
 
     test fun keyWordReplace2() {
-        assertEquals("var_", SaveStr.generateSaveName("var"))
+        assertEquals("var_", SafeStr.generateSafeName("var"))
     }
 
     test fun numberStart() {
-        assertEquals("_0", SaveStr.generateSaveName("0"))
+        assertEquals("_0", SafeStr.generateSafeName("0"))
     }
 
     test fun emptyStr() {
-        assertEquals("_", SaveStr.generateSaveName(""))
+        assertEquals("_", SafeStr.generateSafeName(""))
     }
 
     test fun rightStr() {
-        assertEquals("a09_zAZ", SaveStr.generateSaveName("a09_zAZ"))
+        assertEquals("a09_zAZ", SafeStr.generateSafeName("a09_zAZ"))
     }
-
 
 }

@@ -17,8 +17,7 @@ package org.jetbrains.kara.generate.templates
 
 import java.util.HashMap
 
-
-object SaveStr {
+object SafeStr {
     private val specialReplaceMap: Map<String, String>
     {
         val specialReplaceMap = HashMap<String, String>()
@@ -38,18 +37,18 @@ object SaveStr {
         return specialReplaceMap.get(str)
     }
 
-    public fun replaceUnsavedChars(str: String): String {
+    public fun replaceUnsafeChars(str: String): String {
         return str.replaceAll("[^a-zA-Z_0-9]", "_")
     }
 
-    public fun generateSaveName(str: String): String {
-        val saveChars = replaceUnsavedChars(str)
-        if (saveChars.isEmpty()) {
+    public fun generateSafeName(str: String): String {
+        val safeChars = replaceUnsafeChars(str)
+        if (safeChars.isEmpty()) {
             return "_"
         }
-        if (saveChars[0] in '0'..'9') {
-            return "_" + saveChars
+        if (safeChars[0] in '0'..'9') {
+            return "_" + safeChars
         }
-        return specialReplace(saveChars) ?: saveChars
+        return specialReplace(safeChars) ?: safeChars
     }
 }
