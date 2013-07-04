@@ -23,6 +23,29 @@ import java.util.Comparator
 import java.util.ArrayList
 
 
+fun doubleCompare(c1: Int, c2: Int): Int {
+    if (c1 == 0) {
+        return c2
+    } else {
+        return c1
+    }
+}
+
+fun AttributeDeclaration.compareTo(that: AttributeDeclaration): Int {
+    if (this.elementName == null || that.elementName == null) {
+        return this.name.compareTo(that.name)
+    } else {
+        return doubleCompare(this.name.compareTo(that.name), this.elementName!!.compareTo(that.elementName!!))
+    }
+}
+
+fun AttributeTypeDeclaration.compareTo(that: AttributeTypeDeclaration): Int {
+    if (this.elementName == null || that.elementName == null) {
+        return this.name.compareTo(that.name)
+    } else {
+        return doubleCompare(this.name.compareTo(that.name), this.elementName!!.compareTo(that.elementName!!))
+    }
+}
 
 class AttributeGroupImp(name: String,
                         parentGroups: Collection<AttributeGroup>,
@@ -30,7 +53,7 @@ class AttributeGroupImp(name: String,
 ): AttributeGroup {
     override val name: String = name
     override val parentGroups: List<AttributeGroup> = parentGroups.sort({(a, b) -> a.name.compareTo(b.name) })
-    override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a, b) -> a.compareTo(b) })
 }
 
 
@@ -107,7 +130,7 @@ open class CommonElementDeclaration(name: String,
     override val name: String = name
     override val allowText: Boolean = allowText
     override val attributeGroups: List<AttributeGroup> = attributeGroups.sort({(a, b) -> a.name.compareTo(b.name) })
-    override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val newAttributes: List<AttributeDeclaration> = newAttributes.sort({(a, b) -> a.compareTo(b) })
     override val elementGroups: List<ElementGroupDeclaration> = elementGroups.sort({(a, b) -> a.name.compareTo(b.name) })
 
     private var realNewAllowElements: List<ElementDeclaration>? = null;
@@ -128,8 +151,8 @@ class HtmlModelImpl(
         elementDeclarations: Collection<ElementDeclaration>,
         elementGroupDeclaration: Collection<ElementGroupDeclaration>
 ): HtmlModel {
-    override val attributeTypeDeclarations: List<AttributeTypeDeclaration> = attributeTypeDeclarations.sort({(a, b) -> a.name.compareTo(b.name) })
-    override val attributeDeclarations: List<AttributeDeclaration> = attributeDeclarations.sort({(a, b) -> a.name.compareTo(b.name) })
+    override val attributeTypeDeclarations: List<AttributeTypeDeclaration> = attributeTypeDeclarations.sort({(a, b) -> a.compareTo(b) })
+    override val attributeDeclarations: List<AttributeDeclaration> = attributeDeclarations.sort({(a, b) -> a.compareTo(b) })
     override val attributeGroups: List<AttributeGroup> = attributeGroups.sort({(a, b) -> a.name.compareTo(b.name) })
     override val elementDeclarations: List<ElementDeclaration> = elementDeclarations.sort({(a, b) -> a.name.compareTo(b.name) })
     override val elementGroupDeclaration: List<ElementGroupDeclaration> = elementGroupDeclaration.sort({(a, b) -> a.name.compareTo(b.name) })
