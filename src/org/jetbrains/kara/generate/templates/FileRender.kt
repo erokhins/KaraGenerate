@@ -19,8 +19,6 @@ import org.jetbrains.kara.generate.*
 import java.util.HashSet
 
 
-val INDENT = "    "
-val ENDLINE = "\n"
 
 class FileRender(val htmlModel: HtmlModel, val packageName: String = "kara.test") {
 

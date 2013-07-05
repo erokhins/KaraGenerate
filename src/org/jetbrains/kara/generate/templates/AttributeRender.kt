@@ -15,7 +15,7 @@
  */
 package org.jetbrains.kara.generate.templates
 
-import org.jetbrains.kara.generate.AttributeDeclaration
+import org.jetbrains.kara.generate.*
 import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType.*
 import org.jetbrains.kara.generate.AttributeTypeDeclaration
 import java.util.ArrayList
@@ -64,6 +64,7 @@ fun AttributeTypeDeclaration.inf(): AttributeTypeInf {
             }
     return AttributeTypeInf(className, typeName)
 }
+
 val AttributeGroup.className: String
     get() {
         return SafeStr.upperFirstLetter(SafeStr.generateSafeName(name))
@@ -72,24 +73,18 @@ val AttributeGroup.className: String
 object AttributeRender {
     val IMPL_PROTECTED_CLASS = "AttributesImpl"
 
-
-
-
-
     fun renderEnumClass(attrDecl: AttributeTypeDeclaration, indent: String = ""): String {
         assert(attrDecl.attrType == enumType || attrDecl.attrType == strEnumType,
                 "Type must be enumType or strEnum, but it is: " + attrDecl.attrType)
 
         val s = StrBuilder(indent)
         val className = attrDecl.inf().className
-        s.appendLine("""public enum class ${className}(override val value: String): EnumValues<${className}> {""")
-        for (value in attrDecl.values) {
-            s.appendLine{
+        s.brackets("""public enum class ${className}(override val value: String): EnumValues<${className}>""") {
+            for (value in attrDecl.values) {
                 val safeValue = SafeStr.safeEnumValue(value)
-                append(INDENT).append("""${safeValue}: ${className}("${value}")""")
+                appendLine("""${safeValue}: ${className}("${value}")""")
             }
         }
-        s.appendLine("}")
         return s.toString()
     }
 
@@ -105,21 +100,21 @@ object AttributeRender {
     fun renderAttributesGroupTrait(attrGroup: AttributeGroup, indent: String = ""): String {
         val s = StrBuilder(indent)
         val extendStr = attrGroup.parentGroups.toExtendString { className }
-        s.appendLine("""public trait ${attrGroup.className}${extendStr} {""")
-        for (attr in attrGroup.newAttributes) {
-            s.appendLine { append(INDENT).append("public var ${attr.propertyName}: ${attr.typeName}") }
+        s.brackets("""public trait ${attrGroup.className}${extendStr}""") {
+            for (attr in attrGroup.newAttributes) {
+                appendLine("public var ${attr.propertyName}: ${attr.typeName}")
+            }
         }
-        s.appendLine("}")
         return s.toString()
     }
 
     fun renderProtectedImplAttributeClass(attributes: List<AttributeDeclaration>, indent: String = ""): String {
         val s = StrBuilder(indent)
-        s.appendLine("""public open class $IMPL_PROTECTED_CLASS: BaseAttributeGroupImpl() {""")
-        for (attr in attributes) {
-            s.appendLine { append(INDENT).append("protected var ${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}") }
+        s.brackets("""public open class $IMPL_PROTECTED_CLASS: BaseAttributeGroupImpl()""") {
+            for (attr in attributes) {
+                appendLine("protected var ${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
+            }
         }
-        s.appendLine("}")
         return s.toString()
     }
 }

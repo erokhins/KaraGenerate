@@ -21,6 +21,9 @@ import java.util.Comparator
 import java.util.ArrayList
 
 
+val INDENT = "    "
+val ENDLINE = "\n"
+
 public class Cache<I, R> {
     private val cache: MutableMap<I, R> = HashMap<I, R>()
 
@@ -77,6 +80,11 @@ fun <T>Collection<T>.toExtendString(toStrFun: T.() -> String = { toString() }): 
 class StrBuilder(val indent: String = "", val separator: String = ", ") {
     private val stringBuilder = StringBuilder()
 
+    public val length: Int
+        get() {
+            return stringBuilder.length()
+        }
+
     public fun separate(): StrBuilder {
         if (stringBuilder.length() > 0) {
             append(separator)
@@ -95,6 +103,18 @@ class StrBuilder(val indent: String = "", val separator: String = ", ") {
     public fun appendLine(line: StrBuilder.() -> Unit = {}) {
         append(indent).line()
         append("\n")
+    }
+
+    public fun brackets(prefixLine: String = "", brackets: String = "{}", indent: String = INDENT, innerAppend: StrBuilder.() -> Unit) {
+        val s = StrBuilder(this@StrBuilder.indent + indent)
+        s.innerAppend()
+        if (s.length > 0) {
+            this.appendLine("$prefixLine ${brackets[0]}")
+            this.append(s.toString())
+            this.appendLine(brackets[1])
+        } else {
+            this.appendLine(prefixLine)
+        }
     }
 
     public fun appendCollection<T>(values: Collection<T>, strMaker: T.() -> String = { this.toString() }): StrBuilder {
