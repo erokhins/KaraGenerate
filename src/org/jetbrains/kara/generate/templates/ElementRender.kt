@@ -90,7 +90,7 @@ object ElementRender {
             for (function in element.getAllFunction()!!) {
                 val functionHeader = renderFunctionHeader(element.functionName, function.arguments)
                 s.brackets("$prefix$functionHeader: Unit") {
-                    append(function.body)
+                    append(function.body.normalize(indent+INDENT))
                 }
             }
         }

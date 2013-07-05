@@ -77,6 +77,16 @@ fun <T>Collection<T>.toExtendString(toStrFun: T.() -> String = { toString() }): 
     }
 }
 
+// remove start & end empty lines and set indent for all lines
+fun String.normalize(indent: String = ""): String {
+    val lines = this.trim().split("\n")
+    val s = StrBuilder(indent)
+    lines.forEach {
+        s.appendLine(it.trim())
+    }
+    return s.toString()
+}
+
 class StrBuilder(val indent: String = "", val separator: String = ", ") {
     private val stringBuilder = StringBuilder()
 

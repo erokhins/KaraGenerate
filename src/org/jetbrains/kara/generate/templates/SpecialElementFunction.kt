@@ -51,7 +51,7 @@ object SpecialElementFunction {
         map.put("meta", { arg("name", "String").arg("content", "String") },
                 """
                     val tag = build(META(this), { })
-                    tag.name = name
+                    //tag.name = name
                     tag.content = content
                 """
                 )
