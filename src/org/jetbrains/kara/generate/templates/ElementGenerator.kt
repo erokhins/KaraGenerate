@@ -17,6 +17,7 @@
 package org.jetbrains.kara.generate.templates
 
 import org.jetbrains.kara.generate.*
+import org.jetbrains.kara.generate.templates.*
 import java.util.Collections
 import java.util.ArrayList
 import org.jetbrains.kara.generate.templates.ElementGenerator.Argument
@@ -89,7 +90,7 @@ class ElementGenerator(val htmlModel: HtmlModel) {
     class ElementGroupInfProvider(val group: ElementGroupDeclaration) {
 
         fun getClassName(): String {
-            return upFirstLetter(group.name)
+            return SafeStr.upperFirstLetter(group.name)
         }
     }
 
@@ -143,7 +144,7 @@ class ElementGenerator(val htmlModel: HtmlModel) {
         if (decl.allowText) {
             allTraits.add("AllowText")
         }
-        allTraits.addAll(decl.attributeGroups.map { getSaveGroupName(it.name) })
+        allTraits.addAll(decl.attributeGroups.map { it.className })
         allTraits.addAll(decl.elementGroups.map { ElementGroupInfProvider(it).getClassName() })
         return allTraits.makeString(", ")
     }
@@ -186,37 +187,37 @@ class ElementGenerator(val htmlModel: HtmlModel) {
         }
         return s.toString()
     }
-
-    fun renderHtmlElementFile(): String {
-        return renderFile("kara.test") {
-            val allElementsInGroups = HashSet<ElementDeclaration>()
-            for (group in htmlModel.elementGroupDeclaration) {
-                allElementsInGroups.addAll(group.newAllowElements)
-            }
-            val elementInfList = allElementsInGroups.sort{(a, b) -> a.name.compareTo(b.name)}.map { ElementInformationProvider(it) }
-            append(renderHtmlElementClass(elementInfList))
-        }
-    }
-
-    fun renderElementGroupFile() : String {
-        return renderFile("kara.test") {
-            for (group in htmlModel.elementGroupDeclaration) {
-                append(renderElementGroupClass(group)).append("\n")
-            }
-        }
-    }
-
-    fun renderAllElementsFile(): String {
-        return renderFile("kara.test") {
-            for (element in htmlModel.elementDeclarations) {
-                append(renderElement(element)).append("\n")
-            }
-        }
-    }
-
-    fun renderDeprecatedTraitFile(): String {
-        return renderFile("kara.test") {
-            append(renderDeprecatedTrait(htmlModel.elementDeclarations.map { ElementInformationProvider(it) }))
-        }
-    }
+//
+//    fun renderHtmlElementFile(): String {
+//        return renderFile("kara.test") {
+//            val allElementsInGroups = HashSet<ElementDeclaration>()
+//            for (group in htmlModel.elementGroupDeclaration) {
+//                allElementsInGroups.addAll(group.newAllowElements)
+//            }
+//            val elementInfList = allElementsInGroups.sort{(a, b) -> a.name.compareTo(b.name)}.map { ElementInformationProvider(it) }
+//            append(renderHtmlElementClass(elementInfList))
+//        }
+//    }
+//
+//    fun renderElementGroupFile() : String {
+//        return renderFile("kara.test") {
+//            for (group in htmlModel.elementGroupDeclaration) {
+//                append(renderElementGroupClass(group)).append("\n")
+//            }
+//        }
+//    }
+//
+//    fun renderAllElementsFile(): String {
+//        return renderFile("kara.test") {
+//            for (element in htmlModel.elementDeclarations) {
+//                append(renderElement(element)).append("\n")
+//            }
+//        }
+//    }
+//
+//    fun renderDeprecatedTraitFile(): String {
+//        return renderFile("kara.test") {
+//            append(renderDeprecatedTrait(htmlModel.elementDeclarations.map { ElementInformationProvider(it) }))
+//        }
+//    }
 }

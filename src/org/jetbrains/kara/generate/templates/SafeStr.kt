@@ -61,7 +61,7 @@ object SafeStr {
     }
 
     public fun safeEnumValue(str: String): String {
-        return lowerFirstLetter(replaceUnsafeChars(str))
+        return lowerFirstLetter(generateSafeName(str))
     }
 
     public fun generateSafeName(str: String): String {
