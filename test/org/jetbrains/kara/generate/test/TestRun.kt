@@ -19,7 +19,7 @@ package org.jetbrains.kara.generate.test
 import com.sun.xml.xsom.parser.XSOMParser
 import org.jetbrains.kara.generate.HtmlModelBuilder
 import java.io.File
-import org.jetbrains.kara.generate.templates.ElementGenerator
+import org.jetbrains.kara.generate.templates.ElementRender
 import org.jetbrains.kara.generate.templates.FileRender
 
 val SCHEME_URL = "src/org/jetbrains/kara/generate/grammar/html_5.xsd"
@@ -40,7 +40,6 @@ public fun main(args: Array<String>) {
     
     val fileRender = FileRender(model)
 
-    val elementGenerator = ElementGenerator(model)
 
     writeFile("model.out", makeStr(model))
     writeFile("Enums.kt", fileRender.renderEnumClassesFile())
@@ -48,9 +47,9 @@ public fun main(args: Array<String>) {
     writeFile("AttributeGroups.kt", fileRender.renderAttributesGroupFile())
     writeFile("AttributesImpl.kt", fileRender.renderProtectedImplAttributeClassFile())
 
-//    writeFile("HtmlElement.kt", elementGenerator.renderHtmlElementFile())
-//    writeFile("ElementGroups.kt", elementGenerator.renderElementGroupFile())
-//    writeFile("Elements.kt", elementGenerator.renderAllElementsFile())
-//    writeFile("DeprecatedFun.kt", elementGenerator.renderDeprecatedTraitFile())
+    writeFile("HtmlElement.kt", fileRender.renderHtmlElementFile())
+    writeFile("ElementGroups.kt", fileRender.renderElementGroupFile())
+    writeFile("Elements.kt", fileRender.renderAllElementsFile())
+//    writeFile("DeprecatedFun.kt", fileRender.renderDeprecatedTraitFile())
 
 }

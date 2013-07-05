@@ -53,7 +53,7 @@ package ${packageName}
     }
 
     fun renderAttributesGroupFile(): String {
-        return renderFile() {
+        return renderFile {
             for (attrGroup in htmlModel.attributeGroups) {
                 append(AttributeRender.renderAttributesGroupTrait(attrGroup))
                 append("\n")
@@ -62,13 +62,44 @@ package ${packageName}
     }
 
     fun renderProtectedImplAttributeClassFile(): String {
-        return renderFile() {
+        return renderFile {
             val allAttrInGroups: MutableSet<AttributeDeclaration> = HashSet<AttributeDeclaration>()
             for (attrGroup in htmlModel.attributeGroups) {
                 allAttrInGroups.addAll(attrGroup.newAttributes)
             }
+            for (elementGroup in htmlModel.elementGroupDeclaration) {
+                allAttrInGroups.addAll(elementGroup.newAttributes)
+            }
             val attributes = allAttrInGroups.sort({(a, b) -> a.name.compareTo(b.name) })
             append(AttributeRender.renderProtectedImplAttributeClass(attributes))
+        }
+    }
+
+    // elements
+    fun renderHtmlElementFile(): String {
+        return renderFile {
+            val allElementsInGroups = HashSet<ElementDeclaration>()
+            for (group in htmlModel.elementGroupDeclaration) {
+                allElementsInGroups.addAll(group.newAllowElements)
+            }
+            val elementInfList = allElementsInGroups.sort{(a, b) -> a.name.compareTo(b.name)}
+            append(ElementRender.renderHtmlElementClass(elementInfList))
+        }
+    }
+
+    fun renderElementGroupFile() : String {
+        return renderFile {
+            for (group in htmlModel.elementGroupDeclaration) {
+                append(ElementRender.renderElementGroupClass(group)).append("\n")
+            }
+        }
+    }
+
+    fun renderAllElementsFile(): String {
+        return renderFile {
+            for (element in htmlModel.elementDeclarations) {
+                append(ElementRender.renderElement(element)).append("\n")
+            }
         }
     }
 

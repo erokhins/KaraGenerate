@@ -69,4 +69,9 @@ public class StrEnumAttribute<T>(name: String, val klass : Class<T>): Attribute<
 public open class BaseAttributeGroupImpl: AttributeGroup {
     override val attributesMap: MutableMap<String, Any> = HashMap()
     protected fun String.plus() {}
+
+    public fun build<T>(tag: T, contents: T.() -> Unit): T {
+        tag.contents()
+        return tag
+    }
 }

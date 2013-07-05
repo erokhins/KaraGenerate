@@ -31,39 +31,41 @@ val AttributeDeclaration.propertyName: String
     }
 val AttributeDeclaration.typeName: String
     get() {
-        return this.attrTypeDeclaration.inf().typeName
+        return this.attrTypeDeclaration.typeName
     }
 
-class AttributeTypeInf(val className: String, val typeName: String)
-fun AttributeTypeDeclaration.inf(): AttributeTypeInf {
-    val safe = AttributeSafeName(this.name, this.elementName)
-    val className =
-            when (this.attrType) {
-                enumType -> safe.enumClassName
-                strEnumType -> safe.enumClassName //TODO: StrEnumClass
-                dateTime -> "DateTimeAttribute"
-                float -> "FloatAttribute"
-                integer -> "IntegerAttribute"
-                positiveInteger -> "PositiveIntegerAttribute"
-                boolean -> "BooleanAttribute"
-                string -> "StringAttribute"
-                ticker -> "TickerAttribute"
-                anyUri -> "LinkAttribute"
-            }
-    val typeName =
-            when (this.attrType) {
-                enumType, strEnumType -> safe.enumClassName
-                dateTime -> "String"
-                float -> "Float"
-                integer -> "Int"
-                positiveInteger -> "Int"
-                boolean -> "Boolean"
-                string -> "String"
-                ticker -> "Boolean"
-                anyUri -> "Link"
-            }
-    return AttributeTypeInf(className, typeName)
-}
+val AttributeTypeDeclaration.className: String
+    get() {
+        val safe = AttributeSafeName(this.name, this.elementName)
+        return when (this.attrType) {
+            enumType -> safe.enumClassName
+            strEnumType -> safe.enumClassName //TODO: StrEnumClass
+            dateTime -> "DateTimeAttribute"
+            float -> "FloatAttribute"
+            integer -> "IntegerAttribute"
+            positiveInteger -> "PositiveIntegerAttribute"
+            boolean -> "BooleanAttribute"
+            string -> "StringAttribute"
+            ticker -> "TickerAttribute"
+            anyUri -> "LinkAttribute"
+        }
+    }
+
+val AttributeTypeDeclaration.typeName: String
+    get() {
+        val safe = AttributeSafeName(this.name, this.elementName)
+        return when (this.attrType) {
+            enumType, strEnumType -> safe.enumClassName
+            dateTime -> "String"
+            float -> "Float"
+            integer -> "Int"
+            positiveInteger -> "Int"
+            boolean -> "Boolean"
+            string -> "String"
+            ticker -> "Boolean"
+            anyUri -> "Link"
+        }
+    }
 
 val AttributeGroup.className: String
     get() {
@@ -78,7 +80,7 @@ object AttributeRender {
                 "Type must be enumType or strEnum, but it is: " + attrDecl.attrType)
 
         val s = StrBuilder(indent)
-        val className = attrDecl.inf().className
+        val className = attrDecl.className
         s.brackets("""public enum class ${className}(override val value: String): EnumValues<${className}>""") {
             for (value in attrDecl.values) {
                 val safeValue = SafeStr.safeEnumValue(value)
@@ -91,9 +93,9 @@ object AttributeRender {
     fun renderAttributeDeclaration(attrDecl: AttributeDeclaration): String  {
         val typeDecl = attrDecl.attrTypeDeclaration
         return when (typeDecl.attrType) {
-            enumType -> """val ${attrDecl.propertyName} = EnumAttribute("${attrDecl.name}", javaClass<${typeDecl.inf().className}>())"""
-            strEnumType -> """val ${attrDecl.propertyName} = EnumAttribute("${attrDecl.name}", javaClass<${typeDecl.inf().className}>())"""
-            else -> """val ${attrDecl.propertyName} = ${typeDecl.inf().className}("${attrDecl.name}")"""
+            enumType -> """val ${attrDecl.propertyName} = EnumAttribute("${attrDecl.name}", javaClass<${typeDecl.className}>())"""
+            strEnumType -> """val ${attrDecl.propertyName} = EnumAttribute("${attrDecl.name}", javaClass<${typeDecl.className}>())"""
+            else -> """val ${attrDecl.propertyName} = ${typeDecl.className}("${attrDecl.name}")"""
         }
     }
 
