@@ -18,47 +18,6 @@ package org.jetbrains.kara.generate.test
 
 import org.jetbrains.kara.generate.*
 
-
-
-class StrBuilder(val indent: String = "", val separator: String = ", ") {
-    private val stringBuilder = StringBuilder()
-
-    public fun separate(): StrBuilder {
-        if (stringBuilder.length() > 0) {
-            append(separator)
-        }
-        return this
-    }
-
-    public fun append(any: Any?): StrBuilder {
-        stringBuilder.append(any)
-        return this
-    }
-
-    public fun appendLine(line: Any? = "") {
-        append(indent).append(line).append("\n")
-    }
-    public fun appendLine(line: StrBuilder.() -> Unit = {}) {
-        append(indent).line()
-        append("\n")
-    }
-
-    public fun appendCollection<T>(values: Collection<T>, strMaker: T.() -> String = { this.toString() }): StrBuilder {
-        values.map { it.strMaker() }.appendString(stringBuilder, separator, "[", "]")
-        return this
-    }
-
-    public fun toString(): String {
-        return stringBuilder.toString()
-    }
-
-    public fun toString(actions: StrBuilder.() -> Unit): String {
-        this.actions()
-        return stringBuilder.toString()
-    }
-}
-
-
 fun makeStr(attrTypeDecl: AttributeTypeDeclaration, indent: String = ""): String {
     return StrBuilder(indent).toString {
         appendLine("AttributeTypeDecl = (${attrTypeDecl.name}, ${attrTypeDecl.elementName}, ${attrTypeDecl.attrType})")

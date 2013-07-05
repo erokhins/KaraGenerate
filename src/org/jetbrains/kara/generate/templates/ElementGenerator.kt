@@ -17,7 +17,6 @@
 package org.jetbrains.kara.generate.templates
 
 import org.jetbrains.kara.generate.*
-import org.jetbrains.kara.generate.test.StrBuilder
 import java.util.Collections
 import java.util.ArrayList
 import org.jetbrains.kara.generate.templates.ElementGenerator.Argument

@@ -16,11 +16,11 @@
 
 package org.jetbrains.kara.generate.templates
 
-import org.jetbrains.kara.generate.test.StrBuilder
 import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType.*
 import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType
 import org.jetbrains.kara.generate.toStringList
 import org.jetbrains.kara.generate.AttributeTypeDeclaration
+import org.jetbrains.kara.generate.StrBuilder
 
 class SaveName(val saveName: String, val realName: String)
 val INDENT = "    "

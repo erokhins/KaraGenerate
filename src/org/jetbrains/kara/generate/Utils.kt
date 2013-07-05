@@ -47,6 +47,12 @@ fun <T>Iterable<T>.sort(compare: (o1: T, o2: T) -> Int): List<T> {
     })
 }
 
+public inline fun <T: Comparable<T>> Iterable<T>.sort(): List<T> {
+    val list = toCollection(ArrayList<T>())
+    java.util.Collections.sort(list)
+    return list
+}
+
 fun <T>Collection<T>.toStringList(toStrFun: T.() -> String = {toString()}, separator: String = ", "): String {
     if (this.isEmpty()) return ""
 
@@ -58,8 +64,50 @@ fun <T>Collection<T>.toStringList(toStrFun: T.() -> String = {toString()}, separ
     return s.toString()
 }
 
-public inline fun <T: Comparable<T>> Iterable<T>.sort(): List<T> {
-    val list = toCollection(ArrayList<T>())
-    java.util.Collections.sort(list)
-    return list
+
+fun <T>Collection<T>.toExtendString(toStrFun: T.() -> String = { toString() }): String {
+    val str = this.toStringList(toStrFun, ", ")
+    return if (str.isEmpty()) {
+        ""
+    } else {
+        ": " + str
+    }
+}
+
+class StrBuilder(val indent: String = "", val separator: String = ", ") {
+    private val stringBuilder = StringBuilder()
+
+    public fun separate(): StrBuilder {
+        if (stringBuilder.length() > 0) {
+            append(separator)
+        }
+        return this
+    }
+
+    public fun append(any: Any?): StrBuilder {
+        stringBuilder.append(any)
+        return this
+    }
+
+    public fun appendLine(line: Any? = "") {
+        append(indent).append(line).append("\n")
+    }
+    public fun appendLine(line: StrBuilder.() -> Unit = {}) {
+        append(indent).line()
+        append("\n")
+    }
+
+    public fun appendCollection<T>(values: Collection<T>, strMaker: T.() -> String = { this.toString() }): StrBuilder {
+        values.map { it.strMaker() }.appendString(stringBuilder, separator, "[", "]")
+        return this
+    }
+
+    public fun toString(): String {
+        return stringBuilder.toString()
+    }
+
+    public fun toString(actions: StrBuilder.() -> Unit): String {
+        this.actions()
+        return stringBuilder.toString()
+    }
 }
