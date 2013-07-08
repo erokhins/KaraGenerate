@@ -762,7 +762,6 @@
             <xsd:attribute name="target" type="browsingContext"/>
             <xsd:attribute name="ping"/>
             <xsd:attribute name="rel" type="linkType"/>
-            <xsd:attribute name="media"/>
             <xsd:attribute name="hreflang" type="i18LanguageCode"/>
             <xsd:attribute name="type" type="contentType"/>
         </xsd:complexType>

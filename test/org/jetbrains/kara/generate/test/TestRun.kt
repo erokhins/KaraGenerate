@@ -40,6 +40,12 @@ public fun main(args: Array<String>) {
     
     val fileRender = FileRender(model)
 
+    for (attribute in model.attributeDeclarations) {
+        if (attribute.elementName != null) {
+            println(attribute.name + " " + attribute.elementName)
+        }
+    }
+
 
     writeFile("model.out", makeStr(model))
     writeFile("Enums.kt", fileRender.renderEnumClassesFile())
