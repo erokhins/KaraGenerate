@@ -1344,11 +1344,29 @@
             <xsd:attribute name="max"/>
             <xsd:attribute name="maxlength"/>
             <xsd:attribute name="min"/>
-            <xsd:attribute name="multiple"/>
+            <xsd:attribute name="multiple">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="multiple"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
             <xsd:attribute name="pattern"/>
             <xsd:attribute name="placeholder"/>
-            <xsd:attribute name="readonly"/>
-            <xsd:attribute name="required"/>
+            <xsd:attribute name="readonly">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="readonly"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:NMTOKEN">
+                        <xsd:enumeration value="required"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
             <xsd:attribute name="size"/>
             <xsd:attribute name="src" type="xsd:anyURI"/>
             <xsd:attribute name="step"/>
