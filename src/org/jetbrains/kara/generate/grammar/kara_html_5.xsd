@@ -4,9 +4,6 @@
             version="1.0" targetNamespace='kara-html-5'
 
 
-
-
-
         >
     <!--
 	 Warning:
@@ -56,7 +53,7 @@
         <xsd:attribute name="OnServerChange"/>
     </xsd:attributeGroup>
 
-    <xsd:attributeGroup name="coreAttributeGroup">
+    <xsd:attributeGroup name="commonAttributeGroup">
         <xsd:attribute name="runat">
             <xsd:simpleType>
                 <xsd:restriction base="xsd:NMTOKEN">
@@ -161,11 +158,6 @@
         <xsd:attribute name="ontimeupdate"/>
         <xsd:attribute name="onvolumenchange"/>
         <xsd:attribute name="onwaiting"/>
-    </xsd:attributeGroup>
-
-    <xsd:attributeGroup name="commonAttributeGroup">
-        <xsd:attributeGroup ref="coreAttributeGroup"/>
-        <xsd:attributeGroup ref="commonEventsGroup"/>
     </xsd:attributeGroup>
 
     <xsd:group name="flowContent">
@@ -392,6 +384,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="Pubdate"/>
         </xsd:complexType>
     </xsd:element>
@@ -416,6 +409,7 @@
                 <xsd:element ref="h6"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -428,6 +422,7 @@
     <xsd:element name="br">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -444,6 +439,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -453,6 +449,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="cite" type="xsd:anyURI"/>
         </xsd:complexType>
     </xsd:element>
@@ -463,6 +460,7 @@
                 <xsd:element ref="li"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="start"/>
             <xsd:attribute name="reversed">
                 <xsd:simpleType>
@@ -480,6 +478,7 @@
                 <xsd:element ref="li"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -489,6 +488,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="value"/>
         </xsd:complexType>
     </xsd:element>
@@ -500,6 +500,7 @@
                 <xsd:element ref="dt"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -509,6 +510,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -518,6 +520,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -531,6 +534,7 @@
             </xsd:choice>
             <!-- Attributes -->
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="href" type="xsd:anyURI"/>
             <xsd:attribute name="target" type="browsingContext"/>
             <xsd:attribute name="ping"/>
@@ -551,6 +555,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="cite" type="xsd:anyURI"/>
         </xsd:complexType>
     </xsd:element>
@@ -574,6 +579,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="value" type="xsd:float"/>
             <xsd:attribute name="max" type="xsd:float"/>
         </xsd:complexType>
@@ -585,6 +591,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="value" type="xsd:float"/>
             <xsd:attribute name="min" type="xsd:float"/>
             <xsd:attribute name="max" type="xsd:float"/>
@@ -600,6 +607,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="datetime" type="xsd:dateTime"/>
         </xsd:complexType>
     </xsd:element>
@@ -621,6 +629,7 @@
                 <xsd:element ref="rp"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -638,6 +647,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="cite" type="xsd:anyURI"/>
             <xsd:attribute name="datetime" type="xsd:dateTime"/>
         </xsd:complexType>
@@ -649,6 +659,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="cite" type="xsd:anyURI"/>
             <xsd:attribute name="datetime" type="xsd:dateTime"/>
         </xsd:complexType>
@@ -676,12 +687,14 @@
                 <xsd:element ref="legend" minOccurs="0" maxOccurs="1"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
     <xsd:element name="img">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="alt" use="required"/>
             <xsd:attribute name="src" type="xsd:anyURI" use="required"/>
             <xsd:attribute name="height"/>
@@ -700,6 +713,7 @@
     <xsd:element name="iframe">
         <xsd:complexType mixed="true">
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="name" type="browsingContext"/>
             <xsd:attribute name="src" type="xsd:anyURI"/>
             <xsd:attribute name="height"/>
@@ -726,6 +740,7 @@
     <xsd:element name="embed">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="src" type="xsd:anyURI"/>
             <xsd:attribute name="height"/>
             <xsd:attribute name="width"/>
@@ -739,6 +754,7 @@
                 <xsd:element ref="param" minOccurs="0" maxOccurs="unbounded"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="data" type="xsd:anyURI"/>
             <xsd:attribute name="type"/>
             <xsd:attribute name="height"/>
@@ -753,6 +769,7 @@
     <xsd:element name="param">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="name" use="required"/>
             <xsd:attribute name="value" use="required"/>
         </xsd:complexType>
@@ -773,6 +790,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="open">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -786,6 +804,7 @@
     <xsd:element name="command">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="type">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -822,6 +841,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="type">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -844,6 +864,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -854,6 +875,7 @@
     <xsd:element name="source">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="src" type="xsd:anyURI"/>
             <xsd:attribute name="type"/>
             <xsd:attribute name="media"/>
@@ -866,6 +888,7 @@
                 <xsd:element ref="source"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="src" type="xsd:anyURI"/>
             <xsd:attribute name="autobuffer">
                 <xsd:simpleType>
@@ -904,6 +927,7 @@
                 <xsd:element ref="source"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="src" type="xsd:anyURI"/>
             <xsd:attribute name="autobuffer">
                 <xsd:simpleType>
@@ -944,6 +968,7 @@
     <xsd:element name="hr">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -956,6 +981,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="accept-charset"/>
             <xsd:attribute name="action" type="xsd:anyURI" use="required"/>
             <xsd:attribute name="autocomplete">
@@ -1004,6 +1030,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="disabled">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1022,6 +1049,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="form"/>
             <xsd:attribute name="for"/>
         </xsd:complexType>
@@ -1030,6 +1058,7 @@
     <xsd:element name="input">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="type">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1155,6 +1184,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="autofocus">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1220,6 +1250,7 @@
                 <xsd:element ref="optgroup"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="autofocus">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1254,6 +1285,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -1263,6 +1295,7 @@
                 <xsd:element ref="option"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="disabled">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1277,6 +1310,7 @@
     <xsd:element name="option">
         <xsd:complexType mixed="true">
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="disabled">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1299,6 +1333,7 @@
     <xsd:element name="textarea">
         <xsd:complexType mixed="true">
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="autofocus">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1347,6 +1382,7 @@
     <xsd:element name="keygen">
         <xsd:complexType mixed="true">
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="autofocus">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1380,6 +1416,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="for"/>
             <xsd:attribute name="form"/>
             <xsd:attribute name="name"/>
@@ -1391,6 +1428,7 @@
     <xsd:element name="canvas">
         <xsd:complexType mixed="true">
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="width"/>
             <xsd:attribute name="height"/>
         </xsd:complexType>
@@ -1403,6 +1441,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="name" use="required"/>
         </xsd:complexType>
     </xsd:element>
@@ -1410,6 +1449,7 @@
     <xsd:element name="area">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="Shape" default="rect">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
@@ -1435,12 +1475,14 @@
     <xsd:element name="mathml">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
     <xsd:element name="svg">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -1463,6 +1505,7 @@
                 <xsd:element ref="tr"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="summary"/>
         </xsd:complexType>
     </xsd:element>
@@ -1475,6 +1518,7 @@
                 <xsd:element ref="col"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="span" type="xsd:positiveInteger" default="1"/>
         </xsd:complexType>
     </xsd:element>
@@ -1482,6 +1526,7 @@
     <xsd:element name="col">
         <xsd:complexType>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="span" type="xsd:positiveInteger" default="1"/>
         </xsd:complexType>
     </xsd:element>
@@ -1492,6 +1537,7 @@
                 <xsd:element ref="tr"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -1501,6 +1547,7 @@
                 <xsd:element ref="tr"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -1510,6 +1557,7 @@
                 <xsd:element ref="tr"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -1520,6 +1568,7 @@
                 <xsd:element ref="td"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -1529,6 +1578,7 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="headers"/>
             <xsd:attribute name="rowspan" default="1" type="xsd:positiveInteger"/>
             <xsd:attribute name="colspan" default="1" type="xsd:positiveInteger"/>
@@ -1551,6 +1601,7 @@
                 <xsd:group ref="flowContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
+            <xsd:attributeGroup ref="commonEventsGroup"/>
             <xsd:attribute name="headers"/>
             <xsd:attribute name="rowspan" default="1" type="xsd:positiveInteger"/>
             <xsd:attribute name="colspan" default="1" type="xsd:positiveInteger"/>
@@ -1650,6 +1701,7 @@
             <xsd:group ref="flowContent"/>
         </xsd:choice>
         <xsd:attributeGroup ref="commonAttributeGroup"/>
+        <xsd:attributeGroup ref="commonEventsGroup"/>
     </xsd:complexType>
 
     <xsd:complexType mixed="true" name="simplePhrasingContentElement">
@@ -1657,6 +1709,7 @@
             <xsd:group ref="phrasingContent"/>
         </xsd:choice>
         <xsd:attributeGroup ref="commonAttributeGroup"/>
+        <xsd:attributeGroup ref="commonEventsGroup"/>
     </xsd:complexType>
 
 </xsd:schema>
