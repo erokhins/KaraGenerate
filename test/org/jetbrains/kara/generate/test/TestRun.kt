@@ -22,8 +22,8 @@ import java.io.File
 import org.jetbrains.kara.generate.templates.ElementRender
 import org.jetbrains.kara.generate.templates.FileRender
 
-val SCHEME_URL = "src/org/jetbrains/kara/generate/grammar/html_5.xsd"
-val HTML_NAMESPACE = "html-5"
+val SCHEME_URL = "src/org/jetbrains/kara/generate/grammar/kara_html_5.xsd"
+val HTML_NAMESPACE = "kara-html-5"
 
 val WRITE_PATCH = "test/out/"
 private fun writeFile(name: String, text: String) {
