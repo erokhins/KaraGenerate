@@ -190,19 +190,6 @@
         <xsd:attributeGroup ref="coreServerAttributeGroup"/>
     </xsd:attributeGroup>
 
-    <xsd:group name="metadataContent">
-        <xsd:choice>
-            <xsd:element ref="base"/>
-            <xsd:element ref="command"/>
-            <xsd:element ref="link"/>
-            <xsd:element ref="meta"/>
-            <xsd:element ref="noscript"/>
-            <xsd:element ref="script"/>
-            <xsd:element ref="style"/>
-            <xsd:element ref="title" minOccurs="1" maxOccurs="1"/>
-        </xsd:choice>
-    </xsd:group>
-
     <xsd:group name="flowContent">
         <xsd:choice>
 
@@ -262,17 +249,14 @@
             <xsd:element ref="keygen"/>
 
             <xsd:element ref="label"/>
-            <xsd:element ref="link"/>
 
             <xsd:element ref="map"/>
             <xsd:element ref="mark"/>
             <xsd:element ref="math"/>
             <xsd:element ref="menu"/>
-            <xsd:element ref="meta"/>
             <xsd:element ref="meter"/>
 
             <xsd:element ref="nav"/>
-            <xsd:element ref="noscript"/>
 
             <xsd:element ref="ol"/>
             <xsd:element ref="object"/>
@@ -287,13 +271,11 @@
             <xsd:element ref="ruby"/>
 
             <xsd:element ref="samp"/>
-            <xsd:element ref="script"/>
             <xsd:element ref="section"/>
             <xsd:element ref="select"/>
             <xsd:element ref="small"/>
             <xsd:element ref="span"/>
             <xsd:element ref="strong"/>
-            <xsd:element ref="style"/>
             <xsd:element ref="sub"/>
             <xsd:element ref="sup"/>
             <xsd:element ref="svg"/>
@@ -366,15 +348,12 @@
             <xsd:element ref="keygen"/>
 
             <xsd:element ref="label"/>
-            <xsd:element ref="link"/>
 
             <xsd:element ref="map"/>
             <xsd:element ref="mark"/>
             <xsd:element ref="math"/>
-            <xsd:element ref="meta"/>
             <xsd:element ref="meter"/>
 
-            <xsd:element ref="noscript"/>
 
             <xsd:element ref="object"/>
             <xsd:element ref="output"/>
@@ -385,7 +364,6 @@
             <xsd:element ref="ruby"/>
 
             <xsd:element ref="samp"/>
-            <xsd:element ref="script"/>
             <xsd:element ref="select"/>
             <xsd:element ref="small"/>
             <xsd:element ref="span"/>
@@ -425,190 +403,7 @@
 
     <!-- End of group definitions -->
 
-    <!--================ Document Structure ==================================-->
-
-    <!-- This element must be the first one in the file! -->
-    <xsd:element name="html">
-        <xsd:complexType>
-            <xsd:choice>
-                <xsd:element ref="body" minOccurs="1" maxOccurs="1"/>
-                <xsd:element ref="head" minOccurs="0" maxOccurs="1"/>
-            </xsd:choice>
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="manifest" type="xsd:anyURI"/>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!--================ Document Head =======================================-->
-
-    <xsd:element name="head">
-        <xsd:complexType>
-            <xsd:choice>
-                <xsd:group ref="metadataContent"/>
-            </xsd:choice>
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-        </xsd:complexType>
-    </xsd:element>
-
-    <xsd:element name="title">
-        <xsd:complexType mixed="true">
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- document base URI -->
-    <xsd:element name="base">
-        <xsd:complexType>
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="href" type="xsd:anyURI"/>
-            <xsd:attribute name="target" type="browsingContext"/>
-        </xsd:complexType>
-    </xsd:element>
-
-    <xsd:element name="link">
-        <xsd:complexType>
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="href" type="xsd:anyURI"/>
-            <xsd:attribute name="hreflang" type="i18LanguageCode"/>
-            <xsd:attribute name="rel" type="linkType"/>
-            <xsd:attribute name="media" type="mediaType" default="screen"/>
-            <xsd:attribute name="type" type="contentType"/>
-            <xsd:attribute name="sizes"/>
-        </xsd:complexType>
-    </xsd:element>
-
-    <xsd:element name="meta">
-        <xsd:complexType>
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="http-equiv">
-                <xsd:simpleType>
-                    <xsd:union>
-                        <xsd:simpleType>
-                            <xsd:restriction base="xsd:string">
-                                <xsd:enumeration value="content-language"/>
-                                <xsd:enumeration value="content-type"/>
-                                <xsd:enumeration value="default-style"/>
-                                <xsd:enumeration value="refresh"/>
-                            </xsd:restriction>
-                        </xsd:simpleType>
-                        <xsd:simpleType>
-                            <xsd:restriction base="xsd:string"/>
-                        </xsd:simpleType>
-                    </xsd:union>
-                </xsd:simpleType>
-            </xsd:attribute>
-            <xsd:attribute name="name"/>
-            <xsd:attribute name="content"/>
-            <xsd:attribute name="charset"/>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- style info, which may include CDATA sections -->
-
-    <xsd:element name="style">
-        <xsd:complexType mixed="true">
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="type">
-                <xsd:simpleType>
-                    <xsd:union>
-                        <xsd:simpleType>
-                            <xsd:restriction base="xsd:string">
-                                <xsd:enumeration value="text/css"/>
-                            </xsd:restriction>
-                        </xsd:simpleType>
-                        <xsd:simpleType>
-                            <xsd:restriction base="xsd:string"/>
-                        </xsd:simpleType>
-                    </xsd:union>
-                </xsd:simpleType>
-            </xsd:attribute>
-            <xsd:attribute name="media" type="mediaType" default="screen"/>
-            <xsd:attribute name="scoped">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:NMTOKEN">
-                        <xsd:enumeration value="scoped"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:attribute>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- script statements, which may include CDATA sections -->
-
-    <xsd:element name="script">
-        <xsd:complexType mixed="true">
-            <xsd:attributeGroup ref="coreAttributeGroup"/>
-            <xsd:attribute name="charset" type="xsd:string"/>
-            <xsd:attribute name="type" use="required">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:enumeration value="text/ecmascript"/>
-                        <xsd:enumeration value="text/javascript"/>
-                        <xsd:enumeration value="text/javascript1.0"/>
-                        <xsd:enumeration value="text/javascript1.1"/>
-                        <xsd:enumeration value="text/javascript1.2"/>
-                        <xsd:enumeration value="text/javascript1.3"/>
-                        <xsd:enumeration value="text/javascript1.4"/>
-                        <xsd:enumeration value="text/javascript1.5"/>
-                        <xsd:enumeration value="text/jscript"/>
-                        <xsd:enumeration value="text/x-javascript"/>
-                        <xsd:enumeration value="text/x-ecmascript"/>
-                        <xsd:enumeration value="text/vbscript"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:attribute>
-            <xsd:attribute name="src" type="xsd:anyURI"/>
-            <xsd:attribute name="defer">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:NMTOKEN">
-                        <xsd:enumeration value="defer"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:attribute>
-            <xsd:attribute name="async">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:NMTOKEN">
-                        <xsd:enumeration value="async"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:attribute>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- alternate Content container for non script-based rendering -->
-
-    <xsd:element name="noscript">
-        <xsd:complexType mixed="true">
-            <xsd:choice>
-                <xsd:group ref="flowContent"/>
-            </xsd:choice>
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-        </xsd:complexType>
-    </xsd:element>
-
     <!--=================== Document Body ====================================-->
-
-    <xsd:element name="body">
-        <xsd:complexType>
-            <xsd:choice>
-                <xsd:group ref="flowContent"/>
-            </xsd:choice>
-            <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attribute name="onafterprint"/>
-            <xsd:attribute name="onbeforeprint"/>
-            <xsd:attribute name="onbeforeunload"/>
-            <xsd:attribute name="onhashchange"/>
-            <xsd:attribute name="onmessage"/>
-            <xsd:attribute name="onoffline"/>
-            <xsd:attribute name="ononline"/>
-            <xsd:attribute name="onpopstate"/>
-            <xsd:attribute name="onredo"/>
-            <xsd:attribute name="onresize"/>
-            <xsd:attribute name="onstorage"/>
-            <xsd:attribute name="onundo"/>
-            <xsd:attribute name="onunload"/>
-        </xsd:complexType>
-    </xsd:element>
 
     <xsd:element name="section" type="simpleFlowContentElement"/>
     <xsd:element name="nav" type="simpleFlowContentElement"/>
