@@ -47,12 +47,6 @@
         <xsd:attribute name="OnServerClick"/>
     </xsd:attributeGroup>
 
-    <xsd:attributeGroup name="buttonServerAttributeGroup">
-        <xsd:attribute name="CausesValidation" type="xsd:boolean" default="true"/>
-        <xsd:attribute name="ValidationGroup" type="xsd:string" default=""/>
-        <xsd:attribute name="OnServerClick"/>
-    </xsd:attributeGroup>
-
     <xsd:attributeGroup name="formServerAttributeGroup">
         <xsd:attribute name="DefaultButton" type="xsd:string" default=""/>
         <xsd:attribute name="DefaultFocus" type="xsd:string" default=""/>
@@ -1177,7 +1171,6 @@
                 <xsd:group ref="phrasingContent"/>
             </xsd:choice>
             <xsd:attributeGroup ref="commonAttributeGroup"/>
-            <xsd:attributeGroup ref="buttonServerAttributeGroup"/>
             <xsd:attribute name="autofocus">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:NMTOKEN">
