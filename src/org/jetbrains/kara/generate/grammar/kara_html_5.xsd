@@ -28,21 +28,6 @@
 
     <xsd:include schemaLocation="i18Languages.xsd"/>
 
-    <xsd:attributeGroup name="coreServerAttributeGroup">
-        <!-- Attributes -->
-        <xsd:attribute name="EnableTheming" type="xsd:boolean" default="true"/>
-        <xsd:attribute name="EnableViewState" type="xsd:boolean" default="true"/>
-        <xsd:attribute name="SkinID" type="xsd:string" default=""/>
-        <xsd:attribute name="Visible" type="xsd:boolean" default="true"/>
-        <!-- Events -->
-        <xsd:attribute name="OnDataBinding"/>
-        <xsd:attribute name="OnDisposed"/>
-        <xsd:attribute name="OnInit"/>
-        <xsd:attribute name="OnLoad"/>
-        <xsd:attribute name="OnPreRender"/>
-        <xsd:attribute name="OnUnload"/>
-    </xsd:attributeGroup>
-
     <xsd:attributeGroup name="aServerAttributeGroup">
         <xsd:attribute name="OnServerClick"/>
     </xsd:attributeGroup>
@@ -181,7 +166,6 @@
     <xsd:attributeGroup name="commonAttributeGroup">
         <xsd:attributeGroup ref="coreAttributeGroup"/>
         <xsd:attributeGroup ref="commonEventsGroup"/>
-        <xsd:attributeGroup ref="coreServerAttributeGroup"/>
     </xsd:attributeGroup>
 
     <xsd:group name="flowContent">
