@@ -768,7 +768,7 @@
 
     <xsd:element name="param">
         <xsd:complexType>
-            <xsd:attributeGroup ref="coreAttributeGroup"/>
+            <xsd:attributeGroup ref="commonAttributeGroup"/>
             <xsd:attribute name="name" use="required"/>
             <xsd:attribute name="value" use="required"/>
         </xsd:complexType>
