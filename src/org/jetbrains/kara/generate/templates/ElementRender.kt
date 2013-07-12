@@ -97,6 +97,24 @@ object ElementRender {
         return s.toString()
     }
 
+    fun renderAdditionAttributes(element: ElementDeclaration, indent: String = ""): String {
+        if (element.newAttributes.size == 0) {
+            return ""
+        }
+        val s = StrBuilder(indent)
+        with(s) {
+            val attrClassName = "${element.className}_Attribute"
+            appendLine("val ${element.className}.attr = ${attrClassName}()")
+            appendLine("""public final class $attrClassName: AbstractCommonAttribute<$attrClassName>()""")
+            indent {
+                for (attr in element.newAttributes) {
+                    appendLine("public var ${attrClassName}.${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
+                }
+            }
+        }
+        return s.toString()
+    }
+
     fun renderElement(element: ElementDeclaration, indent: String = ""): String {
         val s = StrBuilder(indent)
         val ext =
@@ -110,9 +128,7 @@ object ElementRender {
         for (el in element.newAllowElements) {
             s.append(renderFunctions(el, "public fun ${element.className}.", indent + INDENT))
         }
-//        for (attr in element.newAttributes) {
-//            appendLine("public var ${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
-//        }
+        s.append(renderAdditionAttributes(element, indent + INDENT))
         return s.toString()
     }
 
