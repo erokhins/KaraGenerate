@@ -52,6 +52,7 @@ public fun main(args: Array<String>) {
     writeFile("Attributes.kt", fileRender.renderAttributesFile())
     writeFile("AttributeGroups.kt", fileRender.renderAttributesGroupFile())
     writeFile("Elements.kt", fileRender.renderAllElementsFile())
+    writeFile("BaseBodyTagExtension.kt", fileRender.renderBaseBodyTagExtensionFile())
 
     //    writeFile("AttributesImpl.kt", fileRender.renderProtectedImplAttributeClassFile())
     //

@@ -64,17 +64,17 @@ package ${packageName}
         }
     }
 
-//    // elements
-//    fun renderHtmlElementFile(): String {
-//        return renderFile {
-//            val allElementsInGroups = HashSet<ElementDeclaration>()
-//            for (group in htmlModel.elementGroupDeclaration) {
-//                allElementsInGroups.addAll(group.newAllowElements)
-//            }
-//            val elementInfList = allElementsInGroups.sort{(a, b) -> a.name.compareTo(b.name)}
-//            append(ElementRender.renderHtmlElementClass(elementInfList))
-//        }
-//    }
+    // elements
+    fun renderBaseBodyTagExtensionFile(): String {
+        return renderFile {
+            val allElementsInGroups = HashSet<ElementDeclaration>()
+            for (group in htmlModel.elementGroupDeclaration) {
+                allElementsInGroups.addAll(group.newAllowElements)
+            }
+            val elements = allElementsInGroups.sort{(a, b) -> a.name.compareTo(b.name)}
+            append(ElementRender.renderBaseBodyTagExtension(elements, INDENT))
+        }
+    }
 
     fun renderAllElementsFile(): String {
         return renderFile {

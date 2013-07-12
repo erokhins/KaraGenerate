@@ -116,4 +116,12 @@ object ElementRender {
         return s.toString()
     }
 
+    fun renderBaseBodyTagExtension(elements: List<ElementDeclaration>, indent: String = ""): String {
+        val s = StrBuilder(indent)
+        for(element in elements) {
+            s.append(renderFunctions(element, "public fun BaseBodyTag.", indent))
+        }
+        return s.toString()
+    }
+
 }
