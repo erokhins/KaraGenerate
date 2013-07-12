@@ -73,7 +73,7 @@ trait AbstractElementDeclaration {
 
 
 trait HtmlModel {
-    val attributeTypeDeclarations: List<AttributeTypeDeclaration>
+    val attributeTypeDeclarations: List<AttributeTypeDeclaration> // only enum & strEnum
     val attributeDeclarations: List<AttributeDeclaration>
     val attributeGroups: List<AttributeGroup>
     val elementDeclarations: List<ElementDeclaration>

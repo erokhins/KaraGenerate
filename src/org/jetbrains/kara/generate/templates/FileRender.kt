@@ -17,7 +17,7 @@ package org.jetbrains.kara.generate.templates
 
 import org.jetbrains.kara.generate.*
 import java.util.HashSet
-
+import org.jetbrains.kara.generate.AttributeTypeDeclaration.AttributeType.*
 
 
 class FileRender(val htmlModel: HtmlModel, val packageName: String = "kara.test") {
@@ -46,8 +46,11 @@ package ${packageName}
     fun renderEnumClassesFile(): String {
         return renderFile {
             for (attrTypeDecl in htmlModel.attributeTypeDeclarations) {
-                append(AttributeRender.renderEnumClass(attrTypeDecl))
-                append("\n")
+                when (attrTypeDecl.attrType) {
+                    enumType -> appendLine(AttributeRender.renderEnumClass(attrTypeDecl))
+                    strEnumType -> appendLine(AttributeRender.renderStrEnumClass(attrTypeDecl))
+                    else -> throw IllegalStateException("All attrTypeDecl.attrType must be enum or strEnum, but this type is: ${attrTypeDecl.attrType}")
+                }
             }
         }
     }

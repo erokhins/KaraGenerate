@@ -51,11 +51,11 @@ public fun main(args: Array<String>) {
     writeFile("Enums.kt", fileRender.renderEnumClassesFile())
     writeFile("Attributes.kt", fileRender.renderAttributesFile())
     writeFile("AttributeGroups.kt", fileRender.renderAttributesGroupFile())
-    writeFile("AttributesImpl.kt", fileRender.renderProtectedImplAttributeClassFile())
-
-    writeFile("HtmlElement.kt", fileRender.renderHtmlElementFile())
-    writeFile("ElementGroups.kt", fileRender.renderElementGroupFile())
-    writeFile("Elements.kt", fileRender.renderAllElementsFile())
+//    writeFile("AttributesImpl.kt", fileRender.renderProtectedImplAttributeClassFile())
+//
+//    writeFile("HtmlElement.kt", fileRender.renderHtmlElementFile())
+//    writeFile("ElementGroups.kt", fileRender.renderElementGroupFile())
+//    writeFile("Elements.kt", fileRender.renderAllElementsFile())
 //    writeFile("DeprecatedFun.kt", fileRender.renderDeprecatedTraitFile())
 
 }

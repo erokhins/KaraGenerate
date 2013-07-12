@@ -76,9 +76,7 @@ object AttributeRender {
     val IMPL_PROTECTED_CLASS = "AttributesImpl"
 
     fun renderEnumClass(attrDecl: AttributeTypeDeclaration, indent: String = ""): String {
-        assert(attrDecl.attrType == enumType || attrDecl.attrType == strEnumType,
-                "Type must be enumType or strEnum, but it is: " + attrDecl.attrType)
-
+        assert(attrDecl.attrType == enumType, "Type must be enumType, but it is: " + attrDecl.attrType)
         val s = StrBuilder(indent)
         val className = attrDecl.className
         s.brackets("""public enum class ${className}(override val value: String): EnumValues<${className}>""") {
@@ -90,11 +88,24 @@ object AttributeRender {
         return s.toString()
     }
 
+    fun renderStrEnumClass(attrDecl: AttributeTypeDeclaration, indent: String = ""): String {
+        assert(attrDecl.attrType == strEnumType, "Type must be strEnum, but it is: " + attrDecl.attrType)
+        val s = StrBuilder(indent)
+        val className = attrDecl.className
+        s.brackets("""public class ${className}(override val value: String): StrEnumValues<${className}>""") {
+            for (value in attrDecl.values) {
+                val safeValue = SafeStr.safeEnumValue(value)
+                appendLine("""val ${safeValue} = ${className}("${value}")""")
+            }
+        }
+        return s.toString()
+    }
+
     fun renderAttributeDeclaration(attrDecl: AttributeDeclaration): String  {
         val typeDecl = attrDecl.attrTypeDeclaration
         return when (typeDecl.attrType) {
             enumType -> """val ${attrDecl.propertyName} = EnumAttribute("${attrDecl.name}", javaClass<${typeDecl.className}>())"""
-            strEnumType -> """val ${attrDecl.propertyName} = EnumAttribute("${attrDecl.name}", javaClass<${typeDecl.className}>())"""
+            strEnumType -> """val ${attrDecl.propertyName} = StrEnumAttribute("${attrDecl.name}", javaClass<${typeDecl.className}>())"""
             else -> """val ${attrDecl.propertyName} = ${typeDecl.className}("${attrDecl.name}")"""
         }
     }
