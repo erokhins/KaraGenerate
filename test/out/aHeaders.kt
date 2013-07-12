@@ -26,10 +26,12 @@ trait AttributeGroup {
 }
 
 open class BaseElement(val containingElement: BaseElement?) {
-    val attributesMap = HashMap<String, Any>()
     protected fun String.plus() {}
 }
 fun <T:BaseElement> BaseElement.contentTag(tag : T, c : StyleClass? = null, id : String? = null, contents : T.() -> Unit = empty_contents) {}
+
+open class BaseTag(containingTag: BaseElement?, val tagName: String) : BaseElement(containingTag)
+
 
 trait AllowText {
     public fun String.plus()
@@ -84,5 +86,23 @@ public open class BaseAttributeGroupImpl: AttributeGroup {
 
 public abstract class AbstractAttribute: AttributeGroup {
     override val attributesMap: MutableMap<String, Any> = HashMap()
-
 }
+
+public abstract class AbstractCommonAttribute<T>: AbstractAttribute(), CommonAttributeGroup {
+    public fun invoke(f: T.() -> Unit) {
+        (this as T).f()
+    }
+}
+
+public abstract class AbstractCommonEvents<T>: AbstractAttribute(), CommonEventsGroup {
+    public fun invoke(f: T.() -> Unit) {
+        (this as T).f()
+    }
+}
+
+public final class CommonAttribute: AbstractCommonAttribute<CommonAttribute>()
+public final class CommonEvents: AbstractCommonEvents<CommonEvents>()
+
+public open class BaseBodyTag(containingElement: BaseElement?, name: String): BaseTag(containingElement, name)
+val BaseBodyTag.attr = CommonAttribute()
+val BaseBodyTag.events = CommonEvents()
