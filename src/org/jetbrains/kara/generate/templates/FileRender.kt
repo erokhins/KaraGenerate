@@ -64,25 +64,17 @@ package ${packageName}
         }
     }
 
-    // elements
-    fun renderHtmlElementFile(): String {
-        return renderFile {
-            val allElementsInGroups = HashSet<ElementDeclaration>()
-            for (group in htmlModel.elementGroupDeclaration) {
-                allElementsInGroups.addAll(group.newAllowElements)
-            }
-            val elementInfList = allElementsInGroups.sort{(a, b) -> a.name.compareTo(b.name)}
-            append(ElementRender.renderHtmlElementClass(elementInfList))
-        }
-    }
-
-    fun renderElementGroupFile() : String {
-        return renderFile {
-            for (group in htmlModel.elementGroupDeclaration) {
-                append(ElementRender.renderElementGroupClass(group)).append("\n")
-            }
-        }
-    }
+//    // elements
+//    fun renderHtmlElementFile(): String {
+//        return renderFile {
+//            val allElementsInGroups = HashSet<ElementDeclaration>()
+//            for (group in htmlModel.elementGroupDeclaration) {
+//                allElementsInGroups.addAll(group.newAllowElements)
+//            }
+//            val elementInfList = allElementsInGroups.sort{(a, b) -> a.name.compareTo(b.name)}
+//            append(ElementRender.renderHtmlElementClass(elementInfList))
+//        }
+//    }
 
     fun renderAllElementsFile(): String {
         return renderFile {

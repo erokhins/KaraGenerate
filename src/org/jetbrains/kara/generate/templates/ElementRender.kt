@@ -78,7 +78,7 @@ object ElementRender {
 
     // fun HtmlBodyTag.ul(c : StyleClass? = null, id : String? = null, contents : UL.() -> Unit = empty_contents) = contentTag(UL(this), c, id, contents)
     // prefix need for Extension function
-    fun renderFunction(element: ElementDeclaration, prefix: String = "fun ", indent: String = INDENT): String {
+    fun renderFunctions(element: ElementDeclaration, prefix: String = "fun ", indent: String = INDENT): String {
         val s = StrBuilder(indent)
         if (element.isUsualElement()) {
             val arguments = element.getCollectionArguments()
@@ -97,62 +97,22 @@ object ElementRender {
         return s.toString()
     }
 
-    fun renderHtmlElementClass(elements: List<ElementDeclaration>, indent: String = ""): String {
-        val s = StrBuilder(indent)
-        s.appendLine("fun <T:HtmlElement> HtmlElement.contentTag(tag : T, c : StyleClass? = null, id : String? = null, contents : T.() -> Unit = empty_contents) {}")
-        s.appendLine()
-        s.brackets("public open class HtmlElement(containingTag: HtmlElement?, val tagName: String): AttributesImpl()") {
-            for (element in elements) {
-                append(renderFunction(element, "protected fun ", indent + INDENT))
-            }
-        }
-        return s.toString()
-    }
-
-    fun renderTraitExtension(decl: AbstractElementDeclaration): String {
-        val allTraits = HashSet<String>()
-        if (decl.allowText) {
-            allTraits.add("AllowText")
-        }
-        allTraits.addAll(decl.attributeGroups.map { it.className })
-        allTraits.addAll(decl.elementGroups.map { it.className})
-        return allTraits.makeString(", ")
-    }
-
-    fun renderElementGroupClass(group: ElementGroupDeclaration, indent: String = ""): String {
-        val s = StrBuilder(indent)
-        var ext = renderTraitExtension(group)
-        if (ext.length() > 0) {
-            ext = ": " + ext
-        }
-        s.brackets("trait ${group.className}${ext}") {
-            for (attr in group.newAttributes) {
-                appendLine("public var ${attr.propertyName}: ${attr.typeName}")
-            }
-            for (element in group.newAllowElements) {
-                for (arg in element.getCollectionArguments()) {
-                    val functionHeader = renderFunctionHeader(element.functionName, arg, false)
-                    appendLine("public fun $functionHeader")
-                }
-            }
-        }
-        return s.toString()
-    }
-
     fun renderElement(element: ElementDeclaration, indent: String = ""): String {
         val s = StrBuilder(indent)
-        var ext = renderTraitExtension(element)
-        if (ext.length() > 0) {
-            ext = ext + ", "
-        }
-        s.brackets("""class ${element.className}(containingTag: HtmlElement): ${ext}HtmlElement(containingTag, "${element.name}")""") {
-            for (attr in element.newAttributes) {
-                appendLine("public var ${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
+        val ext =
+            if(element.allowText) {
+                "AllowText, "
+            } else {
+                ""
             }
-        }
+        s.appendLine("""class ${element.className}(containingTag: BaseElement): ${ext}BaseBodyTag(containingTag, "${element.name}")""")
+        // render extension function
         for (el in element.newAllowElements) {
-            s.append(renderFunction(el, "public fun ${element.className}.", indent + INDENT))
+            s.append(renderFunctions(el, "public fun ${element.className}.", indent + INDENT))
         }
+//        for (attr in element.newAttributes) {
+//            appendLine("public var ${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
+//        }
         return s.toString()
     }
 
