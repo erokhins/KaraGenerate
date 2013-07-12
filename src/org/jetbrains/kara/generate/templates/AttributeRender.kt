@@ -99,22 +99,16 @@ object AttributeRender {
         }
     }
 
-    fun renderAttributesGroupTrait(attrGroup: AttributeGroup, indent: String = ""): String {
-        val s = StrBuilder(indent)
-        val extendStr = attrGroup.parentGroups.toExtendString { className }
-        s.brackets("""public trait ${attrGroup.className}${extendStr}""") {
-            for (attr in attrGroup.newAttributes) {
-                appendLine("public var ${attr.propertyName}: ${attr.typeName}")
-            }
-        }
-        return s.toString()
+    fun renderTraitAttributeClass(attrGroup: AttributeGroup, indent: String = ""): String {
+        return renderTraitAttributeClass(attrGroup.className, attrGroup.newAttributes, indent)
     }
 
-    fun renderProtectedImplAttributeClass(attributes: List<AttributeDeclaration>, indent: String = ""): String {
+    fun renderTraitAttributeClass(className: String, attributes: List<AttributeDeclaration>, indent: String = ""): String {
         val s = StrBuilder(indent)
-        s.brackets("""public open class $IMPL_PROTECTED_CLASS: BaseAttributeGroupImpl()""") {
+        s.appendLine("""public trait $className: AttributeGroup""")
+        s.indent {
             for (attr in attributes) {
-                appendLine("protected var ${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
+                appendLine("public var ${className}.${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
             }
         }
         return s.toString()

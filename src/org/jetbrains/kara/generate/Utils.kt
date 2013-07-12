@@ -127,6 +127,12 @@ class StrBuilder(val indent: String = "", val separator: String = ", ") {
         }
     }
 
+    public fun indent(indent: String = INDENT, innerAppend: StrBuilder.() -> Unit) {
+        val s = StrBuilder(this.indent + indent)
+        s.innerAppend()
+        this.append(s.toString())
+    }
+
     public fun appendCollection<T>(values: Collection<T>, strMaker: T.() -> String = { this.toString() }): StrBuilder {
         values.map { it.strMaker() }.appendString(stringBuilder, separator, "[", "]")
         return this

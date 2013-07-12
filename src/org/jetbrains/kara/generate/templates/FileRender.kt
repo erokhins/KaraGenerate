@@ -55,23 +55,9 @@ package ${packageName}
     fun renderAttributesGroupFile(): String {
         return renderFile {
             for (attrGroup in htmlModel.attributeGroups) {
-                append(AttributeRender.renderAttributesGroupTrait(attrGroup))
+                append(AttributeRender.renderTraitAttributeClass(attrGroup))
                 append("\n")
             }
-        }
-    }
-
-    fun renderProtectedImplAttributeClassFile(): String {
-        return renderFile {
-            val allAttrInGroups: MutableSet<AttributeDeclaration> = HashSet<AttributeDeclaration>()
-            for (attrGroup in htmlModel.attributeGroups) {
-                allAttrInGroups.addAll(attrGroup.newAttributes)
-            }
-            for (elementGroup in htmlModel.elementGroupDeclaration) {
-                allAttrInGroups.addAll(elementGroup.newAttributes)
-            }
-            val attributes = allAttrInGroups.sort({(a, b) -> a.name.compareTo(b.name) })
-            append(AttributeRender.renderProtectedImplAttributeClass(attributes))
         }
     }
 
