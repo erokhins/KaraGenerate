@@ -113,9 +113,11 @@ object AttributeRender {
         val s = StrBuilder(indent)
         val className = attrDecl.className
         s.brackets("""public class ${className}(override val value: String): StrEnumValues<${className}>""") {
-            for (value in attrDecl.values) {
-                val safeValue = SafeStr.safePropertyName(value)
-                appendLine("""val ${safeValue} = ${className}("${value}")""")
+            brackets("class object") {
+                for (value in attrDecl.values) {
+                    val safeValue = SafeStr.safePropertyName(value)
+                    appendLine("""val ${safeValue} = ${className}("${value}")""")
+                }
             }
         }
         return s.toString()
