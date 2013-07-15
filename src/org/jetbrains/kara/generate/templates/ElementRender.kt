@@ -97,24 +97,6 @@ object ElementRender {
         return s.toString()
     }
 
-    fun renderAdditionAttributes(element: ElementDeclaration, indent: String = ""): String {
-        if (element.newAttributes.size == 0) {
-            return ""
-        }
-        val s = StrBuilder(indent)
-        with(s) {
-            val attrClassName = "${element.className}_Attribute"
-            appendLine("val ${element.className}.attr = ${attrClassName}()")
-            appendLine("""public final class $attrClassName: AbstractCommonAttribute<$attrClassName>()""")
-            indent {
-                for (attr in element.newAttributes) {
-                    appendLine(AttributeRender.renderExtensionAttribute(attrClassName, attr))
-                }
-            }
-        }
-        return s.toString()
-    }
-
     fun renderElement(element: ElementDeclaration, indent: String = ""): String {
         val s = StrBuilder(indent)
         val ext =
@@ -123,12 +105,18 @@ object ElementRender {
             } else {
                 ""
             }
-        s.appendLine("""class ${element.className}(containingTag: BaseElement): ${ext}BaseBodyTag(containingTag, "${element.name}")""")
+        s.brackets("""class ${element.className}(containingTag: BaseElement): ${ext}BaseBodyTag(containingTag, "${element.name}")""") {
+            appendLine("public final class Attributes: AbstractCommonAttribute<Attributes>()")
+            appendLine("public val attr: Attributes = Attributes()")
+        }
+        val attrClassName = "${element.className}.Attributes"
+        for (attr in element.newAttributes) {
+            s.appendLine(AttributeRender.renderExtensionAttribute(attrClassName, attr))
+        }
         // render extension function
         for (el in element.newAllowElements) {
             s.append(renderFunctions(el, "public fun ${element.className}.", indent + INDENT))
         }
-        s.append(renderAdditionAttributes(element, indent + INDENT))
         return s.toString()
     }
 
