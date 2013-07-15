@@ -18,8 +18,6 @@ package org.jetbrains.kara.generate.test
 import org.junit.Test as test
 import kotlin.test.assertEquals
 import org.jetbrains.kara.generate.templates.SafeStr
-import org.jetbrains.kara.generate.templates.TagSafeName
-import org.jetbrains.kara.generate.templates.AttributeSafeName
 
 class SafeStrTest {
     test fun unsavedCharsTest() {
@@ -57,32 +55,5 @@ class SafeStrTest {
     }
     test fun lowerStr() {
         assertEquals("abcZ", SafeStr.lowerFirstLetter("AbcZ"))
-    }
-}
-
-class TagSafeNameTest {
-    test fun safeName() {
-        assertEquals("_a", TagSafeName("\$a").safeName)
-    }
-    test fun safeKeyName() {
-        assertEquals("var_", TagSafeName("var").safeName)
-    }
-    test fun className() {
-        assertEquals("OBJECT_", TagSafeName("object").className)
-    }
-    test fun functionName() {
-        assertEquals("myTag", TagSafeName("MyTag").functionName)
-    }
-}
-
-class AttributeSafeNameTest {
-    test fun safeName() {
-        assertEquals("inputType", AttributeSafeName("type", "Input").safeName)
-    }
-    test fun safeNameNullElementName() {
-        assertEquals("typeAttr", AttributeSafeName("TypeAttr", null).safeName)
-    }
-    test fun enumClassName() {
-        assertEquals("MyAttr", AttributeSafeName("myAttr").enumClassName)
     }
 }

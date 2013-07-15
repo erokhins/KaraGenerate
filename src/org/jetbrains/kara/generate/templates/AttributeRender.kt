@@ -27,19 +27,40 @@ import org.jetbrains.kara.generate.toExtendString
 
 val AttributeDeclaration.propertyName: String
     get() {
-        return AttributeSafeName(name, elementName).safeName
+        return SafeStr.safePropertyName(this.name)
     }
-val AttributeDeclaration.typeName: String
+val AttributeDeclaration.nameInAttributes: String
     get() {
-        return this.attrTypeDeclaration.typeName
+        val safeName = SafeStr.safePropertyName(this.name)
+        if (elementName == null) {
+            return safeName
+        }
+        val typeDecl = attrTypeDeclaration
+        val secondName = SafeStr.upperFirstLetter(SafeStr.replaceUnsafeChars(name))
+        return when (typeDecl.attrType) {
+            enumType, strEnumType -> elementName!!.toLowerCase() + secondName
+            else -> typeDecl.attrType.name() + secondName
+        }
+    }
+
+val AttributeTypeDeclaration.enumSafeName: String
+    get() {
+        return if (elementName != null) {
+            elementName!!.toLowerCase() + SafeStr.upperFirstLetter(SafeStr.replaceUnsafeChars(name))
+        } else {
+            SafeStr.generateSafeName(SafeStr.lowerFirstLetter(name))
+        }
+    }
+
+val AttributeTypeDeclaration.enumClassName: String
+    get() {
+        return SafeStr.upperFirstLetter(enumSafeName)
     }
 
 val AttributeTypeDeclaration.className: String
     get() {
-        val safe = AttributeSafeName(this.name, this.elementName)
         return when (this.attrType) {
-            enumType -> safe.enumClassName
-            strEnumType -> safe.enumClassName //TODO: StrEnumClass
+            enumType, strEnumType -> enumClassName
             dateTime -> "DateTimeAttribute"
             float -> "FloatAttribute"
             integer -> "IntegerAttribute"
@@ -53,9 +74,8 @@ val AttributeTypeDeclaration.className: String
 
 val AttributeTypeDeclaration.typeName: String
     get() {
-        val safe = AttributeSafeName(this.name, this.elementName)
         return when (this.attrType) {
-            enumType, strEnumType -> safe.enumClassName
+            enumType, strEnumType -> enumClassName
             dateTime -> "String"
             float -> "Float"
             integer -> "Int"
@@ -81,7 +101,7 @@ object AttributeRender {
         val className = attrDecl.className
         s.brackets("""public enum class ${className}(override val value: String): EnumValues<${className}>""") {
             for (value in attrDecl.values) {
-                val safeValue = SafeStr.safeEnumValue(value)
+                val safeValue = SafeStr.safePropertyName(value)
                 appendLine("""${safeValue}: ${className}("${value}")""")
             }
         }
@@ -94,7 +114,7 @@ object AttributeRender {
         val className = attrDecl.className
         s.brackets("""public class ${className}(override val value: String): StrEnumValues<${className}>""") {
             for (value in attrDecl.values) {
-                val safeValue = SafeStr.safeEnumValue(value)
+                val safeValue = SafeStr.safePropertyName(value)
                 appendLine("""val ${safeValue} = ${className}("${value}")""")
             }
         }
@@ -102,11 +122,11 @@ object AttributeRender {
     }
 
     fun renderAttributeDeclaration(attrDecl: AttributeDeclaration): String  {
-        val typeDecl = attrDecl.attrTypeDeclaration
-        return when (typeDecl.attrType) {
-            enumType -> """val ${attrDecl.propertyName} = EnumAttribute("${attrDecl.name}", javaClass<${typeDecl.className}>())"""
-            strEnumType -> """val ${attrDecl.propertyName} = StrEnumAttribute("${attrDecl.name}", javaClass<${typeDecl.className}>())"""
-            else -> """val ${attrDecl.propertyName} = ${typeDecl.className}("${attrDecl.name}")"""
+        val attrType = attrDecl.attrTypeDeclaration
+        return when (attrType.attrType) {
+            enumType -> """val ${attrDecl.nameInAttributes} = EnumAttribute("${attrDecl.name}", javaClass<${attrType.className}>())"""
+            strEnumType -> """val ${attrDecl.nameInAttributes} = StrEnumAttribute("${attrDecl.name}", javaClass<${attrType.className}>())"""
+            else -> """val ${attrDecl.nameInAttributes} = ${attrType.className}("${attrDecl.name}")"""
         }
     }
 
@@ -114,12 +134,17 @@ object AttributeRender {
         return renderTraitAttributeClass(attrGroup.className, attrGroup.newAttributes, indent)
     }
 
+    fun renderExtensionAttribute(className: String, attr: AttributeDeclaration): String {
+        val attrType = attr.attrTypeDeclaration
+        return "public var ${className}.${attr.propertyName}: ${attrType.typeName} by Attributes.${attr.nameInAttributes}"
+    }
+
     fun renderTraitAttributeClass(className: String, attributes: List<AttributeDeclaration>, indent: String = ""): String {
         val s = StrBuilder(indent)
         s.appendLine("""public trait $className: AttributeGroup""")
         s.indent {
             for (attr in attributes) {
-                appendLine("public var ${className}.${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
+                appendLine(renderExtensionAttribute(className, attr))
             }
         }
         return s.toString()

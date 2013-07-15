@@ -108,7 +108,7 @@ object ElementRender {
             appendLine("""public final class $attrClassName: AbstractCommonAttribute<$attrClassName>()""")
             indent {
                 for (attr in element.newAttributes) {
-                    appendLine("public var ${attrClassName}.${attr.propertyName}: ${attr.typeName} by Attributes.${attr.propertyName}")
+                    appendLine(AttributeRender.renderExtensionAttribute(attrClassName, attr))
                 }
             }
         }
