@@ -143,7 +143,7 @@ object AttributeRender {
 
     fun renderTraitAttributeClass(className: String, attributes: List<AttributeDeclaration>, indent: String = ""): String {
         val s = StrBuilder(indent)
-        s.appendLine("""public trait $className: AttributeGroup""")
+        s.appendLine("""public trait $className: AttributesMap""")
         s.indent {
             for (attr in attributes) {
                 appendLine(renderExtensionAttribute(className, attr))
