@@ -63,8 +63,8 @@ val AttributeTypeDeclaration.className: String
             enumType, strEnumType -> enumClassName
             dateTime -> "DateTimeAttribute"
             float -> "FloatAttribute"
-            integer -> "IntegerAttribute"
-            positiveInteger -> "PositiveIntegerAttribute"
+            integer -> "IntAttribute"
+            positiveInteger -> "PositiveIntAttribute"
             boolean -> "BooleanAttribute"
             string -> "StringAttribute"
             ticker -> "TickerAttribute"
