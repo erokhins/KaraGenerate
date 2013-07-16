@@ -25,7 +25,7 @@ import org.jetbrains.kara.generate.templates.FileRender
 val SCHEME_URL = "src/org/jetbrains/kara/generate/grammar/kara_html_5.xsd"
 val HTML_NAMESPACE = "kara-html-5"
 
-val WRITE_PATCH = "test/out/"
+val WRITE_PATCH = "/home/erokhins/IdeaProjects/kara/src/HTMLBuilder2/src/"
 private fun writeFile(name: String, text: String) {
     File(WRITE_PATCH + name).writeText(text)
 }
@@ -38,7 +38,7 @@ public fun main(args: Array<String>) {
     val model = HtmlModelBuilder(schema).build()
     
     
-    val fileRender = FileRender(model)
+    val fileRender = FileRender(model, "kotlin.html5")
 
     for (attribute in model.attributeDeclarations) {
         if (attribute.elementName != null) {
@@ -48,11 +48,11 @@ public fun main(args: Array<String>) {
 
 
     writeFile("model.out", makeStr(model))
-    writeFile("Enums.kt", fileRender.renderEnumClassesFile())
-    writeFile("Attributes.kt", fileRender.renderAttributesFile())
-    writeFile("AttributeGroups.kt", fileRender.renderAttributesGroupFile())
-    writeFile("Elements.kt", fileRender.renderAllElementsFile())
-    writeFile("BaseBodyTagExtension.kt", fileRender.renderBaseBodyTagExtensionFile())
+    writeFile("attributes/Enums.kt", fileRender.renderEnumClassesFile())
+    writeFile("attributes/Attributes.kt", fileRender.renderAttributesFile())
+    writeFile("attributes/AttributeGroups.kt", fileRender.renderAttributesGroupFile())
+//    writeFile("Elements.kt", fileRender.renderAllElementsFile())
+//    writeFile("BaseBodyTagExtension.kt", fileRender.renderBaseBodyTagExtensionFile())
 
     //    writeFile("AttributesImpl.kt", fileRender.renderProtectedImplAttributeClassFile())
     //
