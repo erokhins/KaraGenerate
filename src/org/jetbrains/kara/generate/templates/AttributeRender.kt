@@ -22,7 +22,7 @@ import java.util.ArrayList
 import org.jetbrains.kara.generate.AttributeGroup
 import org.jetbrains.kara.generate.StrBuilder
 import org.jetbrains.kara.generate.toExtendString
-
+import java.util.HashMap
 
 
 val AttributeDeclaration.propertyName: String
@@ -94,6 +94,14 @@ val AttributeGroup.className: String
 
 object AttributeRender {
     val IMPL_PROTECTED_CLASS = "AttributesImpl"
+    val specialAttributes = HashMap<String, AttributeTypes>()
+    class AttributeTypes(val typeName: String, val className: String) {}
+
+    {
+        specialAttributes.putAll {
+            "c" %= AttributeTypes("StyleClass", "ClassAttribute")
+        }
+    }
 
     fun renderEnumClass(attrDecl: AttributeTypeDeclaration, indent: String = ""): String {
         assert(attrDecl.attrType == enumType, "Type must be enumType, but it is: " + attrDecl.attrType)
@@ -124,6 +132,11 @@ object AttributeRender {
     }
 
     fun renderAttributeDeclaration(attrDecl: AttributeDeclaration): String  {
+        val specialType = specialAttributes.get(attrDecl.propertyName)
+        if (specialType != null) {
+            return """val ${attrDecl.nameInAttributes} = ${specialType.className}("${attrDecl.name}")"""
+        }
+
         val attrType = attrDecl.attrTypeDeclaration
         return when (attrType.attrType) {
             enumType -> """val ${attrDecl.nameInAttributes} = EnumAttribute("${attrDecl.name}", javaClass<${attrType.className}>())"""
@@ -137,6 +150,11 @@ object AttributeRender {
     }
 
     fun renderExtensionAttribute(className: String, attr: AttributeDeclaration): String {
+        val specialType = specialAttributes.get(attr.propertyName)
+        if (specialType != null) {
+            return "public var ${className}.${attr.propertyName}: ${specialType.typeName} by Attributes.${attr.nameInAttributes}"
+        }
+
         val attrType = attr.attrTypeDeclaration
         return "public var ${className}.${attr.propertyName}: ${attrType.typeName} by Attributes.${attr.nameInAttributes}"
     }

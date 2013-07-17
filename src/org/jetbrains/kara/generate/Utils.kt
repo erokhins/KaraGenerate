@@ -147,3 +147,13 @@ class StrBuilder(val indent: String = "", val separator: String = ", ") {
         return stringBuilder.toString()
     }
 }
+
+class MapSetter<K, V>(val map: MutableMap<K, V>) {
+    public fun K.modAssign(v : V) {
+        map.put(this, v)
+    }
+}
+
+fun <K, V> MutableMap<K, V>.putAll(f: MapSetter<K, V>.() -> Unit) {
+    MapSetter<K, V>(this).f()
+}
