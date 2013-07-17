@@ -105,13 +105,14 @@ object ElementRender {
             } else {
                 ""
             }
-        s.brackets("""class ${element.className}(containingTag: BaseElement): ${ext}BaseBodyTag(containingTag, "${element.name}")""") {
-            appendLine("public final class Attributes: AbstractCommonAttribute<Attributes>()")
-            appendLine("public val attr: Attributes = Attributes()")
+        s.brackets("""class ${element.className}(containingTag: HtmlBodyTag): ${ext}HtmlBodyTag(containingTag, "${element.name}")""") {
+            appendLine("override val attr = BaseAttributes<${element.className}>(this)")
         }
-        val attrClassName = "${element.className}.Attributes"
-        for (attr in element.newAttributes) {
-            s.appendLine(AttributeRender.renderExtensionAttribute(attrClassName, attr))
+        s.indent {
+            val attrClassName = "BaseAttributes<${element.className}>"
+            for (attr in element.newAttributes) {
+                appendLine(AttributeRender.renderExtensionAttribute(attrClassName, attr))
+            }
         }
         // render extension function
         for (el in element.newAllowElements) {
@@ -123,7 +124,7 @@ object ElementRender {
     fun renderBaseBodyTagExtension(elements: List<ElementDeclaration>, indent: String = ""): String {
         val s = StrBuilder(indent)
         for(element in elements) {
-            s.append(renderFunctions(element, "public fun BaseBodyTag.", indent))
+            s.append(renderFunctions(element, "public fun HtmlBodyTag.", indent))
         }
         return s.toString()
     }

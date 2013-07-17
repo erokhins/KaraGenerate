@@ -51,8 +51,8 @@ public fun main(args: Array<String>) {
     writeFile("attributes/Enums.kt", fileRender.renderEnumClassesFile())
     writeFile("attributes/Attributes.kt", fileRender.renderAttributesFile())
     writeFile("attributes/AttributeGroups.kt", fileRender.renderAttributesGroupFile())
-//    writeFile("Elements.kt", fileRender.renderAllElementsFile())
-//    writeFile("BaseBodyTagExtension.kt", fileRender.renderBaseBodyTagExtensionFile())
+    writeFile("HtmlBody.kt", fileRender.renderAllElementsFile())
+    writeFile("HtmlBodyTagExtension.kt", fileRender.renderBaseBodyTagExtensionFile())
 
     //    writeFile("AttributesImpl.kt", fileRender.renderProtectedImplAttributeClassFile())
     //
