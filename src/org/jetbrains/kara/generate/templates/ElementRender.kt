@@ -105,10 +105,8 @@ object ElementRender {
             } else {
                 ""
             }
-        s.brackets("""class ${element.className}(containingTag: HtmlBodyTag): ${ext}HtmlBodyTag(containingTag, "${element.name}")""") {
+        s.brackets("""class ${element.className}(containingTag: HtmlBodyTag?): ${ext}HtmlBodyTag(containingTag, "${element.name}")""") {
             appendLine("override val attr = BaseAttributes<${element.className}>(this)")
-        }
-        s.indent {
             val attrClassName = "BaseAttributes<${element.className}>"
             for (attr in element.newAttributes) {
                 appendLine(AttributeRender.renderExtensionAttribute(attrClassName, attr))
